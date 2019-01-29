@@ -17,11 +17,11 @@ def geturlList(url):
 def download(lst):
     for elem in lst:
         connection = request.urlopen(elem)
-        html =connection.read()
-        title = bs4.BeautifulSoup(html, "html.parser").title.text
-        print(title)
+        html = connection.read()
+        soup = bs4.BeautifulSoup(html, "html.parser")
+        title= soup.title.text.replace(' ','').replace('<','')
         file = open(os.path.dirname(os.path.dirname(os.path.realpath(__file__)))+"\\UOcourses\\"+title+".html", "w")
-        file.write(html)
+        file.write(str(soup).encode('gbk', errors='ignore').decode('utf-8', errors='ignore'))
         file.close()
 
 
