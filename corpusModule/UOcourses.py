@@ -94,7 +94,7 @@ def rename(name):
                 result += name[i] + ' '
             else:
                 result += name[i].lower()
-    return result + 'courses'
+    return result + ' courses'
 
 
 def main():
