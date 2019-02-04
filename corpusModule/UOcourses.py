@@ -48,10 +48,7 @@ def parser(htmldir, parsedir):
             soup = bs4.BeautifulSoup(open(htmldir + elem), 'html.parser')
             jsonobj = {}
             title = os.path.splitext(elem)[0]
-            jsonobj['docID'] = id
-            jsonobj['title'] = title
-            jsonobj['description'] = rename(title)
-            jsonobj['entries'] = parse(soup)
+            jsonobj['documents'] = parse(soup)
             id += 1
             file = open(parsedir + title + '.json', 'w')
             file.write(json.dumps(jsonobj))
@@ -62,13 +59,12 @@ def parser(htmldir, parsedir):
     print()
     print('parsing complete')
 
-
 def parse(soup):
     jsonarr = []
     courseblock = soup.find_all('div', {'class': 'courseblock'})
 
     for elem in courseblock:
-        title = elem.find('p', {'class': 'courseblocktitle'}).strong.text
+        docid, title = elem.find('p', {'class': 'courseblocktitle'}).strong.text.split(' ',1)
         desc = elem.find('p', {'class': 'courseblockdesc'})
         if desc is not None:
             desc = desc.text.replace("\n", '')
@@ -78,11 +74,13 @@ def parse(soup):
         prereq = elem.find('p', {'class': 'courseblockextra highlight noindent'})
         if prereq is not None:
             prereq = prereq.text
-        jsonobj = {'courseTitle': title, 'courseDescription': desc, 'courseComponent': comp, 'Prerequisite': prereq}
+            prereq = prereq.split(':',1)[-1]
+            prereq=prereq[1:]
+        jsonobj = {'docID':docid,'title': title, 'description': desc, 'courseComponent': comp, 'Prerequisite': prereq}
         jsonarr.append(jsonobj)
     return jsonarr
 
-
+'''
 def rename(name):
     result = ''
     name = name[0].lower() + name[1:]
@@ -95,13 +93,13 @@ def rename(name):
             else:
                 result += name[i].lower()
     return result + ' courses'
-
+'''
 
 def main():
     url = "https://catalogue.uottawa.ca/en/courses/"
     htmldir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\UOcourses\\"
     parsedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\"
-    download(get_url_list(url), htmldir)
+    #download(get_url_list(url), htmldir)
     parser(htmldir, parsedir)
 
 
