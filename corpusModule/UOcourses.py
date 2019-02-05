@@ -80,26 +80,12 @@ def parse(soup):
         jsonarr.append(jsonobj)
     return jsonarr
 
-'''
-def rename(name):
-    result = ''
-    name = name[0].lower() + name[1:]
-    for i in range(len(name) - 1):
-        if name[i] == '(':
-            break
-        else:
-            if name[i + 1].isupper():
-                result += name[i] + ' '
-            else:
-                result += name[i].lower()
-    return result + ' courses'
-'''
 
 def main():
     url = "https://catalogue.uottawa.ca/en/courses/"
     htmldir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\UOcourses\\"
     parsedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\"
-    #download(get_url_list(url), htmldir)
+    download(get_url_list(url), htmldir)
     parser(htmldir, parsedir)
 
 
