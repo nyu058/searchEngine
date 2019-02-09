@@ -59,6 +59,7 @@ def parser(htmldir, parsedir):
     print()
     print('parsing complete')
 
+
 def parse(soup):
     jsonarr = []
     courseblock = soup.find_all('div', {'class': 'courseblock'})
@@ -75,7 +76,6 @@ def parse(soup):
         if prereq is not None:
             prereq = prereq.text
             prereq = prereq.split(':',1)[-1]
-            prereq=prereq[1:]
         jsonobj = {'docID':docid,'title': title, 'description': desc, 'courseComponent': comp, 'Prerequisite': prereq}
         jsonarr.append(jsonobj)
     return jsonarr
