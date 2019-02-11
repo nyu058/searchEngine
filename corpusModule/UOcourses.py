@@ -66,6 +66,7 @@ def parse(soup):
 
     for elem in courseblock:
         docid, title = elem.find('p', {'class': 'courseblocktitle'}).strong.text.split(' ',1)
+        title=title.split('(',1)[0]
         desc = elem.find('p', {'class': 'courseblockdesc'})
         if desc is not None:
             desc = desc.text.replace("\n", '')
@@ -85,7 +86,7 @@ def main():
     url = "https://catalogue.uottawa.ca/en/courses/"
     htmldir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\UOcourses\\"
     parsedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\"
-    download(get_url_list(url), htmldir)
+    #download(get_url_list(url), htmldir)
     parser(htmldir, parsedir)
 
 
