@@ -34,7 +34,7 @@ class DictionaryBuilding:
     def normalize(tokens):
         normalized=[]
         for token in tokens:
-            normalized.extend(re.split('[-.]',token))
+            normalized.extend(filter(None,re.split('[-.]',token)))
         return normalized
 
     def build(self):
@@ -44,7 +44,8 @@ class DictionaryBuilding:
         dictionary = {}
 
         for doc in collection['documents']:
-            tokenized=list(filter(None, re.split('[ .,/()_&#!@?;:]', str(doc['description']).lower())))
+            tokenized=list(filter(None, re.split('[ .,/()_&#!@?;:""]', str(doc['description']).lower())))
+
             if self.normalization:
                 tokenized=self.normalize(tokenized)
             if self.stopwords:
