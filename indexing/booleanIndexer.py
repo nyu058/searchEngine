@@ -2,29 +2,33 @@ from indexing import indexer
 import os.path
 from dictionaryBuilding import dictionaryBuilding
 
+
 class BooleanIndexer(indexer.Indexer):
     def __init__(self):
         super().__init__('boolean')
 
     def buildIndex(self, dictionary):
-        boolean_index=[]
-        sorted=self.parseIndex(dictionary)
-        i=0
-        j=0
-        while i <len(sorted):
-            while j<len(sorted):
-                if sorted[i][0]!=sorted[j][0]:
-                    boolean_index.append((sorted[i][0], j-i))
-                    i=j
+        boolean_index = []
+        sorted = self.parseIndex(dictionary)
+        i = 0
+        j = 0
+        while i < len(sorted):
+            docarr = []
+            while j < len(sorted):
+
+                if sorted[i][0] != sorted[j][0]:
+                    boolean_index.append(((sorted[i][0], len(docarr)), docarr))
+                    i = j
                     break
-                if j==len(sorted)-1:
-                    boolean_index.append((sorted[j][0], j-i+1))
+                else:
+                    docarr.append(sorted[j][1])
+
+                if j == len(sorted) - 1:
+                    boolean_index.append(((sorted[j][0], len(docarr)), docarr))
 
                     return boolean_index
 
                 j += 1
-            # print(boolean_index)
-
 
 
 
@@ -33,6 +37,7 @@ def main():
     builder = dictionaryBuilding.DictionaryBuilding(path, True, True, True)
     indexer = BooleanIndexer()
     print(indexer.buildIndex(builder.build()))
+
 
 if __name__ == '__main__':
     main()
