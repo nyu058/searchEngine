@@ -5,18 +5,19 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import re
 
+
 class DictionaryBuilding:
 
     def __init__(self, path, stopwords=False, stemming=False, normalization=False):
-        self.path=path
+        self.path = path
         self.stopwords = stopwords
         self.stemming = stemming
         self.normalization = normalization
 
     @staticmethod
     def remove_stopwords(tokens):
-        stoplist = set(stopwords.words('english')+stopwords.words('french'))
-        filtered=[]
+        stoplist = set(stopwords.words('english') + stopwords.words('french'))
+        filtered = []
         for token in tokens:
             if token not in stoplist:
                 filtered.append(token)
@@ -25,16 +26,16 @@ class DictionaryBuilding:
     @staticmethod
     def stem(tokens):
         ps = PorterStemmer()
-        stemmed=[]
+        stemmed = []
         for token in tokens:
             stemmed.append(ps.stem(token))
         return stemmed
 
     @staticmethod
     def normalize(tokens):
-        normalized=[]
+        normalized = []
         for token in tokens:
-            normalized.extend(filter(None,re.split('[-.]',token)))
+            normalized.extend(filter(None, re.split('[-.]', token)))
         return normalized
 
     def build(self):
@@ -44,14 +45,14 @@ class DictionaryBuilding:
         dictionary = {}
 
         for doc in collection['documents']:
-            tokenized=list(filter(None, re.split('[ .,/()_&#!@?;:""]', str(doc['description']).lower())))
+            tokenized = list(filter(None, re.split('[ .,/()_&#!@?;:""]', str(doc['description']).lower())))
 
             if self.normalization:
-                tokenized=self.normalize(tokenized)
+                tokenized = self.normalize(tokenized)
             if self.stopwords:
-                tokenized=self.remove_stopwords(tokenized)
+                tokenized = self.remove_stopwords(tokenized)
             if self.stemming:
-                tokenized=self.stem(tokenized)
+                tokenized = self.stem(tokenized)
 
             dictionary[doc['docID']] = tokenized
 
