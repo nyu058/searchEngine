@@ -1,7 +1,7 @@
 from indexing import indexer
 import os.path
 from dictionaryBuilding import dictionaryBuilding
-
+import collections
 
 class BooleanIndexer(indexer.Indexer):
     def __init__(self):
@@ -40,13 +40,15 @@ class BooleanIndexer(indexer.Indexer):
         tokenized = list(filter(None, query.lower().split(' ')))
         # tokenized = dictionaryBuilding.DictionaryBuilding.stem(
         #     dictionaryBuilding.DictionaryBuilding.normalize(tokenized))
-
+        print(tokenized)
         for i in range(len(tokenized)):
+            print(tokenized[i])
             if tokenized[i][-1]=='*':
                 wc=self.wildcard(tokenized[i][0:-1], index)
-                tokenized[i:i+len(wc)]=wc
-
-        #print(tokenized)
+                tokenized[i]=wc
+        print(tokenized)
+        tokenized=list(self.flatten(tokenized))
+        print(tokenized)
         return self.toPostFix(tokenized)
 
     def wildcard(self, token, index):
@@ -59,7 +61,7 @@ class BooleanIndexer(indexer.Indexer):
                 result.append('or')
                 count+=1
         result.pop()
-        for i in range(count+1):
+        for i in range(count):
             result.append(')')
         return result
 
@@ -128,6 +130,16 @@ class BooleanIndexer(indexer.Indexer):
             if elem in l2:
                 result.append(elem)
         return result
+    '''
+    from :https://stackoverflow.com/questions/2158395/flatten-an-irregular-list-of-lists
+    '''
+    @staticmethod
+    def flatten(alist):
+        for item in alist:
+            if isinstance(item, list):
+                for subitem in item: yield subitem
+            else:
+                yield item
 
 
 def main():
