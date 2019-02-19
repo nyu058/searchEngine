@@ -47,7 +47,7 @@ class BooleanIndexer(indexer.Indexer):
                 print(tokenized)
 
 
-        print(tokenized)
+        #print(tokenized)
         return self.toPostFix(tokenized)
 
     def wildcard(self, token, index):
@@ -69,13 +69,13 @@ class BooleanIndexer(indexer.Indexer):
             os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
         builder = dictionaryBuilding.DictionaryBuilding(path, options[0], options[1], options[2])
         index = self.buildIndex(builder.build())
-        print(index)
+        #print(index)
         processed = self.query_processor(query, index)
-        print(processed)
+        #print(processed)
         operators = {'and', 'or', 'not'}
         tojoin = []
         for elem in processed:
-            print(tojoin)
+
             if elem not in operators:
                 tojoin.append(self.getDocList(index, elem))
             elif elem == 'and':
@@ -89,7 +89,7 @@ class BooleanIndexer(indexer.Indexer):
                 tojoin.pop()
                 tojoin.append(joined)
 
-        return tojoin
+        return tojoin[0]
 
 
     def getDocList(self, index, token):

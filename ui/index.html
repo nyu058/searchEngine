@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
     <link href="{% static 'css/main.css' %}" rel="stylesheet"/>
+    <title>V10</title>
 </head>
 <body>
 <h1 style="text-align: center ">V10 Search Engine</h1>
 <div class="s003">
 
-    <form>
+    <form action="/result" method="get">
         <div class="inner-form">
             <div class="input-field first-wrap">
                 <div class="input-select">
-                    <select data-trigger="" name="choices-single-defaul">
-                        <option placeholder="">UO Courses</option>
+                    <select data-trigger="" name="collection">
+                        <option placeholder="">UO_Courses</option>
                         <option>Reuters 2157</option>
                         <option>Web</option>
                     </select>
@@ -26,7 +27,7 @@
             </div>
             <div class="input-field first-wrap">
                 <div class="input-select" style="display: inline">
-                    <select data-trigger="" name="choices-single-defaul">
+                    <select data-trigger="" name="model">
                         <option placeholder="">Boolean</option>
                         <option>VSM</option>
                         <option>Dummy</option>
@@ -34,10 +35,10 @@
                 </div>
             </div>
             <div class="input-field second-wrap">
-                <input id="search" type="text" placeholder="Enter your query here"/>
+                <input id="search" type="text" placeholder="Enter your query here" name="query" required>
             </div>
             <div class="input-field third-wrap">
-                <button class="btn-search" type="button">
+                <button class="btn-search" type="submit">
                     <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-prefix="fas"
                          data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path fill="currentColor"
@@ -45,6 +46,20 @@
                     </svg>
                 </button>
             </div>
+
+        </div>
+        <br>
+        <div class="form-check form-check-inline" >
+        <input class="form-check-input" type="checkbox" id='check1' name="stopwords" value="true">
+  <label class="form-check-label" for="check1">Stopwords Removal</label>
+        </div>
+        <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id='check2' name="stemming" value="true">
+  <label class="form-check-label" for="check2">Stemming</label>
+        </div>
+        <div class="form-check form-check-inline" >
+        <input class="form-check-input" type="checkbox" id='check3' name="normalize" value="true">
+  <label class="form-check-label" for="check3">Normalization</label>
         </div>
     </form>
 </div>

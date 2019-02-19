@@ -119,4 +119,3 @@ USE_TZ = True
 STATIC_URL='/static/'
 #STATIC_ROOT =os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 STATICFILES_DIRS=(os.path.join(BASE_DIR,'ui/static'),)
-print(STATICFILES_DIRS)

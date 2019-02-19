@@ -6,5 +6,6 @@ class VSIndexer(Indexer):
         super().__init__('vs')
 
     def calculate_weight(self, index):
-        pass
+
+        return index
 
