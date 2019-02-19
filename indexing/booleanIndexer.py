@@ -40,12 +40,11 @@ class BooleanIndexer(indexer.Indexer):
         tokenized = list(filter(None, query.lower().split(' ')))
         # tokenized = dictionaryBuilding.DictionaryBuilding.stem(
         #     dictionaryBuilding.DictionaryBuilding.normalize(tokenized))
+
         for i in range(len(tokenized)):
             if tokenized[i][-1]=='*':
-                wc=self.wildcard(tokenized[i][0:-2], index)
+                wc=self.wildcard(tokenized[i][0:-1], index)
                 tokenized[i:i+len(wc)]=wc
-                print(tokenized)
-
 
         #print(tokenized)
         return self.toPostFix(tokenized)
