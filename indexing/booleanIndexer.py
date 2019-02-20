@@ -140,12 +140,12 @@ class BooleanIndexer(indexer.Indexer):
 
 
 def main():
-    # path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
-    # builder = dictionaryBuilding.DictionaryBuilding(path, True, True, True)
-    index = BooleanIndexer()
-    # print(indexer.buildIndex(builder.build()))
+    path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+    builder = dictionaryBuilding.DictionaryBuilding(path, True, True, True)
+    indexer = BooleanIndexer()
+    print(indexer.buildIndex(builder.build()))
     # print(indexer.query_processor('thread and ( Operating or system )'))
-    print(index.search('graphics or ( opera* and system )', [True, False, True]))
+    #print(index.search('graphics or ( opera* and system )', [True, False, True]))
 
 
 if __name__ == '__main__':
