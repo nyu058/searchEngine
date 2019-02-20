@@ -40,7 +40,6 @@ class VSIndexer(indexer.Indexer):
         return result
 
     def query_processor(self, query, dictionary):
-
         tokenized = list(filter(None, query.lower().split(' ')))
         if dictionary.normalization:
             tokenized = dictionary.normalize(tokenized)
@@ -48,6 +47,7 @@ class VSIndexer(indexer.Indexer):
             tokenized = dictionary.remove_stopwords(tokenized)
         if dictionary.stemming:
             tokenized = dictionary.stem(tokenized)
+
         return tokenized
 
     def getDocVec(self, query, index):

@@ -118,28 +118,38 @@ class BooleanIndexer(indexer.Indexer):
         ptr1 = 0
         ptr2 = 0
         result = []
-        while ptr1 < len(l1) and ptr2 < len(l2):
-            if l1[ptr1] > l2[ptr2]:
-                result.append(l2[ptr2])
-                ptr2 += 1
-            else:
+        if not l2:
+            return l1
+        if not l1:
+            return l2
+        if l1 and l2:
+            while ptr1 < len(l1) and ptr2 < len(l2):
+                if l1[ptr1] > l2[ptr2]:
+                    result.append(l2[ptr2])
+                    ptr2 += 1
+                else:
+                    result.append(l1[ptr1])
+                    ptr1 += 1
+            while ptr1 < len(l1):
                 result.append(l1[ptr1])
                 ptr1 += 1
-        while ptr1 < len(l1):
-            result.append(l1[ptr1])
-            ptr1 += 1
-        while ptr2 < len(l2):
-            result.append(l2[ptr2])
-            ptr2 += 1
+            while ptr2 < len(l2):
+                result.append(l2[ptr2])
+                ptr2 += 1
         return result
 
 
     @staticmethod
     def intersect(l1, l2):
+        if not l2:
+            return l1
+        if not l1:
+            return l2
         result = []
-        for elem in l1:
-            if elem in l2:
-                result.append(elem)
+        if l1 and l2:
+            for elem in l1:
+                if elem in l2:
+                    result.append(elem)
         return result
     '''
     from :https://stackoverflow.com/questions/2158395/flatten-an-irregular-list-of-lists

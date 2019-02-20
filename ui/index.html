@@ -10,8 +10,11 @@
 </head>
 <body>
 <h1 style="text-align: center ">V10 Search Engine</h1>
+    <p><b>Notes 1</b>: Boolean query will only work correctly if a space is added after each bracket. i.e 'graphics or (operating and system)' will produce unexpected result, "graphic or ( operating and system )" should work correctly."</p>
+    <p><b>Notes 2</b>: The spell correction module with edit distance is implemented with the VSM model only. Please choose VSM when testing for spell correction.</p>
+<p><b>Note 3</b>: Some query especially those incorrectly typed might be slow, since the edit distance algorithm may not be at the most optimal one.</p>
+<p><b>Note 4</b>: The spell correction may not function correctly with stemming selected</p>
 <div class="s003">
-
     <form action="/result" method="get">
         <div class="inner-form">
             <div class="input-field first-wrap">
@@ -62,6 +65,7 @@
   <label class="form-check-label" for="check3">Normalization</label>
         </div>
     </form>
+
 </div>
 <script src="static/js/extention/choices.js"></script>
 <script>
