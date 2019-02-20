@@ -14,7 +14,7 @@ class BooleanIndexer(indexer.Indexer):
     def toPostFix(tokens):
         operators = {'and', 'or', 'not'}
         brackets = {'(', ')'}
-        prec = {'(': 1, 'and': 2, 'or': 2, 'not': 2}
+        prec = {'(': 1, 'and': 2, 'or': 2, 'not': 3}
         opstack = []
         result = []
         for token in tokens:
@@ -66,10 +66,11 @@ class BooleanIndexer(indexer.Indexer):
         path = os.path.dirname(
             os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
         builder = dictionaryBuilding.DictionaryBuilding(path, options[0], options[1], options[2])
-        index = self.buildIndex(builder.build())
-        #print(index)
+        dic=builder.build()
+        index = self.buildIndex(dic)
+        print(dic)
         processed = self.query_processor(query, index)
-        #print(processed)
+        print(processed)
         operators = {'and', 'or', 'not'}
         tojoin = []
         for elem in processed:
@@ -86,6 +87,12 @@ class BooleanIndexer(indexer.Indexer):
                 tojoin.pop()
                 tojoin.pop()
                 tojoin.append(joined)
+            else:
+                joined = self.negation(tojoin[-1], dic)
+                tojoin.pop()
+                tojoin.append(joined)
+                print(joined)
+
 
         return tojoin[0]
 
@@ -97,7 +104,14 @@ class BooleanIndexer(indexer.Indexer):
                 for docid in elem[1]:
                     result.append(docid[0])
                 return result
-
+    @staticmethod
+    def negation(lst, dic):
+        result=[]
+        lst=set(lst)
+        for elem in dic.keys():
+            if elem not in lst:
+                result.append(elem)
+        return result
 
     @staticmethod
     def union(l1, l2):
@@ -143,9 +157,9 @@ def main():
     path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     builder = dictionaryBuilding.DictionaryBuilding(path, True, True, True)
     indexer = BooleanIndexer()
-    print(indexer.buildIndex(builder.build()))
-    # print(indexer.query_processor('thread and ( Operating or system )'))
-    #print(index.search('graphics or ( opera* and system )', [True, False, True]))
+    #print(indexer.buildIndex(builder.build()))
+    #print(indexer.query_processor('not thread and ( Operating or system )'))
+    print(indexer.search(' graphics or ( not opera* and system )', [True, False, True]))
 
 
 if __name__ == '__main__':

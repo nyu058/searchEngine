@@ -117,7 +117,6 @@ class VSIndexer(indexer.Indexer):
     '''
     modified from: https://www.geeksforgeeks.org/binary-search/
     '''
-
     @staticmethod
     def binarySearchIter(arr, l, r, x):
         while l <= r:
