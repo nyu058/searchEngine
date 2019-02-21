@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import os.path
 from corpus_access import corpusAccess
-from indexing import booleanIndexer, vsIndexer
+from models import booleanmodel, vsmodel
 from django.template import Context, loader
 from nltk.corpus import words
 from optional import spellCorrection
@@ -23,7 +23,7 @@ def result(request):
         stem = True
     if request.GET.get('normalize', 'false') == 'true':
         normal = True
-    query=request.GET['query']
+    query=request.GET.get('query', '')
     if request.GET['model']=='Boolean':
         reslist=boolean(query, sw, stem, normal)
     else:
@@ -37,7 +37,7 @@ def detail(request):
 
 def boolean(query, sw, stem, normal):
     reslist=[]
-    index = booleanIndexer.BooleanIndexer()
+    index = booleanmodel.BooleanModel()
 
     doclist = index.search(query, [sw, stem, normal])
     for elem in corpusAccess.getDocContent(
@@ -53,7 +53,7 @@ def boolean(query, sw, stem, normal):
 
 def vsm(query, sw, stem, normal):
     reslist = []
-    index=vsIndexer.VSIndexer()
+    index=vsmodel.VSModel()
     doclist = index.search(query, [sw, stem, normal])
     path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     resultset=corpusAccess.getDocContent(path, [i[0] for i in doclist])
@@ -66,7 +66,7 @@ def vsm(query, sw, stem, normal):
                 flag=True
                 tokenized[i]=spellCorrection.edits(tokenized[i], spellindex)[0]
         if flag:
-            reslist.append('<div>No result was returned, did you mean:<a href=\"/result/?collection=UO_Courses&model=VSM&query='+'+'.join(tokenized)+'\">')
+            reslist.append('<di v>No result was returned, did you mean:<a href=\"/result/?collection=UO_Courses&model=VSM&query='+'+'.join(tokenized)+'\">')
             for i in range(len(tokenized)):
                 reslist.append(" "+spellCorrection.edits(tokenized[i], spellindex)[0])
             reslist.append('</a></div>')

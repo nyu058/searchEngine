@@ -1,9 +1,8 @@
-from indexing import indexer
+from models import model
 import os.path
 from dictionaryBuilding import dictionaryBuilding
-import collections
 
-class BooleanIndexer(indexer.Indexer):
+class BooleanModel(model.Model):
     def __init__(self):
         super().__init__('boolean')
 
@@ -166,7 +165,7 @@ class BooleanIndexer(indexer.Indexer):
 def main():
     path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     builder = dictionaryBuilding.DictionaryBuilding(path, True, True, True)
-    indexer = BooleanIndexer()
+    indexer = BooleanModel()
     #print(indexer.buildIndex(builder.build()))
     #print(indexer.query_processor('not thread and ( Operating or system )'))
     print(indexer.search(' graphics or ( not opera* and system )', [True, False, True]))

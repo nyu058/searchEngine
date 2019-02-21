@@ -2,7 +2,7 @@ from dictionaryBuilding import dictionaryBuilding
 import os.path
 
 
-class Indexer:
+class Model:
 
     def __init__(self, model):
         self.model = model
@@ -51,7 +51,8 @@ class Indexer:
 def main():
     path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     builder = dictionaryBuilding.DictionaryBuilding(path, True, True, True)
-    print(Indexer.parseIndex(builder.build()))
+    index=Model('boolean')
+    print(index.buildIndex(builder.build()))
 
 
 if __name__ == '__main__':

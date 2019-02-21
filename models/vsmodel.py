@@ -1,10 +1,10 @@
-from indexing import indexer
+from models import model
 import math
 import os.path
 from dictionaryBuilding import dictionaryBuilding
 
 
-class VSIndexer(indexer.Indexer):
+class VSModel(model.Model):
     def __init__(self):
         super().__init__('vs')
 
@@ -25,7 +25,7 @@ class VSIndexer(indexer.Indexer):
             os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
         builder = dictionaryBuilding.DictionaryBuilding(path, options[0], options[1], options[2])
         dic = builder.build()
-        index = VSIndexer()
+        index = VSModel()
         result = []
         index = self.calculate_weight(index.buildIndex(dic), len(dic))
         processedQuery = self.query_processor(query, builder)
@@ -132,7 +132,7 @@ class VSIndexer(indexer.Indexer):
 
 
 def main():
-    indexer = VSIndexer()
+    indexer = VSModel()
     print(indexer.search('operating systems', [True, True, True]))
 
 

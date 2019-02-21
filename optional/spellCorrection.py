@@ -1,6 +1,6 @@
 from nltk.corpus import words
 import os.path
-from indexing import booleanIndexer
+from models import booleanmodel
 from dictionaryBuilding import dictionaryBuilding
 '''
 modified from: http://norvig.com/spell-correct.html
@@ -48,7 +48,7 @@ def minDistance(word1, word2):
 def main():
     path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     builder = dictionaryBuilding.DictionaryBuilding(path, True, False, True)
-    indexer = booleanIndexer.BooleanIndexer()
+    indexer = booleanmodel.BooleanModel()
     index=indexer.buildIndex(builder.build())
     print(edits('operatng', index))
 
