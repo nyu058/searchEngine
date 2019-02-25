@@ -1,1 +1,2 @@
-ui/static/* linguist-vendored
+ui/static/js/* linguist-vendored
+main.js linguist-vendored=false
