@@ -1,2 +1,4 @@
 ui/static/js/* linguist-vendored
 main.js linguist-vendored=false
+ui/static/css/* linguist-vendored
+main.css linguist-vendored=false
