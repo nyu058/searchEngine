@@ -1,6 +1,8 @@
 import re
 import os.path
 import json
+import bs4
+import sys
 
 def parser(indir, outdir):
     print('parsing...')
@@ -9,40 +11,48 @@ def parser(indir, outdir):
     docs=[]
     progress = 0
     size = 100 / len(dirlist)
+    jsonobj = {}
+
     for elem in dirlist:
         if elem.endswith('.sgm'):
-            with open(indir + elem,'r') as f:
+            with open(indir + elem,'r', encoding='utf-8', errors='ignore') as f:
                 content=f.read()
-            jsonobj = {}
-            jsonobj['documents'] = parse(content)
-            id += 1
-            if id==1:
-                break
-            # file = open(outdir + 'reuters_parsed' + '.json', 'w')
-            # file.write(json.dumps(jsonobj))
+            filedoc, endid=parse(content, id)
+            docs.extend(filedoc)
+            id= endid
+            progress += size
+            sys.stdout.write("\r" + str(round(progress, 1)) + '%')
+            sys.stdout.flush()
 
-            # progress += size
-            # sys.stdout.write("\r" + str(round(progress, 1)) + '%')
-            # sys.stdout.flush()
+    jsonobj['documents']=docs
+    file = open(outdir + 'reuters_parsed' + '.json', 'w')
+    file.write(json.dumps(jsonobj), )
+    file.close()
 
-def parse(content):
+def parse(content, id):
     jsonarr=[]
-    docid=0
-    titlere='<TITLE>(.*)</TITLE>'
-    title=re.findall(titlere, content)
-    bodyre = '<BODY>(.*?)</BODY>'
-    body = re.findall(bodyre, content, re.DOTALL)
-    topicsre = '<TOPICS>(.*)</TOPICS>'
-    topics = re.findall(topicsre, content)
-    jsonobj={}
-    #for i in range(len(title)):
 
-    print(title)
-    print(len(title))
-    print(topics)
-    print(len(topics))
-    print(body)
-    print(len(body))
+    reuters='<REUTERS(.*?)</REUTERS>'
+    titlere='<TITLE>(.*)</TITLE>'
+    bodyre = '<BODY>(.*?)</BODY>'
+    topicsre = '<TOPICS>(.*)</TOPICS>'
+    topicsubre='<D>(.*?)</D>'
+    endingre='( Reuter &#3;| REUTER &#3;| reuter &#3;| Reuters &#3;| reuters &#3;| REUTER &#3;|&#.{1,3};| &#3;)'
+    ret=re.findall(reuters, content, re.DOTALL)
+    for elem in ret:
+        title=re.findall(titlere, elem)
+
+        if title:
+            jsonobj={}
+            jsonobj['docID']=id
+            jsonobj['title']= title[0].replace('&lt;','<').replace('&amp;','&')
+            jsonobj['topics']=re.findall(topicsubre,re.findall(topicsre, elem)[0], re.DOTALL)
+            desc=re.findall(bodyre, elem, re.DOTALL)[0].replace('\n', ' ').replace('&lt;','<').replace('&amp;','&')
+            jsonobj['description']= re.sub(endingre,'',desc)
+            id+=1
+            jsonarr.append(jsonobj)
+
+    return jsonarr, id
 
 if __name__ == '__main__':
     indir = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\reuters\\"

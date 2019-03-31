@@ -1,7 +1,7 @@
 from models import model
 import math
 import os.path
-from dictionaryBuilding import dictionaryBuilding
+from dictionaryBuilding import dictionaryBuilding as db
 
 
 class VSModel(model.Model):
@@ -20,15 +20,12 @@ class VSModel(model.Model):
 
         return math.log(1 + tf, 10) * math.log(n / df, 10)
 
-    def search(self, query, options):
-        path = os.path.dirname(
-            os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
-        builder = dictionaryBuilding.DictionaryBuilding(path, options[0], options[1], options[2])
-        dic = builder.build()
+    def search(self, query, options, dic):
+
         index = VSModel()
         result = []
         index = self.calculate_weight(index.buildIndex(dic), len(dic))
-        processedQuery = self.query_processor(query, builder)
+        processedQuery = self.query_processor(query, options)
         queryweight = []
         for elem in processedQuery:
             queryweight.append(processedQuery.count(elem))
@@ -39,14 +36,15 @@ class VSModel(model.Model):
         result.sort(key=lambda x: x[1], reverse=True)
         return result
 
-    def query_processor(self, query, dictionary):
+    def query_processor(self, query, options):
+
         tokenized = list(filter(None, query.lower().split(' ')))
-        if dictionary.normalization:
-            tokenized = dictionary.normalize(tokenized)
-        if dictionary.stopwords:
-            tokenized = dictionary.remove_stopwords(tokenized)
-        if dictionary.stemming:
-            tokenized = dictionary.stem(tokenized)
+        if options[2]:
+            tokenized = db.DictionaryBuilding.normalize(tokenized)
+        if options[0]:
+            tokenized = db.DictionaryBuilding.remove_stopwords(tokenized)
+        if options[1]:
+            tokenized = db.DictionaryBuilding.stem(tokenized)
 
         return tokenized
 

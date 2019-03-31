@@ -7,7 +7,12 @@ from django.template import Context, loader
 from nltk.corpus import words
 from optional import spellCorrection
 from dictionaryBuilding import dictionaryBuilding
-
+reuterpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
+cspath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+print('building dictionary')
+reuterdic = dictionaryBuilding.DictionaryBuilding(cspath, False, False, False).build()
+csdic = dictionaryBuilding.DictionaryBuilding(cspath, False, False, False).build()
+print('building dictionary complete')
 
 def index(request):
     template= loader.get_template('index.html')
@@ -35,11 +40,11 @@ def detail(request):
     resultset=corpusAccess.getDocDetail( os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json", request.GET['docid'])
     return  HttpResponse(template.render({'title':resultset[0], 'description':resultset[1], 'comp':resultset[2], 'preq':resultset[3]}))
 
-def boolean(query, sw, stem, normal):
+def boolean(query, sw, stem, normal, dic):
     reslist=[]
     index = booleanmodel.BooleanModel()
 
-    doclist = index.search(query, [sw, stem, normal])
+    doclist = index.search(query, [sw, stem, normal], dic)
     for elem in corpusAccess.getDocContent(
             os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json",
             doclist):
@@ -51,10 +56,10 @@ def boolean(query, sw, stem, normal):
     return reslist
 
 
-def vsm(query, sw, stem, normal):
+def vsm(query, sw, stem, normal,dic):
     reslist = []
     index=vsmodel.VSModel()
-    doclist = index.search(query, [sw, stem, normal])
+    doclist = index.search(query, [sw, stem, normal], dic)
     path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     resultset=corpusAccess.getDocContent(path, [i[0] for i in doclist])
     if not resultset:

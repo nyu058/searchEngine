@@ -61,11 +61,8 @@ class BooleanModel(model.Model):
             result.append(')')
         return result
 
-    def search(self, query, options):
-        path = os.path.dirname(
-            os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
-        builder = dictionaryBuilding.DictionaryBuilding(path, options[0], options[1], options[2])
-        dic=builder.build()
+    def search(self, query, options, dic):
+
         index = self.buildIndex(dic)
         print(dic)
         processed = self.query_processor(query, index)
