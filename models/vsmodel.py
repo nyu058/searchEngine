@@ -20,12 +20,12 @@ class VSModel(model.Model):
 
         return math.log(1 + tf, 10) * math.log(n / df, 10)
 
-    def search(self, query, options, dic):
+    def search(self, query, dic):
 
         index = VSModel()
         result = []
         index = self.calculate_weight(index.buildIndex(dic), len(dic))
-        processedQuery = self.query_processor(query, options)
+        processedQuery = self.query_processor(query)
         queryweight = []
         for elem in processedQuery:
             queryweight.append(processedQuery.count(elem))
@@ -36,17 +36,9 @@ class VSModel(model.Model):
         result.sort(key=lambda x: x[1], reverse=True)
         return result
 
-    def query_processor(self, query, options):
+    def query_processor(self, query):
 
-        tokenized = list(filter(None, query.lower().split(' ')))
-        if options[2]:
-            tokenized = db.DictionaryBuilding.normalize(tokenized)
-        if options[0]:
-            tokenized = db.DictionaryBuilding.remove_stopwords(tokenized)
-        if options[1]:
-            tokenized = db.DictionaryBuilding.stem(tokenized)
-
-        return tokenized
+        return list(filter(None, query.lower().split(' ')))
 
     def getDocVec(self, query, index):
         qdoclist = []
@@ -130,8 +122,14 @@ class VSModel(model.Model):
 
 
 def main():
+    path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
+    # path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+    builder = db.DictionaryBuilding(path, True, False, False)
     indexer = VSModel()
-    print(indexer.search('operating systems', [True, True, True]))
+    dic = builder.build()
+    print(indexer.buildIndex(dic))
+
+    #print(indexer.search('operating systems', [True, True, True]))
 
 
 if __name__ == '__main__':

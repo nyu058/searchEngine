@@ -18,4 +18,4 @@ def getDocDetail(path, docid):
         collection = json.load(f)
     for doc in collection['documents']:
         if doc['docID']==docid:
-            return docid+' '+doc['title'], doc['description'], doc['courseComponent'], doc['Prerequisite']
+            return docid+' '+doc['title'], doc['description']

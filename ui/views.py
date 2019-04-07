@@ -10,8 +10,8 @@ from dictionaryBuilding import dictionaryBuilding
 reuterpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
 cspath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
 print('building dictionary')
-reuterdic = dictionaryBuilding.DictionaryBuilding(cspath, False, False, False).build()
-csdic = dictionaryBuilding.DictionaryBuilding(cspath, False, False, False).build()
+reuterdic = dictionaryBuilding.DictionaryBuilding(reuterpath, True, False, False).build()
+csdic = dictionaryBuilding.DictionaryBuilding(cspath, True, False, False).build()
 print('building dictionary complete')
 
 def index(request):
@@ -21,33 +21,31 @@ def index(request):
 def result(request):
     template = loader.get_template('result.html')
     reslist=[]
-    sw, stem, normal = False, False, False
-    if request.GET.get('stopwords', 'false') == 'true':
-        sw = True
-    if request.GET.get('stemming', 'false') == 'true':
-        stem = True
-    if request.GET.get('normalize', 'false') == 'true':
-        normal = True
     query=request.GET.get('query', '')
     if request.GET['model']=='Boolean':
-        reslist=boolean(query, sw, stem, normal)
+        reslist=boolean(query, request.GET['collection'])
     else:
-        reslist=vsm(query, sw, stem, normal)
+        reslist=vsm(query, request.GET['collection'])
     return HttpResponse(template.render({'query':request.GET['query'], 'reslist':''.join(reslist)}))
 
 def detail(request):
     template=loader.get_template('detail.html')
     resultset=corpusAccess.getDocDetail( os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json", request.GET['docid'])
-    return  HttpResponse(template.render({'title':resultset[0], 'description':resultset[1], 'comp':resultset[2], 'preq':resultset[3]}))
+    return  HttpResponse(template.render({'title':resultset[0], 'description':resultset[1]}))
 
-def boolean(query, sw, stem, normal, dic):
+def boolean(query, collection):
     reslist=[]
     index = booleanmodel.BooleanModel()
+    path=''
+    doclist =[]
+    if collection=='UO_Courses':
+        doclist=index.search(query, csdic)
+        path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+    else:
+        doclist = index.search(query, reuterdic)
+        path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
 
-    doclist = index.search(query, [sw, stem, normal], dic)
-    for elem in corpusAccess.getDocContent(
-            os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json",
-            doclist):
+    for elem in corpusAccess.getDocContent(path, doclist):
         reslist.append("<div><h6><a href=\"/result/detail?docid="+elem[0]+"\">")
         reslist.append(elem[1])
         reslist.append("</a></h6><div><p>")
@@ -56,22 +54,34 @@ def boolean(query, sw, stem, normal, dic):
     return reslist
 
 
-def vsm(query, sw, stem, normal,dic):
+def vsm(query, collection):
     reslist = []
+    resultset=[]
+    doclist=[]
     index=vsmodel.VSModel()
-    doclist = index.search(query, [sw, stem, normal], dic)
-    path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
-    resultset=corpusAccess.getDocContent(path, [i[0] for i in doclist])
+    if collection=='UO_Courses':
+        doclist = index.search(query, csdic)
+        path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+        resultset=corpusAccess.getDocContent(path, [i[0] for i in doclist])
+    else:
+        doclist = index.search(query, csdic)
+        path = os.path.dirname(
+            os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
+        resultset = corpusAccess.getDocContent(path, [i[0] for i in doclist])
+
     if not resultset:
         tokenized = list(filter(None, query.lower().split(' ')))
-        spellindex= index.buildIndex(dictionaryBuilding.DictionaryBuilding(path, sw, stem, normal).build())
+        if collection=='UO_Courses':
+            spellindex= index.buildIndex(csdic)
+        else:
+            spellindex = index.buildIndex(reuterdic)
         flag=False
         for i in range(len(tokenized)):
             if tokenized[i] not in words.words():
                 flag=True
                 tokenized[i]=spellCorrection.edits(tokenized[i], spellindex)[0]
         if flag:
-            reslist.append('<di v>No result was returned, did you mean:<a href=\"/result/?collection=UO_Courses&model=VSM&query='+'+'.join(tokenized)+'\">')
+            reslist.append('<div>No result was returned, did you mean:<a href=\"/result/?collection=UO_Courses&model=VSM&query='+'+'.join(tokenized)+'\">')
             for i in range(len(tokenized)):
                 reslist.append(" "+spellCorrection.edits(tokenized[i], spellindex)[0])
             reslist.append('</a></div>')
@@ -85,4 +95,5 @@ def vsm(query, sw, stem, normal,dic):
             reslist.append("</span><div><p>")
             reslist.append(resultset[i][2])
             reslist.append('</p></div></div>')
+
     return reslist

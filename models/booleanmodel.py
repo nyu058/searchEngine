@@ -61,7 +61,7 @@ class BooleanModel(model.Model):
             result.append(')')
         return result
 
-    def search(self, query, options, dic):
+    def search(self, query, dic):
 
         index = self.buildIndex(dic)
         print(dic)
@@ -160,12 +160,14 @@ class BooleanModel(model.Model):
 
 
 def main():
-    path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
-    builder = dictionaryBuilding.DictionaryBuilding(path, True, True, True)
+    path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
+    # path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+    builder = dictionaryBuilding.DictionaryBuilding(path, True, False, False)
     indexer = BooleanModel()
-    #print(indexer.buildIndex(builder.build()))
+    dic=builder.build()
+    print(indexer.buildIndex(dic))
     #print(indexer.query_processor('not thread and ( Operating or system )'))
-    print(indexer.search(' graphics or ( not opera* and system )', [True, False, True]))
+    # print(indexer.search(' graphics or ( not opera* and system )', [True, False, True]))
 
 
 if __name__ == '__main__':

@@ -44,7 +44,7 @@ def parse(content, id):
 
         if title:
             jsonobj={}
-            jsonobj['docID']=id
+            jsonobj['docID']=str(id)
             jsonobj['title']= title[0].replace('&lt;','<').replace('&amp;','&')
             jsonobj['topics']=re.findall(topicsubre,re.findall(topicsre, elem)[0], re.DOTALL)
             desc=re.findall(bodyre, elem, re.DOTALL)[0].replace('\n', ' ').replace('&lt;','<').replace('&amp;','&')

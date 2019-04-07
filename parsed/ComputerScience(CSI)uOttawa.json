@@ -1,1 +1,1215 @@
-{"documents": [{"docID": "CSI1306", "title": "Computing Concepts for Business (3 units)", "description": "Introduction to computer-based problem solving from the perspective of the business world. Design of algorithms for solving business problems. Basics of computer programming in a modern programming language. Solving business problems using application packages including spreadsheets and databases. Basics of web design. Collaborative tools. Using open source software.", "courseComponent": "Laboratory, Lecture", "Prerequisite": "The courses ITI1120, GNG1106, CSI1306, CSI1308, CSI1390 cannot be combined for credits."}, {"docID": "CSI1308", "title": "Introduction to Computing Concepts (3 units)", "description": "Introduction to computer based problem solving for scientific applications.  Design of algorithms and algorithms descriptions.  4th generation languages. Software packages.  Structured program development.  Modular and object-oriented programming.  Program testing.", "courseComponent": "Laboratory, Lecture", "Prerequisite": " Advanced Functions and Introductory Calculus 4U and Geometry and Discrete Mathematics 4U. The courses ITI1120, GNG1106, CSI1306, CSI1308, CSI1390 cannot be combined for credits."}, {"docID": "CSI1390", "title": "Introduction to Computers (3 units)", "description": "Computing and computers. Problem solving and algorithm development. Introduction to programming. Use of application, communication, and database software.", "courseComponent": "Laboratory, Lecture", "Prerequisite": "The courses ITI1120, ITI1121, GNG1106, CSI1306, CSI1308, CSI1390 cannot be combined for credits."}, {"docID": "CSI1706", "title": "lments de programmation pour la gestion (3 crdits)", "description": "Introduction aux mthodes de rsolution informatises dans le cadre du monde des affaires. Conception d'algorithmes pour rsoudre des problmes d'affaires. lments de base de programmation dans un langage de programmation moderne. Rsolution de problmes d'affaires  l'aide d'applications telles que les tableurs et les bases de donnes. lments de base de la conception pour le web. Outils de collaboration. Utilisation de logiciel libre.", "courseComponent": "Laboratoire, Cours magistral", "Prerequisite": "Les cours ITI1520, GNG1506, CSI1706, CSI1708, CSI1790 ne peuvent tre combins pour l'obtention de crdits."}, {"docID": "CSI1708", "title": "Introduction aux concepts de l'informatique (3 crdits)", "description": "Introduction aux mthodes de rsolution de problmes par ordinateur dans le cadre des applications scientifiques.  Conception et description des algorithmes.  Langages de 4e gnration.  Logiciels. Dveloppement de programmes modulaires, structurs et orients objet. Tests de programmes.", "courseComponent": "Cours magistral, Laboratoire", "Prerequisite": " Fonctions avances et introduction au Calcul diffrentiel 4U et Gomtrie et mathmatiques discrtes 4U. Les cours ITI1520, GNG1506, CSI1706, CSI1708, CSI1790 ne peuvent tre combins pour l'obtention de crdits."}, {"docID": "CSI1790", "title": "Introduction aux ordinateurs (3 crdits)", "description": "Le traitement de l'information et les ordinateurs. La rsolution de problmes. Dveloppement des algorithmes. Introduction aux concepts de la programmation. Utilisation de logiciels d'application, de communication et de bases de donnes.", "courseComponent": "Laboratoire, Cours magistral", "Prerequisite": "Les cours ITI1520, ITI1521, CSI1706, CSI1708, CSI1790 ne peuvent tre combins pour l'obtention de crdits."}, {"docID": "CSI2101", "title": "Discrete Structures (3 units)", "description": "Discrete structures as they apply to computer science, algorithm analysis and design. Predicate logic. Review of proof techniques; application of induction to computing problems. Graph theory applications in information technology. Program correctness, preconditions, postconditions and invariants. Analysis of recursive programs using recurrence relations. Properties of integers and basic cryptographical applications.", "courseComponent": "Discussion Group, Lecture", "Prerequisite": " MAT1348."}, {"docID": "CSI2110", "title": "Data Structures and Algorithms (3 units)", "description": "The concept of abstract data types. Simple methods of complexity analysis. Trees. The search problem: balanced trees, binary-trees, hashing. Sorting. Graphs and simple graph algorithms: traversal, minimum spanning tree. Strings and pattern matching.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " ITI1121, MAT1348."}, {"docID": "CSI2120", "title": "Programming Paradigms (3 units)", "description": "Presentation of the major programming paradigms: object-oriented, imperative, logic, functional. Related programming languages, their essential properties and typical applications. Programming in imperative, logic and functional languages. Influence of programming paradigms on problem solving and program design strategies. An overview of other paradigms, such as constraint-based, rule-based and event-driven programming.", "courseComponent": "Discussion Group, Laboratory, Lecture", "Prerequisite": " CSI2110."}, {"docID": "CSI2132", "title": "Databases I (3 units)", "description": "Fundamental database concepts. Entity-Relationship modeling. Relational algebra and relational calculus. Relational databases. Database definition and manipulation using SQL. Embedded SQL. Functional dependencies and normalization. Introduction to physical database design. Design and implementation of a database application in a team project.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " CSI2110."}, {"docID": "CSI2372", "title": "Advanced Programming Concepts With C++ (3 units)", "description": "Differences between C++ and Java programming.  C++ data types. Pointers and memory management.  Object oriented programming in C++. File and stream I/O.  Pre-processor macros. Templates and the Standard Template Library.  Numerical computation in C++.  Interfacing with hardware.  Engineering applications.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " ITI1121, ITI1100."}, {"docID": "CSI2501", "title": "Structures discrtes (3 crdits)", "description": "Structures discrtes utilises en informatique. Analyse et conception des algorithmes.  Logique des prdicats. Rvision des techniques de preuves. Application de l'induction aux problmes en informatique. Thorie des graphes. Applications en technologie de l'information. Justesse des programmes correction.  Pr, post conditions et invariants.  Analyse des programmes rcursifs  l'aide des relations de rcurrence. Proprits des entiers et application de base et en cryptographie.", "courseComponent": "Cours magistral, Tutoriel", "Prerequisite": " MAT1748."}, {"docID": "CSI2510", "title": "Structures de donnes et algorithmes (3 crdits)", "description": "Types abstraits de donnes. Mthodes simples d'analyse de complexit. Arbres. Recherche : arbres binaires, arbres quilibrs et hachage. Tris.  Graphes et algorithmes simples pour graphes : parcours, arbre minimal recouvrant. Chanes, patrons et filtrage.", "courseComponent": "Laboratoire, Cours magistral, Tutoriel", "Prerequisite": " ITI1521, MAT1748."}, {"docID": "CSI2520", "title": "Paradigmes de programmation (3 crdits)", "description": "Prsentation des principaux paradigmes de programmation: orient objet, impratif, logique, fonctionnel.  Langages de programmation correspondants, leurs proprits essentielles et leurs applications typiques. Programmation avec langages impratifs, logiques et fonctionnels.  Influence des paradigmes de programmation sur la rsolution de problmes et les stratgies de conception de programmes. Survol d'autres paradigmes tels que les programmations orientes contraintes,  base de rgles, et vnementielle.", "courseComponent": "Laboratoire, Cours magistral, Tutoriel", "Prerequisite": " CSI2510."}, {"docID": "CSI2532", "title": "Bases de donnes I (3 crdits)", "description": "Concepts fondamentaux des bases de donnes. Modle entit relation. Algbre et calcul relationnels. Bases de donnes relationnelles. Dfinition de bases de donnes et manipulation  l'aide de SQL embarqu. Dpendances fonctionnelles et normalisation. Introduction  la conception physique des bases de donnes. Conception et implantation d'une application avec base de donnes (projet d'quipe)", "courseComponent": "Tutoriel, Laboratoire, Cours magistral", "Prerequisite": " CSI2510."}, {"docID": "CSI2772", "title": "Concepts avancs de programmation en C++ (3 crdits)", "description": "Diffrences entre la programmation Java et la programmation C++. Pointeurs et gestion de la mmoire.  Programmation oriente objet en C++.  Entre-sortie des fichiers et flux de donnes.  Macros du prprocesseur.  Classes gnriques et bibliothque STL. Calcul numrique en C++.  Interfaage avec le matriel.  Applications d'ingnierie.", "courseComponent": "Laboratoire, Cours magistral, Tutoriel", "Prerequisite": " ITI1521, ITI1500."}, {"docID": "CSI2911", "title": "Pratique professionnelle de l'informatique / Professional Practice in Computing (3 crdits / 3 units)", "description": "Professionnalisme en informatique. Pratique thique. Proprit intellectuelle. Rpercussions sociales de l'informatique. Confidentialit et aspects lgaux. / Professionalism in Computer Science. Ethical practice. Intellectual property rights. Social impact of computing. Privacy and legal issues.", "courseComponent": "Cours magistral / Lecture, Tutoriel / Tutorial", "Prerequisite": null}, {"docID": "CSI3104", "title": "Introduction to Formal Languages (3 units)", "description": "Regular languages, finite automata, transition graphs Kleene's theorem. Finite automata with output. Context-free languages, derivation trees, normal form grammars, pumping lemma, pushdown automata, determinism. Decidability. Recursively enumerable languages, Turing machines, the halting problem.", "courseComponent": "Lecture", "Prerequisite": " CSI2101 or MAT2143."}, {"docID": "CSI3105", "title": "Design and Analysis of Algorithms I (3 units)", "description": "Analysis of algorithms: worst-case analysis, complexity analysis, asymptotic notations and basic complexity classes. Algorithm design techniques: brute force, divide and conquer, dynamic programming, greedy, backtracking. Computational complexity of problems: lower bound arguments, the classes P, NP, NP-complete, dealing with NP-complete problems.", "courseComponent": "Lecture", "Prerequisite": " CSI2110, CSI2101 or for honors mathematics students: CSI2110, (MAT2141 or MAT2143)."}, {"docID": "CSI3120", "title": "Programming Language Concepts (3 units)", "description": "Design and evaluation criteria for programming languages. Introduction to syntactic and semantic description of programming languages. Basics of programming language implementation. Scripting languages. A comparison of design choices across programming paradigms: data objects, data types, control structures, sub-programs. Basics of concurrency.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " CSI2101, CSI2120."}, {"docID": "CSI3130", "title": "Databases II (3 units)", "description": "Advanced physical database design. Access right, privacy and security. Query processing and optimization. Transaction processing, concurrency control and recovery. Object-oriented databases. Distributed and multi-databases. Data warehousing.  Data integration. Design and implementation of a database component in a team project.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " CSI2132."}, {"docID": "CSI3131", "title": "Operating Systems (3 units)", "description": "Principles of operating systems. Operating systems design issues. Process management, process scheduling, concurrency issues. CPU scheduling. Memory management. Virtual memory. Mass storage systems. Input/Output system. File system. Security and protection. Examples of operating systems.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " CEG2136, CSI2110."}, {"docID": "CSI3140", "title": "WWW Structures, Techniques and Standards (3 units)", "description": "Basic infrastructure of the Web. Servers and browsers. Examples of protocols. Internet and viruses. Search engine architecture. WWW Contents and presentation. Web pages, their structuring and interpretation. HTML, XML and their derivatives. Web interfaces to software and databases. Cookies and privacy issues. Semantic Web and o ontologies. Web services.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " CSI2110, CSI2132."}, {"docID": "CSI3504", "title": "Introduction aux langages formels (3 crdits)", "description": "Langages rguliers, automates d'tats finis, graphes de transition et thorme de Kleene. Automates d'tats finis avec sortie. Langages non-contextuels, arbres de drivation, grammaires de forme normale, automates  pile, dterminisme. Dcidabilit. Langages recursivement dnombrables, machines de Turing, le problme de terminaison.", "courseComponent": "Cours magistral", "Prerequisite": " CSI2501 ou MAT2543."}, {"docID": "CSI3505", "title": "Conception et analyse des algorithmes I (3 crdits)", "description": "Analyse des cas moyens et du pire cas. Analyse de la complexit. Notations asymptotiques et classes de complexit de base. Techniques de conception d'algorithmes: exhaustive, diviser pour rgner, programmation dynamique glouton, retour arrire. Complexit computationnelle de problmes : arguments de borne infrieure. Classes P, NP, et NP complet; traitement  des problmes NP complet.", "courseComponent": "Cours magistral", "Prerequisite": " CSI2510/CSI 2610, CSI2501 ou pour les tudiants et tudiantes inscrits aux programmes spcialiss en mathmatiques : CSI2510/CSI 2610, (MAT2541 ou MAT2543)."}, {"docID": "CSI3520", "title": "Concepts des langages de programmation (3 crdits)", "description": "Critres de conception et d'valuation pour langages de programmation. Introduction  leur description syntaxique et smantique.  Principes d'implantation. Langages de script.  Comparaison de choix de conception selon le paradigme de programmation: objets, types, structures de contrle, sous-programmes. lments de concurrence.", "courseComponent": "Laboratoire, Cours magistral, Tutoriel", "Prerequisite": " CSI2501, CSI2520."}, {"docID": "CSI3530", "title": "Bases de donnes II (3 crdits)", "description": "Conception avance de bases de donnes physiques. Droits d'accs, protection et scurit.  Traitement et optimisation des requtes. Traitement des transactions, contrle du paralllisme et reprise. Bases de donnes orientes objets, base de donnes distribues et multi-bases de donnes. Entrepts de donnes. Intgration des donnes. Conception et implantation d'un composant de base de donnes (projet de groupe).", "courseComponent": "Laboratoire, Cours magistral, Tutoriel", "Prerequisite": " CSI2532."}, {"docID": "CSI3531", "title": "Systmes d'exploitation (3 crdits)", "description": "Principes et conception des systmes d'exploitation.  Gestion des processus, ordonnancement des processus et concurrence. Ordonnancement du processeur. Gestion de la mmoire. Mmoire virtuelle. Mmoire de masse. Entres/sorties.  Systme de fichiers. Scurit et protection.  Exemples de systmes d'exploitation.", "courseComponent": "Tutoriel, Laboratoire, Cours magistral", "Prerequisite": " CEG2536, CSI2510."}, {"docID": "CSI3540", "title": "Structures, techniques et normes du Web (3 crdits)", "description": "Infrastructure de base du Web. Serveurs et navigateurs. Exemples de protocoles.  Internet et virus. Architecture de moteur de recherche. Contenu et prsentation Web. Pages Web, leur structure et leur interprtation. HTML, XML et leurs drivs. Interfaces Web vers les logiciels et bases de donnes. Tmoins et droit   la vie priv. Web smantique et ontologies. Services Web.", "courseComponent": "Laboratoire, Cours magistral, Tutoriel", "Prerequisite": " CSI2510, CSI2532."}, {"docID": "CSI4101", "title": "Theory of Computability (3 units)", "description": "Recursive functions, recursively enumerable sets, decision problems, Church-Turing thesis. S-M-N theorem, recursion theorem. Topics selected from: Lambda calculus, formal languages, logic complexity theory.", "courseComponent": "Lecture", "Prerequisite": " CSI3104."}, {"docID": "CSI4103", "title": "Topics in Computer Science I (3 units)", "description": "Selected topics in areas not covered by regular courses.", "courseComponent": "Lecture", "Prerequisite": " Permission of the School."}, {"docID": "CSI4104", "title": "Topics in Computer Science II (3 units)", "description": "Selected topics in areas not covered by regular courses.", "courseComponent": "Lecture", "Prerequisite": " Permission of the School."}, {"docID": "CSI4105", "title": "Design and Analysis of Algorithms II (3 units)", "description": "Theory of NP-completeness, methods for dealing with NP-complete problems. Selected topics in such areas as combinatorial optimization, computational geometry, cryptography, parallel algorithms.", "courseComponent": "Lecture", "Prerequisite": " CSI3105."}, {"docID": "CSI4106", "title": "Introduction to Artificial Intelligence (3 units)", "description": "The roots and scope of Artificial Intelligence.  Knowledge and knowledge representation. Search, informed search, adversarial search. Deduction and reasoning. Uncertainty in Artificial Intelligence. Introduction to Natural Language Processing. Elements of planning. Basics of Machine Learning.", "courseComponent": "Lecture", "Prerequisite": " MAT1348, (CSI3120 or SEG2106)."}, {"docID": "CSI4107", "title": "Information Retrieval and the Internet (3 units)", "description": "Basic principles of Information Retrieval.  Indexing methods.  Query processing.  Linguistic aspects of Information Retrieval.  Agents and artificial intelligence approaches to Information Retrieval.  Relation of Information Retrieval to the World Wide Web.  Search engines. Servers and clients.  Browser and server side programming for Information Retrieval.", "courseComponent": "Lecture", "Prerequisite": " CEG3185, (CSI3120 or SEG2106)."}, {"docID": "CSI4108", "title": "Cryptography (3 units)", "description": "The notion of secure communication.  Building secure cryptosystems based on the assumption of computational hardness. Cryptographic one-way functions, trap-door functions, pseudorandom generators, and public/private-key encryption schemes. Computational indistinguishable and unpredictability.  Digital signature and message authentication. Zero-knowledge/interactive proof systems. Application to e-commerce and e-trade.", "courseComponent": "Lecture", "Prerequisite": " CSI3105, MAT2377."}, {"docID": "CSI4109", "title": "Introduction to Distributed Computing (3 units)", "description": "Computational models. Communication complexity.  Design and analysis of distributed algorithms.  Control algorithms.  Asynchronous computations. Synchronous computations.  Fault-tolerant algorithms.  Manipulation of distributed data.  Examples of applications in data and communication networks, mobile computing and systems of communicating agents.", "courseComponent": "Lecture, Discussion Group", "Prerequisite": " CSI3105."}, {"docID": "CSI4115", "title": "Introduction to Compilers (3 units)", "description": "Fundamental features of programming languages, functions of compilers, processors, preprocessors, and translators. Organization of compilers including compile-time and run-time symbol tables. Lexical and syntactic analysis. Object code generation. Error diagnostics.", "courseComponent": "Lecture", "Prerequisite": " CEG2136, (CSI3120 or SEG2106)."}, {"docID": "CSI4118", "title": "Computer Networks Protocols (3 units)", "description": "Communication services, protocols and software. Details of layered protocol hierarchies.  The transport, session, presentation and application layers.  Fundamental concepts of computer network design. Computer network and communication protocol architectures.", "courseComponent": "Lecture", "Prerequisite": " CEG3185."}, {"docID": "CSI4124", "title": "Foundation of Modelling and Simulation (3 units)", "description": "The modelling and simulation process from a project oriented perspective. The role of conceptual modelling in the discrete event dynamic system context. Dealing with randomness. Distinctive features of modelling and simulation for continuous time dynamic systems and overview of numerical procedures. Validation and verification. Simulation software and program development.", "courseComponent": "Lecture", "Prerequisite": " CSI2120, MAT2377."}, {"docID": "CSI4125", "title": "Theory of Programming Languages (3 units)", "description": "The concept of formal semantics. Attribute grammars. Denotational semantics. Operational semantics. Axiomatic semantics. Lambda-calculus for programming language description. Resolution and the semantics of logic programming. Theory of abstract data types. Concurrent programming, process algebras, CCS, CSP.", "courseComponent": "Lecture", "Prerequisite": " CSI3104, CSI3120."}, {"docID": "CSI4126", "title": "Algorithms in Bioinformatics (3 units)", "description": "DNA assembly, gene finding methods, exact string matching, pairwise alignment, grammatical frameworks, higher order structures. Recent developments, including DNA and protein chips.", "courseComponent": "Lecture", "Prerequisite": " CSI3105."}, {"docID": "CSI4130", "title": "Computer Graphics (3 units)", "description": "Interactive computer graphics. Display data structures and procedures. Graphics pipeline. Geometric transformations. Viewing in three dimensions. Illumination and color models. Object modelling in 2D and 3D.", "courseComponent": "Laboratory, Lecture", "Prerequisite": " CSI3105, MAT1341."}, {"docID": "CSI4133", "title": "Computer Methods in Picture Processing and Analysis (3 units)", "description": "Representation of digital pictures. Elements of visual perception. Imaging geometry. Image enhancement and image restoration. Image segmentation and feature identification. Content-based analysis of images. Images compression, compression standards and graphics file format.", "courseComponent": "Laboratory, Lecture", "Prerequisite": " CSI3105."}, {"docID": "CSI4134", "title": "Pattern Recognition Technics (3 units)", "description": "Review of mathematical aspects of pattern classification in the context of picture processing languages. Practical examples in pattern recognition.", "courseComponent": "Lecture", "Prerequisite": " CSI3105."}, {"docID": "CSI4139", "title": "Design of Secure Computer Systems (3 units)", "description": "Security policies. Security mechanisms. Physical security. Security awareness. User authentication. Application security mechanisms. Encryption. External and internal firewalls. Security of operating systems and software. Security of e-commerce applications. Design of security system and components. Devices for security analysis; sniffers, attack detectors. Information warfare. Ethical issues in computer security.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": null}, {"docID": "CSI4140", "title": "Introduction to Parallel Computing (3 units)", "description": "Models of parallel computation. Architecture of parallel computers. Interconnection networks. Communication primitives. MPI, OpenMP. Principles of parallel algorithm design. Partitioning strategies. Load balancing. Analytical modeling of parallel programs. Parallel linear algebra. Parallel sorting. Parallel graph algorithms. Parallel searching.", "courseComponent": "Lecture", "Prerequisite": " CSI3105."}, {"docID": "CSI4141", "title": "Real Time Systems Design (3 units)", "description": "Definition of real-time systems;  examples.  Characteristics of real-time systems.  Analysis frameworks and tools.  Elements of real-time system structure.  Reliability and fault tolerance. Exceptions and exception handling.  Concurrency and concurrent programming in real-time systems.  Synchronisation and communication, resource control, and scheduling in real-time systems. Real-time system design methodologies.  Computer assisted design of real-time systems.", "courseComponent": "Laboratory, Lecture, Tutorial", "Prerequisite": " CSI3131. Also offered as CEG4166."}, {"docID": "CSI4142", "title": "Introduction to Data Science (3 units)", "description": "Big data, analytics, and cloud computing; data preparation: organization, basic statistics, cleaning, and integration; data mining techniques: pattern mining, classification, clustering, outlier and anomaly detection; model evaluation; data warehousing and multi-dimensional analysis; data visualization and visual data analytics.", "courseComponent": "Lecture", "Prerequisite": " CSI2132, (CSI3120 or SEG2106), MAT2377 or (MAT2371 and MAT2375)."}, {"docID": "CSI4150", "title": "Introduction to Optimization Methods (3 units)", "description": "Linear optimization models and their solution.  Modelling techniques for linear programming problems, the simplex solution method, duality theory, sensitivity analysis, interior point methods.  Formulation of problems as integer linear programs, solution methods such as branch and bound and cutting plane algorithms.", "courseComponent": "Lecture", "Prerequisite": " CSI3105."}, {"docID": "CSI4501", "title": "Thorie de la calculabilit (3 crdits)", "description": "Fonctions rcursives, ensembles rcursivement dnombrables. Dcidabilit. Thse de Church-Turing. Thormes S-M-N et de la rcursion. Thmes choisis parmi le calcul-Lambda, les langages formels, la logique et la thorie de la complexit.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3504."}, {"docID": "CSI4503", "title": "Sujets en informatique I (3 crdits)", "description": "Sujets choisis dans des domaines non couverts par les cours rguliers.", "courseComponent": "Cours magistral", "Prerequisite": " Permission de l'cole."}, {"docID": "CSI4504", "title": "Sujets en informatique II (3 crdits)", "description": "Sujets choisis dans des domaines non couverts par les cours rguliers.", "courseComponent": "Cours magistral", "Prerequisite": " Permission de l'cole."}, {"docID": "CSI4505", "title": "Conception et analyse des algorithmes II (3 crdits)", "description": "Thorie du NP-complet. Mthodes de traitement des problmes NP-complets. Sujets choisis parmi les domaines suivants: optimisation combinatoire, gomtrie de calcul, cryptographie, algorithmes parallles.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3505."}, {"docID": "CSI4506", "title": "Introduction  l'intelligence artificielle (3 crdits)", "description": "Concepts et mthodes de base de l'intelligence artificielle. Connaissances et reprsentation des connaissances. Recherche, recherche stratgique, jeux de stratgie. Raisonnement et dduction. Incertitude en intelligence artificielle. Introduction au traitement du langage naturel. lments de base de la planification. lments de base de l'apprentissage automatique.", "courseComponent": "Cours magistral", "Prerequisite": " MAT1748, (CSI3520 ou SEG2506)"}, {"docID": "CSI4507", "title": "Recherche d'information et l'Internet (3 crdits)", "description": "Principes de base de la recherche d'information.  Mthodes d'indexage. Traitement des requtes.  Aspects linguistiques de la recherche d'information.  Agents et approches d'intelligence artificielle pour la recherche d'information.  Relation entre la recherche d'information et le World Wide Web.  Moteur de recherche.  Serveurs et clients. Programmation du ct client et du ct serveur pour la recherche d'information.", "courseComponent": "Cours magistral", "Prerequisite": " CEG3585, (CSI3520 ou SEG2506)."}, {"docID": "CSI4508", "title": "Cryptographie (3 crdits)", "description": "La notion de communication sre.  Construction de cryptosystmes srs fonde sur l'hypothse de la complexit calculatoire.  Fonctions cryptographiques unidirectionnelles, fonctions  portes de droutement, gnrateurs pseudo-alatoires, et schmas de chiffrement  cl publique/prive.  Incapacit de distinction et imprvisibilit calculatoires.  Signature numrique et authentification de messages. Systmes de preuves interactifs/ divulgation nulle.  Application au commerce lectronique et au courtage lectronique.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3505, MAT2777."}, {"docID": "CSI4509", "title": "Introduction au calcul rparti (3 crdits)", "description": "Modles de calcul.  Complexit de communication.  Conception et analyse d'algorithmes rpartis.  Algorithmes de contrle.  Calcul dans les systmes asynchrones.  Calcul dans les systmes synchrones. Algorithmes tolrants aux dfaillances. Manipulation de donnes rparties.  Exemples d'applications dans les rseaux de communication, rseaux mobiles, et systmes d'agents communicants.", "courseComponent": "Groupe de discussion, Cours magistral", "Prerequisite": " CSI3505."}, {"docID": "CSI4515", "title": "Introduction aux compilateurs (3 crdits)", "description": "Les caractristiques essentielles des langages de programmation. Les fonctions des compilateurs, processeurs, prprocesseurs, et traducteurs. Organisation d'un compilateur et gnration de tables. Analyse lexicale et syntaxique. Gnration du code en langage objet. Dtection d'erreurs.", "courseComponent": "Cours magistral", "Prerequisite": " CEG2536, (CSI3520 ou SEG2506)."}, {"docID": "CSI4518", "title": "Rseaux d'ordinateurs et protocoles (3 crdits)", "description": "Services de communication, protocoles et logiciels. Dtails des hirarchies de protocoles  couches. Les couches transport, session, prsentation et application. Concepts fondamentaux de la conception de rseaux d'ordinateurs. Architectures de rseaux d'ordinateurs et de protocoles de communication.", "courseComponent": "Cours magistral", "Prerequisite": " CEG3585."}, {"docID": "CSI4524", "title": "Principes de base de modlisation et simulation (3 crdits)", "description": "Le processus de la modlisation et la simulation de la perspective d un projet. Le rle de la modlisation conceptuelle dans le contexte de systme dynamique d vnements discrets. Composer avec des phnomnes alatoires. Les caractristiques particulires de la modlisation et simulation pour les systmes dynamiques  temps continu et un survol des procdures numriques.  Validation et vrification.  Logiciel de simulation et le dveloppement de programmation.", "courseComponent": "Cours magistral", "Prerequisite": " CSI2520, MAT2777."}, {"docID": "CSI4525", "title": "Thorie des langages de programmation (3 crdits)", "description": "Le concept de smantique formelle.  Grammaires d'attributs.  Smantique dnotationnelle.  Smantique oprationnelle.  Smantique axiomatique. Le calcul Lambda pour la description des langages de programmation. Le principe de rsolution et la smantique des langages de programmation logique.  Thories de types abstraits de donnes. Programmation parallle, algbres de processus, CCS, CSP.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3504, CSI3520."}, {"docID": "CSI4526", "title": "Algorithmes en bio-informatique (3 crdits)", "description": "Assemblage de l'ADN, recherche de gnes, comparaison de chanes, alignement de squences, structures grammaticales, structures secondaires et tertiaires.  Les rcents dveloppements, tels que les puces d'ADN et de protines.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3505."}, {"docID": "CSI4530", "title": "Graphiques interactifs (3 crdits)", "description": "Infographie interactive. Structures de donnes et procdures d'affichage. Pipeline graphique. Transformations gomtriques. Reprsentation en trois dimensions. Modles de couleur et d'illumination. Modlisation d'objets en deux et trois dimensions.", "courseComponent": "Laboratoire, Cours magistral", "Prerequisite": " CSI3505, MAT1741."}, {"docID": "CSI4533", "title": "Mthodes informatises en traitement d'image (3 crdits)", "description": null, "courseComponent": "Laboratoire, Cours magistral", "Prerequisite": " CSI3505."}, {"docID": "CSI4534", "title": "Techniques de reconnaissance des formes (3 crdits)", "description": "tude des aspects mathmatiques associs  la classification de modles dans le contexte des langages de traitement d'image. Exemples pratiques en concordance de modles.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3505."}, {"docID": "CSI4539", "title": "Conception de systmes informatiques scuritaires (3 crdits)", "description": "Politiques de scurit. Mcanismes de scurit. Scurit physique. Conscience de la scurit. Authentification d'utilisateur. Application des mcanismes de scurit. Codage. \"Firewalls\" internes et externes. Scurit des systmes d'opration et des logiciels. Scurit des applications de commerce lectronique. Design de systmes et composantes de scurit. Dispositifs pour l'analyse de la scurit, renifleurs, dtecteurs d'attaque. Guerre de l'information. Aspects thiques de la scurit informatique.", "courseComponent": "Groupe de discussion, Laboratoire, Cours magistral", "Prerequisite": " CEG3585. Aussi offert sous la cote CEG4799."}, {"docID": "CSI4540", "title": "Introduction au calcul parallle (3 crdits)", "description": "Modles de calcul parallle. Machines parallles  mmoire partage. Rseaux d'interconnexion et leurs proprits topologiques. Tableaux systoliques. Architectures hypercube. Configuration physique. Mesures de performance pour algorithmes parallles. Recherche parallle et structures de donnes. Traitement algbrique et gomtrique parallle. Calcul tolrant les pannes. valuation parallle d'expressions.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3505."}, {"docID": "CSI4541", "title": "Conception de systmes en temps rel (3 crdits)", "description": "Dfinition de systmes en temps rel;  exemples.  Caractristiques de systmes en temps rel.  Outils et techniques d'analyse.  Structure de systmes en temps rel.  Fiabilit et tolrance de dfaillances. Prise en charge d'exceptions.  Simultanit d'excution et programmation simultane de systmes en temps rel.  Synchronisation et communication, contrle et ordonnancement de ressources dans des systmes en temps rel.  Mthodologies de conception de systmes en temps rel.  Conception assiste par ordinateur de systmes en temps rel.", "courseComponent": "Laboratoire, Cours magistral, Tutoriel", "Prerequisite": " CSI3531/CSI 3631. Aussi offert sous la cote CEG4566."}, {"docID": "CSI4542", "title": "Introduction  la science des donnes (3 crdits)", "description": "Donnes massives, analyse de donnes et infonuagique; prparation des donnes : organisation, statistiques de base, nettoyage et intgration des donnes; techniques d'exploration de donnes, exploration des motifs, classification, partionnement des donnes, dtection des donnes aberrantes, valuation des modles, entreposage des donnes et analyse multidimensionnelle, visualisation des donnes, analyse des donnes visuelles.", "courseComponent": "Cours magistral", "Prerequisite": " CSI2532, (CSI3520 ou SEG2506), MAT2777 ou (MAT2771 et MAT2775)."}, {"docID": "CSI4550", "title": "Introduction aux mthodes d'optimisation (3 crdits)", "description": "Modles d'optimisation linaire et leurs solutions. Techniques de modlisation des problmes de programmation linaire, les solutions par la mthode du simplex, thorie de la dualit, analyse de sensibilit, mthodes de point intrieur. Formulation de problmes par programmation linaire en nombres entiers, mthodes de rsolution telles que les algorithmes de coupes et les algorithmes de sparation et valuation.", "courseComponent": "Cours magistral", "Prerequisite": " CSI3505."}, {"docID": "CSI4900", "title": "Projet de recherche / Honours Project (3 crdits / 3 units)", "description": "Un projet d'une dure d'un semestre,  faire seul ou en petit groupe, sous la supervision d'un professeur. Les projets sont affichs et sont choisis durant le semestre prcdent. Les tudiants doivent participer aux prsentations des projets, cdules  la fin du semestre. / A one-semester project, individual or for a small group, carried out under the supervision of a faculty member.  Projects are posted and selected in the preceding semester.  The students are required to participate in project presentations scheduled at the end of the semester.", "courseComponent": "Recherche / Research", "Prerequisite": " 18 crdits de cours CSI ou SEG de niveau 3000 / Prerequisite: 18 credits of CSI or SEG courses at the 3000 level."}, {"docID": "CSI5100", "title": "Data Integration (3 units)", "description": "Materialized and virtual approaches to integration of heterogeneous and independent data sources. Emphasis on data models, architectures, logic-based techniques for query processing, metadata and consistency management, the role of XML and ontologies in data integration; connections to schema mapping, data exchange, and P2P systems. This course is equivalent to COMP 5306 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5101", "title": "Knowledge Representation (3 units)", "description": "KR is concerned with representing knowledge and using it in computers. Emphasis on logic-based languages for KR, and automated reasoning techniques and systems; important applications of this traditional area of AI to ontologies and semantic web. This course is equivalent to COMP 5307 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5102", "title": "Topics in Medical Computing (3 units)", "description": "Introductory course on data structures, algorithms, techniques, and software development related to medical computing (in particular spatial modeling). Topics may include: computational geometry algorithms for cancer treatment, medical imaging, spatial data compression algorithms, dynamic programming for DNA analysis. This course is equivalent to COMP 5308 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5105", "title": "Network Security and Cryptography (3 units)", "description": "Advanced methodologies selected from symmetric and public key cryptography, network security protocols and infrastructure, identification, anonymity, privacy technologies, secret-sharing, intrusion detection, firewalls, access control technologies, and defending network attacks. This course is equivalent to COMP 5406 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": " familiarity with basic concepts in networks, network security, and applied cryptography."}, {"docID": "CSI5106", "title": "Cryptography (3 units)", "description": "Security in encryption algorithms. Encryption and decryption. Entropy, equivocation, and unicity distance.  Cryptanalysis and computational complexity. Substitution, transposition, and product ciphers. Symmetric ciphers: block and stream modes. Modular arithmetic. Public key cryptosystems. Factorization methods. Elliptic curve, lattice-based, and homomorphic cryptography. Proofs of security.", "courseComponent": "Discussion Group, Laboratory, Lecture, Research, Seminar, Work Term, Theory and Laboratory, Tutorial", "Prerequisite": null}, {"docID": "CSI5110", "title": "Principles of Formal Software Development (3 units)", "description": "Methodologies in formal software specification, development, and verification. The use of theorem proving, automated deduction, and other related formal methods for software correctness. Applications in program verification and secure computation.  This course is equivalent to COMP 5707 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5111", "title": "Software Quality Engineering (3 units)", "description": "Software quality issues. Quality components and metrics. Software process quality. Software reliability  engineering. Software design for testability. Requirements capture and validation. Systematic design  validation; grey-box approach, test design, implementation and management, case studies in validation and verification of communications software. Object-oriented design and  test. Theoretical aspects. This course is equivalent to COMP 5501 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5112", "title": "Software Engineering (3 units)", "description": "Topics of current interest in Software Engineering, such as requirements engineering, precise and advanced modelling, development processes, change management, standards, and emerging types of applications. This course is equivalent to COMP 5207 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5113", "title": "Foundations Programming Languages (3 units)", "description": "Advanced study of programming paradigms from a practical perspective. Paradigms may include functional, imperative, concurrent, distributed, generative, aspect- and object-oriented, and logic programming. Emphasis on underlying principles. Topics may include: types, modules, inheritance, semantics, continuations, abstraction and reflection. This course is equivalent to COMP 5001 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5115", "title": "Database Analysis and Design (3 units)", "description": "The dimensional and multidimensional data models for data warehousing. Data dependencies and decomposition. Structure and use of data definition and manipulation languages. Database economics, engineering, deployment and evolution. Issues in integrity, security, the Internet and distributed databases. Relationships to decision support systems. This course is equivalent to COMP 5503 at Carleton University.", "courseComponent": "Discussion Group, Laboratory, Lecture, Research, Seminar, Work Term, Theory and Laboratory, Tutorial", "Prerequisite": null}, {"docID": "CSI5116", "title": "Authentication and Software Security (3 units)", "description": "Specialized topics in security including advanced authentication techniques, user interface aspects, electronic and digital signatures, security infrastructures and protocols, software vulnerabilities affecting security, non-secure software and hosts, protecting software and digital content. This course is equivalent to COMP 5407 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5118", "title": "Automated Verification and Validation of Software (3 units)", "description": "Topics in formal test derivation methods, test management, high-level, CASE-based verification and validation, data-flow & control-flow measures and metrics for assessing quality of designs and code, regression analysis & testing. This course is equivalent to COMP 5302 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5121", "title": "Advanced Data Structures (3 units)", "description": "Simple methods of data structure design and analysis that lead to efficient data structures for several problems. Topics include randomized binary search trees, persistence, fractional cascading, self-adjusting data structures, van Emde Boas trees, tries, randomized heaps, and lowest common ancestor queries. This course is equivalent to COMP 5408 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5122", "title": "Software Usability (3 units)", "description": "Design principles and metrics for usability. Qualitative and quantitative methods for the evaluation of software system usability: Heuristic evaluation, usability testing, usability inspections and walkthroughs, cognitive walkthroughs, formal usability experimentation. Ethical concerns when performing studies with test users. Economics of usability. Integration of usability engineering into the software engineering lifecycle. This course is equivalent to COMP 5301 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5124", "title": "Computational Aspects of Geographic Information Systems (3 units)", "description": "Computational perspective of geographic information systems (GIS). Data representations and their operations on raster and vector devices: e.g., quadtrees, grid files, digital elevation models, triangular irregular network models. Analysis and design of efficient algorithms for solving GIS problems: visibility queries, point location, facility location. This course is equivalent to COMP 5204 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5126", "title": "Algorithms in Bioinformatics (3 units)", "description": "Fundamental mathematical and algorithmic concepts underlying computational molecular biology; physical and genetic mapping, sequence analysis (including alignment and probabilistic models), genomic rearrangement, phylogenetic inference, computational proteomics and systemics modelling of the whole cell. This course is equivalent to COMP 5108 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5127", "title": "Applied Computational Geometry (3 units)", "description": "Design and analysis of efficient algorithms for solving geometric problems in applied fields such as Geometric Network Design, Geometric Routing and Searching. Geometric spanners, Greedy spanners, Theta-Graphs, Yao-Graphs, Well-Separated Pair Decomposition, Delaunay Triangulations. Introduction to the game of Cops and Robbers. This course is equivalent to COMP 5409 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5128", "title": "Swarm Intelligence (3 units)", "description": "Collective computation, collective action, and principles of self-organization in social agent systems. Algorithms for combinatorial optimization problems, division of labour, task allocation, task switching, and task sequencing with applications in security, routing, wireless and ad hoc networks and distributed manufacturing. This course is equivalent to COMP 5002 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5129", "title": "Advanced Database Systems (3 units)", "description": "In-depth study on developments in database systems shaping the future of information systems, including complex object, object-oriented, object-relational, and semi-structured databases. Data structures, query languages, implementation and applications. This course is equivalent to COMP 5305 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5130", "title": "Applications Design for Mobile Devices (3 units)", "description": "Programming environments for mobile devices applications: native applications and web applications.  User interface, multitouch screens, accelerometer, geo-localization, multi-networks interfaces, camera, digital signal processing. Enterprise applications development. Device-specific and carrier-specific challenges. Methods for dealing with limited memory, speed and storage. Power management. Security. Deployment and distribution of applications.", "courseComponent": "Lecture", "Prerequisite": "Permission of the Department is required."}, {"docID": "CSI5131", "title": "Parallel Algorithms and Applications in Bioinformatics (3 units)", "description": "Multiprocessor architectures from an application programmer's perspective: programming models, processor clusters, multi-core processors, GPUs, algorithmic paradigms, efficient parallel problem solving, scalability and portability. Projects on high performance computing in Data Science, including data analytics, bioinformatics, simulations. Programming experience on parallel processing equipment. This course is equivalent to COMP 5704 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5134", "title": "Fault Tolerance (3 units)", "description": "Hardware and software techniques for fault tolerance. Topics include modeling and evaluation techniques, error detecting and correcting codes, module and system level fault detection mechanisms, design techniques for fault-tolerant and fail-safe systems, software fault tolerance through recovery blocks, N-version programming, algorithm-based fault tolerance, checkpointing and recovery techniques, and survey of practical fault-tolerant systems. This course is equivalent to COMP 5004 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5135", "title": "Information Visualization and Visual Analytics (3 units)", "description": "Principles, techniques, technology and applications of information visualization for visual data analysis. Topics include human visual perception, cognitive processes, static and dynamic models of image semantics, interaction paradigms, big data visual analysis case studies. This course is equivalent to COMP 5209 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5136", "title": "Computer Security and Usability (3 units)", "description": "Design and evaluation of security and privacy software with particular attention to human factors and how interaction design impacts security. Topics include current approaches to usable security, methodologies for empirical analysis, and design principles for usable security and privacy. This course is equivalent to COMP 5110 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5137", "title": "Selected Topics in Software Engineering (Category E) (3 units)", "description": "Selected topics in Software Engineering (Category E), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5138", "title": "Selected Topics in Theory of Computing (Category T) (3 units)", "description": "Selected topics in Theory of Computing (Category T), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5139", "title": "Selected Topics in Computer Applications (Category A) (3 units)", "description": "Selected topics in Computer Applications (Category A), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5140", "title": "Selected Topics in Computer Systems (Category S) (3 units)", "description": "Selected topics in Computer Systems (Category S), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5142", "title": "Protocols for Mobile and Wireless Networks (3 units)", "description": "Link and network layer protocols of wireless networks; applications of wireless networks may be discussed. Topics may include: protocol implementation, mobile IP, resource discovery, wireless LANs/PANs, and Spreadspectrum. Courses CSI 6136 (SYSC 5306), CSI5142 (COMP 5402) cannot be combined for units. This course is equivalent to COMP 5402 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": "Precludes additional credit for SYSC 5306."}, {"docID": "CSI5146", "title": "Computer Graphics (3 units)", "description": "Principles and advanced techniques in rendering and modelling. Research field overview. Splines, subdivision surfaces and hierarchical surface representations. Physics of light transport, rendering equation and Bidirectional Reflectance Distribution Function. Classical ray tracing, radiosity, global illumination and modern hybrid methods. Plenoptic function and image-based rendering. This course is equivalent to COMP 5402 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5147", "title": "Computer Animation (3 units)", "description": "Theories and techniques in 3D modeling and animation. Animation principles, categories, and history. Forward and inverse kinematics. Motion capture, editing and retargeting. Flexible bodies. Particle animation. Behavioral animation. Human modeling. Facial animation. Cloth animation and other sub-topics. This course is equivalent to COMP 5201 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5148", "title": "Wireless Ad Hoc Networking (3 units)", "description": "Self-organized, mobile, and hybrid ad hoc networks. Physical, medium access, networks, transport and application layers, and cross-layering issues. Power management. Security in ad hoc networks. Topology control and maintenance. Data communication protocols, routing and broadcasting. Location service for efficient routing. This course is equivalent to COMP 5103 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5149", "title": "Graphical Models and Applications (3 units)", "description": "Bayesian networks, factor graphs, Markov random fields, maximum a posteriori probability (MAP) and maximum likelihood (ML) principles, elimination algorithm, sum-product algorithm, decomposable and non-decomposable models, junction tree algorithm, completely observed models, iterative proportional fitting algorithm, expectation- maximization (EM) algorithm, iterative conditional modes algorithm, variational methods, applications. Courses CSI5149 (COMP 5007), ELG5131 (EAGJ 5131) and ELG7177 (EACJ 5605) cannot be combined for units. This course is equivalent to COMP 5007 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": "Permission of the Department is required."}, {"docID": "CSI5151", "title": "Virtual Environments (3 units)", "description": "Basic concepts. Virtual worlds. Hardware and software support. World modeling. Geometric modeling. Light modeling. Kinematic and dynamic models. Other physical modeling modalities. Multi-sensor data fusion. Anthropomorphic avatars. Animation: modeling languages, scripts, real-time computer architectures. Virtual environment interfaces. Case studies. Courses ELG5124 (EACJ 5204), CSI5151 (COMP 5205) cannot be combined for units. This course is equivalent to COMP 5205 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5152", "title": "Evolving Information Networks (3 units)", "description": "Convergence of social and technological networks with WWW. Interplay between information content, entities creating it and technologies supporting it. Structure and analysis of such networks, models abstracting their properties, link analysis, search, mechanism design, power laws, cascading, clustering and connections with work in social sciences. This course is equivalent to COMP 5310 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5153", "title": "Data Management for Business Intelligence (3 units)", "description": "Data management problems and information technology in decision making support in business environments. Topics include advanced data modeling, semantic modeling, multidimensional databases and data warehousing, on-line-analytical processing, elements of data mining, context in data management, data quality assessment, data cleaning, elements of business process modeling. This course emphasizes concepts and techniques rather than specific applications or systems/implementations. This course is equivalent to COMP 5111 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5154", "title": "Algorithms for Data Science (3 units)", "description": "Algorithmic techniques to handle (massive/big) data arising from, for example, social media, mobile devices, sensors, financial transactions. Algorithmic techniques may include locality-sensitive hashing, dimensionality reduction, streaming, clustering, VC-dimension, external memory, core sets, link analysis and recommendation systems. This course is equivalent to COMP 5112 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5155", "title": "Machine Learning (3 units)", "description": "Concepts, techniques, and algorithms in machine learning; representation, regularization and generalization; supervised learning; unsupervised learning; advanced methods such as support vector machines, online algorithms, neural networks, hidden Markov models, and Bayesian networks; curse of dimensionality and large-scale machine learning. Category T in course list.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5161", "title": "Principles of Distributed Simulation (3 units)", "description": "Distributed simulation principles and practices. Synchronization protocols: Optimistic vs Conservative,  Deadlock detection in conservative simulations, Time warp simulation. Distributed interactive simulation:  Data distribution management, Interest management, High Level Architectures (HLA), Run Time Infrastructure (RTI). Distributed web-based simulation. Distributed agent based simulation. Real time applications of distributed simulation. Distributed and collaborative virtual simulations. This course is equivalent to COMP 5606 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5163", "title": "Algorithm Analysis and Design (3 units)", "description": "Topics of current interest in the design and analysis of computer algorithms for graph-theoretical applications; e.g. shortest paths, chromatic number, etc. Lower bounds, upper bounds, and average performance of algorithms. Complexity theory. This course is equivalent to COMP 5703 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5164", "title": "Computational Geometry (3 units)", "description": "Study of design and analysis of algorithms to solve geometric problems; emphasis on applications such as robotics, graphics, and pattern recognition. Topics include: visibility problems, hidden line and surface removal, path planning amidst obstacles, convex hulls, polygon triangulation, point location. This course is equivalent to COMP 5008 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5165", "title": "Combinatorial Algorithms (3 units)", "description": "Design of algorithms for solving problems that are combinatorial in nature, involving exhaustive generation, enumeration, search and optimization. Algorithms for generating basic combinatorial objects (permutations, combinations, subsets) and for solving hard optimization problems (knapsack, maximum clique, minimum set cover). Metaheuristic search, backtracking, branch-and-bound. Computing isomorphism of combinatorial objects (graphs), isomorph-free exhaustive generation. This course is equivalent to COMP 5709 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5166", "title": "Applications of Combinatorial Optimization (3 units)", "description": "Topics in combinatorial optimization with emphasis on applications in Computer Science. Topics include network flows, various routing algorithms, polyhedral combinatorics, and the cutting plane method. This course is equivalent to COMP 5805 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5167", "title": "Human-Computer Interaction Models, Theories and Frameworks (3 units)", "description": "A basis for graduate study in HCI with an emphasis on the application of theory to user interface design. Review of main theories of human behaviour relevant to HCI, including especially Cognitive Dimensions of Notations Framework, Mental Models, Distributed Cognition, and Activity Theory, and their application to design and development of interactive systems. This course is equivalent to COMP 5210 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5168", "title": "Digital Watermarking (3 units)", "description": "Overview of recent advances in watermarking of image, video, audio, and other media. Spatial, spectral, and temporal watermarking algorithms. Perceptual models. Use of cryptography in steganography and watermarking. Robustness, security, imperceptibility, and capacity of watermarking. Content authentication, copy control, intellectual property, digital rights management, and other applications. This course is equivalent to COMP 5309 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5169", "title": "Wireless Networks and Mobile Computing (3 units)", "description": "Computational aspects and applications of design and analysis of mobile and wireless networking. Topics include Physical, Link Layer, Media Access Control, Wireless, Mobile LANs (Local Area Networks), Ad-Hoc, Sensor Networks, Power Consumption optimization, Routing, Searching, Service Discovery, Clustering, Multicasting, Localization, Mobile IP/TCP (Internet Protocol/Transmission Control Protocol), File Systems, Mobility Models, Wireless Applications. Courses CSI5169, ELG6168 cannot be combined for units. This course is equivalent to COMP 5304 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5173", "title": "Data Networks (3 units)", "description": "Mathematical and practical aspects of design and analysis of communication networks. Topics include: basic concepts, layering, delay models, multi-access communication, queuing theory, routing, fault-tolerance, and advanced topics on high-speed networks, ATM, mobile wireless networks, and optical networks. This course is equivalent to COMP 5203 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5174", "title": "Validation Methods for Distributed Systems (3 units)", "description": "Review of formal specification and description techniques for distributed and open systems. Verification techniques. Correctness proofs. Verification of general properties of distributed systems. Analysis and relief strategies. Testing techniques. Test generation strategies. Test architectures. This course is equivalent to COMP 5604 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5175", "title": "Mobile Commerce Technologies (3 units)", "description": "Wireless networks support for m-commerce; m-commerce architectures and applications; mobile payment support systems; business models; mobile devices and their operating systems; mobile content presentation; security issues and solutions; relevant cross layer standards and protocols; case studies. Courses EBC5175, CSI5175 cannot be combined for units. This course is equivalent to COMP 5900 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5180", "title": "Topics in Artificial Intelligence (3 units)", "description": "Selected topics in Artificial Intelligence (A.I.); could include A.I. programming techniques, pattern matching systems, natural language systems, rule-based systems, constraint systems, machine learning systems, and cognitive systems. Applications could include areas in Finance, Medicine, Manufacturing, Smart Cities, Semantic Web, Healthcare, Fraud Detection, Intrusion Detection, Autonomous Vehicles, Opinion mining, Sentiment Analysis or similar areas. Assignments will be both (a) programming-oriented, requiring implementation and/or extensions of prototypes in Lisp and/or Prolog and (b) research-oriented, requiring readings of special topics in current A.I. journals. This course is equivalent to COMP 5100 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5183", "title": "Evolutionary Computation and Artificial Life (3 units)", "description": "Study of algorithms based upon biological theories of evolution, applications to machine learning and optimization problems. Possible topics: Genetic Algorithms, Classifier Systems, and Genetic Programming. Recent work in the fields of Artificial Life (swarm intelligence, distributed agents, behavior-based AI) and of connectionism. This course is equivalent to COMP 5206 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": "Precludes additional credit for COMP 4107."}, {"docID": "CSI5185", "title": "Statistical and Syntactic Pattern Recognition (3 units)", "description": "Topics include a mathematical review, Bayes decision theory, maximum likelihood and Bayesian learning for parametric pattern recognition, non-parametric methods including nearest neighbor and linear discriminants. Syntactic recognition of strings, substrings, subsequences and tree structures. Applications include speech, shape and character recognition. This course is equivalent to COMP 5107 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5200", "title": "Projects on Selected Topics (3 units)", "description": null, "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5308", "title": "Principles of Distributed Computing (3 units)", "description": "Formal models of distributed environment; theoretical issues in the design of distributed algorithms; message and time complexity; problem solving in distributed settings. Problems discussed may include: coordination and control, information diffusion, leader election, consensus, distributed data operations, computing by mobile entities. This course is equivalent to COMP 5003 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5311", "title": "Distributed Databases and Transaction Processing (3 units)", "description": "Principles involved in the design and implementation of distributed databases and distributed transaction processing systems. Topics include: distributed and multi-database system architectures and models, atomicity, synchronization and distributed concurrency control algorithms, data replication, recovery techniques, and reliability in distributed databases. This course is equivalent to COMP 5101 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5312", "title": "Distributed Operating Systems Engineering (3 units)", "description": "Design issues of advanced multiprocessor distributed operating systems: multiprocessor system architectures; process and object models; synchronization and message passing primitives; memory architectures and management; distributed file systems; protection and security; distributed concurrency control; deadlock; recovery; remote tasking; dynamic reconfiguration; performance measurement, modeling, and system tuning. This course is equivalent to COMP 5102 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5314", "title": "Object-Oriented Software Development (3 units)", "description": "Issues in modeling and verifying quality and variability in object-oriented systems. Testable models in model-driven and test-driven approaches. System family engineering. Functional conformance: scenario modeling and verification, design by contract. Conformance to non-functional requirements: goals, forces and tradeoffs, metrics. This course is equivalent to COMP 5104 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5380", "title": "Systems and Architectures for Electronic Commerce (3 units)", "description": "E-commerce system architecture with a focus on relevant design patterns. Web servers, containers, and application frameworks. Web protocols, services, and client technologies. Scalability through load balancing, clustering, and code optimization. Internationalization, accessibility, and privacy. Data mining and sharing approaches for digital targeted advertising. E-commerce user interface design and evaluation. Current research issues. Hands-on experience with an integrated set of current e-commerce tools. E-commerce development project. Courses EBC5380, CSI5380 cannot be combined for units. This course is equivalent to COMP 5405 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5386", "title": "Natural Language Processing (3 units)", "description": "Overview of both rule-based or symbolic methods and statistical methods as approaches to Natural Language Processing (NLP), with more emphasis on the statistical ones. Applications such as information retrieval, text categorization, clustering, and statistical machine translation could be discussed. This course is equivalent to COMP 5505 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5387", "title": "Data Mining and Concept Learning (3 units)", "description": "Concepts and techniques of data mining. Methods for data summarization and data preprocessing. Algorithms for finding frequent patterns and association analysis; classification; cluster analysis and anomaly detection. Model selection, model evaluation and statistical significance testing. Approaches for coping with Big Data. Selected applications of data mining and concept learning.", "courseComponent": "Lecture", "Prerequisite": "Permission of the Department is required."}, {"docID": "CSI5388", "title": "Topics in Machine Learning (3 units)", "description": null, "courseComponent": "Lecture", "Prerequisite": "Permission of the Department is required."}, {"docID": "CSI5389", "title": "Electronic Commerce Technologies (3 units)", "description": "Business models and technologies. Search engines. Cryptography. Web services and agents. Secure electronic transactions.  Value added e-commerce technologies. Advanced research questions. Courses EBC5389, CSI5389 cannot be combined for units. This course is equivalent to COMP 5401 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5390", "title": "Learning Systems from Random Environments (3 units)", "description": "Computerized adaptive learning for random environments and its applications. Topics include a mathematical review, learning automata which are deterministic/stochastic, with fixed/variable structures, of continuous/discretized design, with ergodic/absorbing properties and of estimator families.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI5500", "title": "Projets en informatique (3 crdits)", "description": null, "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5501", "title": "Modles formels de l'information (3 crdits)", "description": null, "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5510", "title": "Principles de dveloppement formel de logiciels (3 crdits)", "description": "Mthodologies pour la spcification, le dveloppement et la vrification formels de logiciels. Utilisation d'assistants de preuves, de dduction automatise et d?autres mthodes formelles visant l?exactitude de logiciel. Applications  la vrification de programmes et au calcul scuris. Ce cours est quivalent  COMP 5707  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5511", "title": "Gnie de la qualit des logiciels (3 crdits)", "description": "Critres de la qualit des logiciels. Composantes et mtriques de qualit. Qualit du processus de dveloppement des logiciels. Gnie de fiabilit des logiciels. Capture et validation d'exigences. Validation systmatique de la conception; approche bote-grise. Conception, implantation et gestion des tests. tude de cas en validation et vrification des logiciels de communication. Conception oriente objet. Aspects thoriques. Ce cours est quivalent  COMP 5501  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5526", "title": "Algorithmes en bio-informatique (3 crdits)", "description": "Assemblage de l'ADN, recherche de gnes, comparaison de chanes, alignement de squences, structures grammaticales, structures secondaires et tertiaires. Les rcents dveloppements, tels que les puces d'ADN et de protines. Travail additionnel requis dans le cas des tudiants inscrits sous la cote CSI5526.", "courseComponent": "Cours magistral", "Prerequisite": "Permission du Dpartement est requise."}, {"docID": "CSI5537", "title": "Thme choisi en gnie logiciel (catgorie E) (3 crdits)", "description": "Thmes choisis en gnie logiciel (catgorie E), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5538", "title": "Thme choisi en thorie de l?informatique (catgorie T) (3 crdits)", "description": "Thmes choisis en thorie de l'informatique (catgorie T), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5539", "title": "Thme choisi en application informatique (catgorie A) (3 crdits)", "description": "Thmes choisis en application informatique (catgorie A), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5540", "title": "Thme choisi en systmes informatiques (catgorie S) (3 crdits)", "description": "Thmes choisis en systmes informatiques (catgorie S), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5555", "title": "Apprentissage machine (3 crdits)", "description": "Concepts, techniques et algorithmes en apprentissage machine; reprsentation, rgularisation et gnralisation; apprentissage supervis; apprentissage non supervis; mthodes avances telles que les machines  vecteur de support, les algorithmes en ligne, les rseaux de neurones; les modles de Markov cachs et les rseaux baysiens; le flau de la dimensionnalit et l'apprentissage machine  grande chelle. Catgorie T dans la liste de cours.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5561", "title": "Sujets en simulation et en optimisation des systmes (3 crdits)", "description": null, "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5563", "title": "Analyse et conception des algorithmes (3 crdits)", "description": null, "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5565", "title": "Algorithmes combinatoires (3 crdits)", "description": "Conception d'algorithmes pour rsoudre des problmes de nature combinatoire (gnration exhaustive, numration, recherche et optimisation). Algorithmes pour gnrer des objets combinatoires de base (permutations, combinaisons, sous-ensembles) et pour rsoudre des problmes d'optimisation difficiles (knapsack, clique maximum, couverture minimum). Recherche mtaheuristique, retour arrire, branch-and-bound. Calcul de l'isomorphisme des objets combinatoires (graphes), gnration exhaustive sans isomorphes. Ce cours est quivalent  COMP 5709  l'Universit Carleton.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5571", "title": "Tlmatique : Concepts et logiciels (3 crdits)", "description": null, "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5580", "title": "Sujets en intelligence artificielle (3 crdits)", "description": "Thmes choisis en intelligence artificielle (I.A.); pourrait inclure des techniques de programmation en intelligence artificielle, des systmes d?appariement de formes, des systmes  langage naturel, des systmes  base de rgles, des systmes de contraintes, des systmes d?apprentissage automatique et des systmes cognitifs. Les applications peuvent couvrir les domaines de la finance, de la mdecine, de la fabrication, des villes intelligentes, du Web smantique, de la dtection de fraudes ou d?intrusion, des vhicules autonomes, de l?analyse d?opinion, de l?analyse de sentiments ou d?autres domaines similaires.  Les devoirs seront  la fois (a) axs sur la programmation, exigeant l?implmentation et/ou l?extension de prototypes (b) axs sur la recherche, ncessitant des lectures de sujets spciaux dans des revus d?I.A. contemporaines. Ce cours est quivalent  COMP 5100  l?Universit Carleton.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5780", "title": "Systmes et architectures des logiciels pour le commerce lectronique (3 crdits)", "description": "Architecture du systme de commerce lectronique et patrons de conception. Serveurs Web, conteneurs et cadres d'application. Protocoles, services, et technologies de client Web. volutivit grce  l'quilibrage de la charge, au clustering et  l'optimisation du code. Internationalisation, accessibilit et confidentialit. Mthodes d'exploration et de partage de donnes pour la publicit cible numrique. Conception et valuation de l'interface utilisateur pour le commerce lectronique. Problmes de recherche actuels. Exprience pratique avec un ensemble intgr d'outils de commerce lectronique actuels. Projet de dveloppement du commerce lectronique. Les cours EBC5380, CSI5380 ne peuvent pas tre combins pour les units. Ce cours est quivalent  COMP 5405  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": " CSI5389"}, {"docID": "CSI5787", "title": "Fouille des donnes et apprentissage des concepts (3 crdits)", "description": "Aspects conceptuels et techniques de l?exploration des donnes.  Mthodes pour l?agrgation et le prtraitement des donnes.  Algorithmes d?extraction de patrons et analyse des rgles d?association; partitionnement des donnes et dtection des anomalies.  Slection et valuation des modles et tests de signification statistique.  Approches pour composer avec les mgadonnes.  Choix d?applications en exploration des donnes et en extraction des concepts.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI5789", "title": "Technologies du commerce lectronique (3 crdits)", "description": "Introduction aux modles et technologies d'entreprise. Moteurs de recherche. Cryptographie. Services Web et agents. Transactions lectroniques scurises. Technologies du commerce lectronique  valeur ajoute. Questions de recherche avances. Ce cours est quivalent  COMP 5401  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": " CSI 4110 or equivalent."}, {"docID": "CSI5900", "title": "Projets de recherche en informatique / Graduate Projects in Computer Science (3 crdits / 3 units)", "description": "Ce cours est quivalent  COMP 5902  la Carleton University. / This course is equivalent to COMP 5902 at Carleton University.", "courseComponent": "Cours magistral / Lecture", "Prerequisite": null}, {"docID": "CSI5901", "title": "tudes diriges / Directed Studies (3 crdits / 3 units)", "description": " A course of independent study under the supervision of a member of the School of Computer Science. Ce cours est quivalent  COMP 5901  la Carleton University. / This course is equivalent to COMP 5901 at Carleton University.", "courseComponent": "Recherche / Research", "Prerequisite": null}, {"docID": "CSI5903", "title": "Stage en commerce lectronique / Electronic Commerce Work Term (3 crdits / 3 units)", "description": "Exprience en milieu de travail. Not S (satisfaisant) ou NS (non satisfaisant) selon les rsultats du rapport crit et l'valuation de l'employeur. Pralable : tre accept au programme de certificat en commerce lectronique (option technologie) et recevoir la permission du Comit du programme. / Practical experience. Graded S (Satisfactory) / NS (Not satisfactory), to be based on the grades obtained for the written report as well as on the evaluations of the employer.", "courseComponent": "Cours magistral / Lecture", "Prerequisite": "Permission du Dpartement est requise. / Permission of the Department is required."}, {"docID": "CSI5904", "title": "Projet de recherche avanc en commerce lectronique / Graduate Project in Electronic Commerce (3 crdits / 3 units)", "description": "Projet sur un sujet prcis en commerce lectronique men sous la direction d'un professeur. Les cours CSI5904, CSI5903 ne peuvent tre combins pour l'obtention de crdits. / Project on a specific topic in electronic commerce under the supervision of a professor. Courses CSI5904, CSI5903 cannot be combined for units.", "courseComponent": "Cours magistral / Lecture", "Prerequisite": " CSI5903."}, {"docID": "CSI5905", "title": "Projet / Project (3 crdits / 3 units)", "description": "Dveloppement d'une application pour appareils mobiles. L'tudiant identifie un projet, qui doit comprendre une importante part de logiciel s'excutant sur l'appareil mobile et se prter  une valuation raisonnablement indpendante d'autres logiciels. Le projet est dirig par un professeur approuv par la direction du programme. Le projet est normalement complt en une session. Not S (satisfaisant) ou NS (non satisfaisant) par le directeur du projet et un autre professeur nomm par le directeur du programme. / Development of an application for mobile devices. Students identify a project that must include a significant portion of software running on device, and should be reasonably self-contained. The project can normally be completed in one session. Graded S (Satisfactory) or NS (Not satisfactory) by the supervisor and by another professor appointed by the program director.", "courseComponent": "Cours magistral / Lecture", "Prerequisite": "Permission du Dpartement est requise. / Permission of the Department is required."}, {"docID": "CSI6900", "title": "Projets de recherche intensive en informatique / Intensive Graduate Projects in Computer Science (6 crdits / 6 units)", "description": "Cours de six crdits s'chelonnant sur une priode de deux sessions. L'envergure du projet de recherche exig dans ce cours est deux fois plus grande que dans le cas de CSI5900. Les cours CSI6900, CSI5900 ne peuvent tre combins pour l'obtention de crdits. Cours ouvert uniquement aux tudiants inscrits  la matrise sans thse. Ce cours est quivalent  COMP 5903  la Carleton University. / A two-session course. The project is twice the scope of projects in CSI5900. Courses CSI6900, CSI5900 cannot be combined for units. Not to be taken in the thesis option. This course is equivalent to COMP 5903 at Carleton University.", "courseComponent": "Recherche / Research", "Prerequisite": null}, {"docID": "CSI7131", "title": "Advanced Parallel and Systolic Algorithms (3 units)", "description": "Continuation of CSI5131 (COMP 5704). This course is equivalent to COMP 6100 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI7160", "title": "Advanced Topics in the Theory of Computing (3 units)", "description": "This course is equivalent to COMP 6601 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI7161", "title": "Advanced Topics in Programming Systems and Languages (3 units)", "description": "This course is equivalent to COMP 6603 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI7162", "title": "Advanced Topics in Computer Applications (3 units)", "description": "This course is equivalent to COMP 6604 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI7163", "title": "Advanced Topics in Computer Systems (3 units)", "description": "This course is equivalent to COMP 6605 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI7170", "title": "Advanced Topics in Distributed Computing (3 units)", "description": "This course is equivalent to COMP 6602 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI7314", "title": "Advanced Topics in Object-Oriented Systems (3 units)", "description": "Advanced object-oriented software engineering, in particular the issues of reuse and testing. Sample topics include: interaction modeling; class and cluster testing; traceability; design patterns and testing; the C++ standard template library. Students will carry out research. This course is equivalent to COMP 6104 at Carleton University.", "courseComponent": "Lecture", "Prerequisite": null}, {"docID": "CSI7561", "title": "tudes avances en systmes et langages de programmation (3 crdits)", "description": "Ce cours est quivalent  COMP 6603  la Carleton University.", "courseComponent": "Cours magistral", "Prerequisite": null}, {"docID": "CSI7900", "title": "Projets de recherche en informatique / Graduate Projects in Computer Science (3 crdits / 3 units)", "description": "Ce cours est quivalent  COMP 6902  la Carleton University. / This course is equivalent to COMP 6902 at Carleton University.", "courseComponent": "Cours magistral / Lecture", "Prerequisite": null}, {"docID": "CSI7901", "title": "tudes diriges / Directed Studies (3 crdits / 3 units)", "description": "Ce cours est quivalent  COMP 6901  la Carleton University. / This course is equivalent to COMP 6901 at Carleton University.", "courseComponent": "Recherche / Research", "Prerequisite": null}, {"docID": "CSI9901", "title": "Colloque / Seminar", "description": null, "courseComponent": "Sminaire / Seminar", "Prerequisite": null}, {"docID": "CSI9902", "title": "Colloque / Seminar", "description": null, "courseComponent": "Recherche / Research", "Prerequisite": null}, {"docID": "CSI9997", "title": "Proposition de thse de doctorat / Doctoral Thesis Proposal", "description": " Within 8 terms following initial registration in the program, a document, generally defining the problem addressed, relating it to the literature, outlining the hypotheses, goals, research methodology, initial results and validation approach, must be submitted to an examination committee and successfully defended. Ce cours est quivalent  COMP 6908  la Carleton University. This course is equivalent to COMP 6908 at Carleton University.", "courseComponent": "Recherche / Research", "Prerequisite": null}, {"docID": "CSI9998", "title": "Examen gnral de doctorat / Ph.D. Comprehensive", "description": " A committee must be assembled and must approve at least 3 topics for written examination: typically, a major and two minor areas. An oral examination occurs if the written exam is passed. Both elements must take place within the first 4 terms following initial registration in the program. The comprehensive examination may be failed, passed conditionally (i.e., with extra course requirements) or passed unconditionally. If failed, this course may be retaken at most one time. Ce cours est quivalent  COMP 6907  la Carleton University. This course is equivalent to COMP 6907 at Carleton University.", "courseComponent": "Recherche / Research", "Prerequisite": null}]}
+{
+  "documents": [
+    {
+      "docID": "CSI1306",
+      "title": "Computing Concepts for Business (3 units)",
+      "description": "Introduction to computer-based problem solving from the perspective of the business world. Design of algorithms for solving business problems. Basics of computer programming in a modern programming language. Solving business problems using application packages including spreadsheets and databases. Basics of web design. Collaborative tools. Using open source software.",
+      "courseComponent": "Laboratory, Lecture",
+      "Prerequisite": "The courses ITI1120, GNG1106, CSI1306, CSI1308, CSI1390 cannot be combined for credits."
+    },
+    {
+      "docID": "CSI1308",
+      "title": "Introduction to Computing Concepts (3 units)",
+      "description": "Introduction to computer based problem solving for scientific applications.  Design of algorithms and algorithms descriptions.  4th generation languages. Software packages.  Structured program development.  Modular and object-oriented programming.  Program testing.",
+      "courseComponent": "Laboratory, Lecture",
+      "Prerequisite": " Advanced Functions and Introductory Calculus 4U and Geometry and Discrete Mathematics 4U. The courses ITI1120, GNG1106, CSI1306, CSI1308, CSI1390 cannot be combined for credits."
+    },
+    {
+      "docID": "CSI1390",
+      "title": "Introduction to Computers (3 units)",
+      "description": "Computing and computers. Problem solving and algorithm development. Introduction to programming. Use of application, communication, and database software.",
+      "courseComponent": "Laboratory, Lecture",
+      "Prerequisite": "The courses ITI1120, ITI1121, GNG1106, CSI1306, CSI1308, CSI1390 cannot be combined for credits."
+    },
+    {
+      "docID": "CSI1706",
+      "title": "lments de programmation pour la gestion (3 crdits)",
+      "description": "Introduction aux mthodes de rsolution informatises dans le cadre du monde des affaires. Conception d'algorithmes pour rsoudre des problmes d'affaires. lments de base de programmation dans un langage de programmation moderne. Rsolution de problmes d'affaires  l'aide d'applications telles que les tableurs et les bases de donnes. lments de base de la conception pour le web. Outils de collaboration. Utilisation de logiciel libre.",
+      "courseComponent": "Laboratoire, Cours magistral",
+      "Prerequisite": "Les cours ITI1520, GNG1506, CSI1706, CSI1708, CSI1790 ne peuvent tre combins pour l'obtention de crdits."
+    },
+    {
+      "docID": "CSI1708",
+      "title": "Introduction aux concepts de l'informatique (3 crdits)",
+      "description": "Introduction aux mthodes de rsolution de problmes par ordinateur dans le cadre des applications scientifiques.  Conception et description des algorithmes.  Langages de 4e gnration.  Logiciels. Dveloppement de programmes modulaires, structurs et orients objet. Tests de programmes.",
+      "courseComponent": "Cours magistral, Laboratoire",
+      "Prerequisite": " Fonctions avances et introduction au Calcul diffrentiel 4U et Gomtrie et mathmatiques discrtes 4U. Les cours ITI1520, GNG1506, CSI1706, CSI1708, CSI1790 ne peuvent tre combins pour l'obtention de crdits."
+    },
+    {
+      "docID": "CSI1790",
+      "title": "Introduction aux ordinateurs (3 crdits)",
+      "description": "Le traitement de l'information et les ordinateurs. La rsolution de problmes. Dveloppement des algorithmes. Introduction aux concepts de la programmation. Utilisation de logiciels d'application, de communication et de bases de donnes.",
+      "courseComponent": "Laboratoire, Cours magistral",
+      "Prerequisite": "Les cours ITI1520, ITI1521, CSI1706, CSI1708, CSI1790 ne peuvent tre combins pour l'obtention de crdits."
+    },
+    {
+      "docID": "CSI2101",
+      "title": "Discrete Structures (3 units)",
+      "description": "Discrete structures as they apply to computer science, algorithm analysis and design. Predicate logic. Review of proof techniques; application of induction to computing problems. Graph theory applications in information technology. Program correctness, preconditions, postconditions and invariants. Analysis of recursive programs using recurrence relations. Properties of integers and basic cryptographical applications.",
+      "courseComponent": "Discussion Group, Lecture",
+      "Prerequisite": " MAT1348."
+    },
+    {
+      "docID": "CSI2110",
+      "title": "Data Structures and Algorithms (3 units)",
+      "description": "The concept of abstract data types. Simple methods of complexity analysis. Trees. The search problem: balanced trees, binary-trees, hashing. Sorting. Graphs and simple graph algorithms: traversal, minimum spanning tree. Strings and pattern matching.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " ITI1121, MAT1348."
+    },
+    {
+      "docID": "CSI2120",
+      "title": "Programming Paradigms (3 units)",
+      "description": "Presentation of the major programming paradigms: object-oriented, imperative, logic, functional. Related programming languages, their essential properties and typical applications. Programming in imperative, logic and functional languages. Influence of programming paradigms on problem solving and program design strategies. An overview of other paradigms, such as constraint-based, rule-based and event-driven programming.",
+      "courseComponent": "Discussion Group, Laboratory, Lecture",
+      "Prerequisite": " CSI2110."
+    },
+    {
+      "docID": "CSI2132",
+      "title": "Databases I (3 units)",
+      "description": "Fundamental database concepts. Entity-Relationship modeling. Relational algebra and relational calculus. Relational databases. Database definition and manipulation using SQL. Embedded SQL. Functional dependencies and normalization. Introduction to physical database design. Design and implementation of a database application in a team project.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " CSI2110."
+    },
+    {
+      "docID": "CSI2372",
+      "title": "Advanced Programming Concepts With C++ (3 units)",
+      "description": "Differences between C++ and Java programming.  C++ data types. Pointers and memory management.  Object oriented programming in C++. File and stream I/O.  Pre-processor macros. Templates and the Standard Template Library.  Numerical computation in C++.  Interfacing with hardware.  Engineering applications.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " ITI1121, ITI1100."
+    },
+    {
+      "docID": "CSI2501",
+      "title": "Structures discrtes (3 crdits)",
+      "description": "Structures discrtes utilises en informatique. Analyse et conception des algorithmes.  Logique des prdicats. Rvision des techniques de preuves. Application de l'induction aux problmes en informatique. Thorie des graphes. Applications en technologie de l'information. Justesse des programmes correction.  Pr, post conditions et invariants.  Analyse des programmes rcursifs  l'aide des relations de rcurrence. Proprits des entiers et application de base et en cryptographie.",
+      "courseComponent": "Cours magistral, Tutoriel",
+      "Prerequisite": " MAT1748."
+    },
+    {
+      "docID": "CSI2510",
+      "title": "Structures de donnes et algorithmes (3 crdits)",
+      "description": "Types abstraits de donnes. Mthodes simples d'analyse de complexit. Arbres. Recherche : arbres binaires, arbres quilibrs et hachage. Tris.  Graphes et algorithmes simples pour graphes : parcours, arbre minimal recouvrant. Chanes, patrons et filtrage.",
+      "courseComponent": "Laboratoire, Cours magistral, Tutoriel",
+      "Prerequisite": " ITI1521, MAT1748."
+    },
+    {
+      "docID": "CSI2520",
+      "title": "Paradigmes de programmation (3 crdits)",
+      "description": "Prsentation des principaux paradigmes de programmation: orient objet, impratif, logique, fonctionnel.  Langages de programmation correspondants, leurs proprits essentielles et leurs applications typiques. Programmation avec langages impratifs, logiques et fonctionnels.  Influence des paradigmes de programmation sur la rsolution de problmes et les stratgies de conception de programmes. Survol d'autres paradigmes tels que les programmations orientes contraintes,  base de rgles, et vnementielle.",
+      "courseComponent": "Laboratoire, Cours magistral, Tutoriel",
+      "Prerequisite": " CSI2510."
+    },
+    {
+      "docID": "CSI2532",
+      "title": "Bases de donnes I (3 crdits)",
+      "description": "Concepts fondamentaux des bases de donnes. Modle entit relation. Algbre et calcul relationnels. Bases de donnes relationnelles. Dfinition de bases de donnes et manipulation  l'aide de SQL embarqu. Dpendances fonctionnelles et normalisation. Introduction  la conception physique des bases de donnes. Conception et implantation d'une application avec base de donnes (projet d'quipe)",
+      "courseComponent": "Tutoriel, Laboratoire, Cours magistral",
+      "Prerequisite": " CSI2510."
+    },
+    {
+      "docID": "CSI2772",
+      "title": "Concepts avancs de programmation en C++ (3 crdits)",
+      "description": "Diffrences entre la programmation Java et la programmation C++. Pointeurs et gestion de la mmoire.  Programmation oriente objet en C++.  Entre-sortie des fichiers et flux de donnes.  Macros du prprocesseur.  Classes gnriques et bibliothque STL. Calcul numrique en C++.  Interfaage avec le matriel.  Applications d'ingnierie.",
+      "courseComponent": "Laboratoire, Cours magistral, Tutoriel",
+      "Prerequisite": " ITI1521, ITI1500."
+    },
+    {
+      "docID": "CSI2911",
+      "title": "Pratique professionnelle de l'informatique / Professional Practice in Computing (3 crdits / 3 units)",
+      "description": "Professionnalisme en informatique. Pratique thique. Proprit intellectuelle. Rpercussions sociales de l'informatique. Confidentialit et aspects lgaux. / Professionalism in Computer Science. Ethical practice. Intellectual property rights. Social impact of computing. Privacy and legal issues.",
+      "courseComponent": "Cours magistral / Lecture, Tutoriel / Tutorial",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI3104",
+      "title": "Introduction to Formal Languages (3 units)",
+      "description": "Regular languages, finite automata, transition graphs Kleene's theorem. Finite automata with output. Context-free languages, derivation trees, normal form grammars, pumping lemma, pushdown automata, determinism. Decidability. Recursively enumerable languages, Turing machines, the halting problem.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI2101 or MAT2143."
+    },
+    {
+      "docID": "CSI3105",
+      "title": "Design and Analysis of Algorithms I (3 units)",
+      "description": "Analysis of algorithms: worst-case analysis, complexity analysis, asymptotic notations and basic complexity classes. Algorithm design techniques: brute force, divide and conquer, dynamic programming, greedy, backtracking. Computational complexity of problems: lower bound arguments, the classes P, NP, NP-complete, dealing with NP-complete problems.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI2110, CSI2101 or for honors mathematics students: CSI2110, (MAT2141 or MAT2143)."
+    },
+    {
+      "docID": "CSI3120",
+      "title": "Programming Language Concepts (3 units)",
+      "description": "Design and evaluation criteria for programming languages. Introduction to syntactic and semantic description of programming languages. Basics of programming language implementation. Scripting languages. A comparison of design choices across programming paradigms: data objects, data types, control structures, sub-programs. Basics of concurrency.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " CSI2101, CSI2120."
+    },
+    {
+      "docID": "CSI3130",
+      "title": "Databases II (3 units)",
+      "description": "Advanced physical database design. Access right, privacy and security. Query processing and optimization. Transaction processing, concurrency control and recovery. Object-oriented databases. Distributed and multi-databases. Data warehousing.  Data integration. Design and implementation of a database component in a team project.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " CSI2132."
+    },
+    {
+      "docID": "CSI3131",
+      "title": "Operating Systems (3 units)",
+      "description": "Principles of operating systems. Operating systems design issues. Process management, process scheduling, concurrency issues. CPU scheduling. Memory management. Virtual memory. Mass storage systems. Input/Output system. File system. Security and protection. Examples of operating systems.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " CEG2136, CSI2110."
+    },
+    {
+      "docID": "CSI3140",
+      "title": "WWW Structures, Techniques and Standards (3 units)",
+      "description": "Basic infrastructure of the Web. Servers and browsers. Examples of protocols. Internet and viruses. Search engine architecture. WWW Contents and presentation. Web pages, their structuring and interpretation. HTML, XML and their derivatives. Web interfaces to software and databases. Cookies and privacy issues. Semantic Web and o ontologies. Web services.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " CSI2110, CSI2132."
+    },
+    {
+      "docID": "CSI3504",
+      "title": "Introduction aux langages formels (3 crdits)",
+      "description": "Langages rguliers, automates d'tats finis, graphes de transition et thorme de Kleene. Automates d'tats finis avec sortie. Langages non-contextuels, arbres de drivation, grammaires de forme normale, automates  pile, dterminisme. Dcidabilit. Langages recursivement dnombrables, machines de Turing, le problme de terminaison.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI2501 ou MAT2543."
+    },
+    {
+      "docID": "CSI3505",
+      "title": "Conception et analyse des algorithmes I (3 crdits)",
+      "description": "Analyse des cas moyens et du pire cas. Analyse de la complexit. Notations asymptotiques et classes de complexit de base. Techniques de conception d'algorithmes: exhaustive, diviser pour rgner, programmation dynamique glouton, retour arrire. Complexit computationnelle de problmes : arguments de borne infrieure. Classes P, NP, et NP complet; traitement  des problmes NP complet.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI2510/CSI 2610, CSI2501 ou pour les tudiants et tudiantes inscrits aux programmes spcialiss en mathmatiques : CSI2510/CSI 2610, (MAT2541 ou MAT2543)."
+    },
+    {
+      "docID": "CSI3520",
+      "title": "Concepts des langages de programmation (3 crdits)",
+      "description": "Critres de conception et d'valuation pour langages de programmation. Introduction  leur description syntaxique et smantique.  Principes d'implantation. Langages de script.  Comparaison de choix de conception selon le paradigme de programmation: objets, types, structures de contrle, sous-programmes. lments de concurrence.",
+      "courseComponent": "Laboratoire, Cours magistral, Tutoriel",
+      "Prerequisite": " CSI2501, CSI2520."
+    },
+    {
+      "docID": "CSI3530",
+      "title": "Bases de donnes II (3 crdits)",
+      "description": "Conception avance de bases de donnes physiques. Droits d'accs, protection et scurit.  Traitement et optimisation des requtes. Traitement des transactions, contrle du paralllisme et reprise. Bases de donnes orientes objets, base de donnes distribues et multi-bases de donnes. Entrepts de donnes. Intgration des donnes. Conception et implantation d'un composant de base de donnes (projet de groupe).",
+      "courseComponent": "Laboratoire, Cours magistral, Tutoriel",
+      "Prerequisite": " CSI2532."
+    },
+    {
+      "docID": "CSI3531",
+      "title": "Systmes d'exploitation (3 crdits)",
+      "description": "Principes et conception des systmes d'exploitation.  Gestion des processus, ordonnancement des processus et concurrence. Ordonnancement du processeur. Gestion de la mmoire. Mmoire virtuelle. Mmoire de masse. Entres/sorties.  Systme de fichiers. Scurit et protection.  Exemples de systmes d'exploitation.",
+      "courseComponent": "Tutoriel, Laboratoire, Cours magistral",
+      "Prerequisite": " CEG2536, CSI2510."
+    },
+    {
+      "docID": "CSI3540",
+      "title": "Structures, techniques et normes du Web (3 crdits)",
+      "description": "Infrastructure de base du Web. Serveurs et navigateurs. Exemples de protocoles.  Internet et virus. Architecture de moteur de recherche. Contenu et prsentation Web. Pages Web, leur structure et leur interprtation. HTML, XML et leurs drivs. Interfaces Web vers les logiciels et bases de donnes. Tmoins et droit   la vie priv. Web smantique et ontologies. Services Web.",
+      "courseComponent": "Laboratoire, Cours magistral, Tutoriel",
+      "Prerequisite": " CSI2510, CSI2532."
+    },
+    {
+      "docID": "CSI4101",
+      "title": "Theory of Computability (3 units)",
+      "description": "Recursive functions, recursively enumerable sets, decision problems, Church-Turing thesis. S-M-N theorem, recursion theorem. Topics selected from: Lambda calculus, formal languages, logic complexity theory.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3104."
+    },
+    {
+      "docID": "CSI4103",
+      "title": "Topics in Computer Science I (3 units)",
+      "description": "Selected topics in areas not covered by regular courses.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " Permission of the School."
+    },
+    {
+      "docID": "CSI4104",
+      "title": "Topics in Computer Science II (3 units)",
+      "description": "Selected topics in areas not covered by regular courses.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " Permission of the School."
+    },
+    {
+      "docID": "CSI4105",
+      "title": "Design and Analysis of Algorithms II (3 units)",
+      "description": "Theory of NP-completeness, methods for dealing with NP-complete problems. Selected topics in such areas as combinatorial optimization, computational geometry, cryptography, parallel algorithms.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3105."
+    },
+    {
+      "docID": "CSI4106",
+      "title": "Introduction to Artificial Intelligence (3 units)",
+      "description": "The roots and scope of Artificial Intelligence.  Knowledge and knowledge representation. Search, informed search, adversarial search. Deduction and reasoning. Uncertainty in Artificial Intelligence. Introduction to Natural Language Processing. Elements of planning. Basics of Machine Learning.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " MAT1348, (CSI3120 or SEG2106)."
+    },
+    {
+      "docID": "CSI4107",
+      "title": "Information Retrieval and the Internet (3 units)",
+      "description": "Basic principles of Information Retrieval.  Indexing methods.  Query processing.  Linguistic aspects of Information Retrieval.  Agents and artificial intelligence approaches to Information Retrieval.  Relation of Information Retrieval to the World Wide Web.  Search engines. Servers and clients.  Browser and server side programming for Information Retrieval.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CEG3185, (CSI3120 or SEG2106)."
+    },
+    {
+      "docID": "CSI4108",
+      "title": "Cryptography (3 units)",
+      "description": "The notion of secure communication.  Building secure cryptosystems based on the assumption of computational hardness. Cryptographic one-way functions, trap-door functions, pseudorandom generators, and public/private-key encryption schemes. Computational indistinguishable and unpredictability.  Digital signature and message authentication. Zero-knowledge/interactive proof systems. Application to e-commerce and e-trade.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3105, MAT2377."
+    },
+    {
+      "docID": "CSI4109",
+      "title": "Introduction to Distributed Computing (3 units)",
+      "description": "Computational models. Communication complexity.  Design and analysis of distributed algorithms.  Control algorithms.  Asynchronous computations. Synchronous computations.  Fault-tolerant algorithms.  Manipulation of distributed data.  Examples of applications in data and communication networks, mobile computing and systems of communicating agents.",
+      "courseComponent": "Lecture, Discussion Group",
+      "Prerequisite": " CSI3105."
+    },
+    {
+      "docID": "CSI4115",
+      "title": "Introduction to Compilers (3 units)",
+      "description": "Fundamental features of programming languages, functions of compilers, processors, preprocessors, and translators. Organization of compilers including compile-time and run-time symbol tables. Lexical and syntactic analysis. Object code generation. Error diagnostics.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CEG2136, (CSI3120 or SEG2106)."
+    },
+    {
+      "docID": "CSI4118",
+      "title": "Computer Networks Protocols (3 units)",
+      "description": "Communication services, protocols and software. Details of layered protocol hierarchies.  The transport, session, presentation and application layers.  Fundamental concepts of computer network design. Computer network and communication protocol architectures.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CEG3185."
+    },
+    {
+      "docID": "CSI4124",
+      "title": "Foundation of Modelling and Simulation (3 units)",
+      "description": "The modelling and simulation process from a project oriented perspective. The role of conceptual modelling in the discrete event dynamic system context. Dealing with randomness. Distinctive features of modelling and simulation for continuous time dynamic systems and overview of numerical procedures. Validation and verification. Simulation software and program development.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI2120, MAT2377."
+    },
+    {
+      "docID": "CSI4125",
+      "title": "Theory of Programming Languages (3 units)",
+      "description": "The concept of formal semantics. Attribute grammars. Denotational semantics. Operational semantics. Axiomatic semantics. Lambda-calculus for programming language description. Resolution and the semantics of logic programming. Theory of abstract data types. Concurrent programming, process algebras, CCS, CSP.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3104, CSI3120."
+    },
+    {
+      "docID": "CSI4126",
+      "title": "Algorithms in Bioinformatics (3 units)",
+      "description": "DNA assembly, gene finding methods, exact string matching, pairwise alignment, grammatical frameworks, higher order structures. Recent developments, including DNA and protein chips.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3105."
+    },
+    {
+      "docID": "CSI4130",
+      "title": "Computer Graphics (3 units)",
+      "description": "Interactive computer graphics. Display data structures and procedures. Graphics pipeline. Geometric transformations. Viewing in three dimensions. Illumination and color models. Object modelling in 2D and 3D.",
+      "courseComponent": "Laboratory, Lecture",
+      "Prerequisite": " CSI3105, MAT1341."
+    },
+    {
+      "docID": "CSI4133",
+      "title": "Computer Methods in Picture Processing and Analysis (3 units)",
+      "description": "Representation of digital pictures. Elements of visual perception. Imaging geometry. Image enhancement and image restoration. Image segmentation and feature identification. Content-based analysis of images. Images compression, compression standards and graphics file format.",
+      "courseComponent": "Laboratory, Lecture",
+      "Prerequisite": " CSI3105."
+    },
+    {
+      "docID": "CSI4134",
+      "title": "Pattern Recognition Technics (3 units)",
+      "description": "Review of mathematical aspects of pattern classification in the context of picture processing languages. Practical examples in pattern recognition.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3105."
+    },
+    {
+      "docID": "CSI4139",
+      "title": "Design of Secure Computer Systems (3 units)",
+      "description": "Security policies. Security mechanisms. Physical security. Security awareness. User authentication. Application security mechanisms. Encryption. External and internal firewalls. Security of operating systems and software. Security of e-commerce applications. Design of security system and components. Devices for security analysis; sniffers, attack detectors. Information warfare. Ethical issues in computer security.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI4140",
+      "title": "Introduction to Parallel Computing (3 units)",
+      "description": "Models of parallel computation. Architecture of parallel computers. Interconnection networks. Communication primitives. MPI, OpenMP. Principles of parallel algorithm design. Partitioning strategies. Load balancing. Analytical modeling of parallel programs. Parallel linear algebra. Parallel sorting. Parallel graph algorithms. Parallel searching.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3105."
+    },
+    {
+      "docID": "CSI4141",
+      "title": "Real Time Systems Design (3 units)",
+      "description": "Definition of real-time systems;  examples.  Characteristics of real-time systems.  Analysis frameworks and tools.  Elements of real-time system structure.  Reliability and fault tolerance. Exceptions and exception handling.  Concurrency and concurrent programming in real-time systems.  Synchronisation and communication, resource control, and scheduling in real-time systems. Real-time system design methodologies.  Computer assisted design of real-time systems.",
+      "courseComponent": "Laboratory, Lecture, Tutorial",
+      "Prerequisite": " CSI3131. Also offered as CEG4166."
+    },
+    {
+      "docID": "CSI4142",
+      "title": "Introduction to Data Science (3 units)",
+      "description": "Big data, analytics, and cloud computing; data preparation: organization, basic statistics, cleaning, and integration; data mining techniques: pattern mining, classification, clustering, outlier and anomaly detection; model evaluation; data warehousing and multi-dimensional analysis; data visualization and visual data analytics.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI2132, (CSI3120 or SEG2106), MAT2377 or (MAT2371 and MAT2375)."
+    },
+    {
+      "docID": "CSI4150",
+      "title": "Introduction to Optimization Methods (3 units)",
+      "description": "Linear optimization models and their solution.  Modelling techniques for linear programming problems, the simplex solution method, duality theory, sensitivity analysis, interior point methods.  Formulation of problems as integer linear programs, solution methods such as branch and bound and cutting plane algorithms.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " CSI3105."
+    },
+    {
+      "docID": "CSI4501",
+      "title": "Thorie de la calculabilit (3 crdits)",
+      "description": "Fonctions rcursives, ensembles rcursivement dnombrables. Dcidabilit. Thse de Church-Turing. Thormes S-M-N et de la rcursion. Thmes choisis parmi le calcul-Lambda, les langages formels, la logique et la thorie de la complexit.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3504."
+    },
+    {
+      "docID": "CSI4503",
+      "title": "Sujets en informatique I (3 crdits)",
+      "description": "Sujets choisis dans des domaines non couverts par les cours rguliers.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " Permission de l'cole."
+    },
+    {
+      "docID": "CSI4504",
+      "title": "Sujets en informatique II (3 crdits)",
+      "description": "Sujets choisis dans des domaines non couverts par les cours rguliers.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " Permission de l'cole."
+    },
+    {
+      "docID": "CSI4505",
+      "title": "Conception et analyse des algorithmes II (3 crdits)",
+      "description": "Thorie du NP-complet. Mthodes de traitement des problmes NP-complets. Sujets choisis parmi les domaines suivants: optimisation combinatoire, gomtrie de calcul, cryptographie, algorithmes parallles.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3505."
+    },
+    {
+      "docID": "CSI4506",
+      "title": "Introduction  l'intelligence artificielle (3 crdits)",
+      "description": "Concepts et mthodes de base de l'intelligence artificielle. Connaissances et reprsentation des connaissances. Recherche, recherche stratgique, jeux de stratgie. Raisonnement et dduction. Incertitude en intelligence artificielle. Introduction au traitement du langage naturel. lments de base de la planification. lments de base de l'apprentissage automatique.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " MAT1748, (CSI3520 ou SEG2506)"
+    },
+    {
+      "docID": "CSI4507",
+      "title": "Recherche d'information et l'Internet (3 crdits)",
+      "description": "Principes de base de la recherche d'information.  Mthodes d'indexage. Traitement des requtes.  Aspects linguistiques de la recherche d'information.  Agents et approches d'intelligence artificielle pour la recherche d'information.  Relation entre la recherche d'information et le World Wide Web.  Moteur de recherche.  Serveurs et clients. Programmation du ct client et du ct serveur pour la recherche d'information.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CEG3585, (CSI3520 ou SEG2506)."
+    },
+    {
+      "docID": "CSI4508",
+      "title": "Cryptographie (3 crdits)",
+      "description": "La notion de communication sre.  Construction de cryptosystmes srs fonde sur l'hypothse de la complexit calculatoire.  Fonctions cryptographiques unidirectionnelles, fonctions  portes de droutement, gnrateurs pseudo-alatoires, et schmas de chiffrement  cl publique/prive.  Incapacit de distinction et imprvisibilit calculatoires.  Signature numrique et authentification de messages. Systmes de preuves interactifs/ divulgation nulle.  Application au commerce lectronique et au courtage lectronique.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3505, MAT2777."
+    },
+    {
+      "docID": "CSI4509",
+      "title": "Introduction au calcul rparti (3 crdits)",
+      "description": "Modles de calcul.  Complexit de communication.  Conception et analyse d'algorithmes rpartis.  Algorithmes de contrle.  Calcul dans les systmes asynchrones.  Calcul dans les systmes synchrones. Algorithmes tolrants aux dfaillances. Manipulation de donnes rparties.  Exemples d'applications dans les rseaux de communication, rseaux mobiles, et systmes d'agents communicants.",
+      "courseComponent": "Groupe de discussion, Cours magistral",
+      "Prerequisite": " CSI3505."
+    },
+    {
+      "docID": "CSI4515",
+      "title": "Introduction aux compilateurs (3 crdits)",
+      "description": "Les caractristiques essentielles des langages de programmation. Les fonctions des compilateurs, processeurs, prprocesseurs, et traducteurs. Organisation d'un compilateur et gnration de tables. Analyse lexicale et syntaxique. Gnration du code en langage objet. Dtection d'erreurs.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CEG2536, (CSI3520 ou SEG2506)."
+    },
+    {
+      "docID": "CSI4518",
+      "title": "Rseaux d'ordinateurs et protocoles (3 crdits)",
+      "description": "Services de communication, protocoles et logiciels. Dtails des hirarchies de protocoles  couches. Les couches transport, session, prsentation et application. Concepts fondamentaux de la conception de rseaux d'ordinateurs. Architectures de rseaux d'ordinateurs et de protocoles de communication.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CEG3585."
+    },
+    {
+      "docID": "CSI4524",
+      "title": "Principes de base de modlisation et simulation (3 crdits)",
+      "description": "Le processus de la modlisation et la simulation de la perspective d un projet. Le rle de la modlisation conceptuelle dans le contexte de systme dynamique d vnements discrets. Composer avec des phnomnes alatoires. Les caractristiques particulires de la modlisation et simulation pour les systmes dynamiques  temps continu et un survol des procdures numriques.  Validation et vrification.  Logiciel de simulation et le dveloppement de programmation.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI2520, MAT2777."
+    },
+    {
+      "docID": "CSI4525",
+      "title": "Thorie des langages de programmation (3 crdits)",
+      "description": "Le concept de smantique formelle.  Grammaires d'attributs.  Smantique dnotationnelle.  Smantique oprationnelle.  Smantique axiomatique. Le calcul Lambda pour la description des langages de programmation. Le principe de rsolution et la smantique des langages de programmation logique.  Thories de types abstraits de donnes. Programmation parallle, algbres de processus, CCS, CSP.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3504, CSI3520."
+    },
+    {
+      "docID": "CSI4526",
+      "title": "Algorithmes en bio-informatique (3 crdits)",
+      "description": "Assemblage de l'ADN, recherche de gnes, comparaison de chanes, alignement de squences, structures grammaticales, structures secondaires et tertiaires.  Les rcents dveloppements, tels que les puces d'ADN et de protines.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3505."
+    },
+    {
+      "docID": "CSI4530",
+      "title": "Graphiques interactifs (3 crdits)",
+      "description": "Infographie interactive. Structures de donnes et procdures d'affichage. Pipeline graphique. Transformations gomtriques. Reprsentation en trois dimensions. Modles de couleur et d'illumination. Modlisation d'objets en deux et trois dimensions.",
+      "courseComponent": "Laboratoire, Cours magistral",
+      "Prerequisite": " CSI3505, MAT1741."
+    },
+    {
+      "docID": "CSI4533",
+      "title": "Mthodes informatises en traitement d'image (3 crdits)",
+      "description": null,
+      "courseComponent": "Laboratoire, Cours magistral",
+      "Prerequisite": " CSI3505."
+    },
+    {
+      "docID": "CSI4534",
+      "title": "Techniques de reconnaissance des formes (3 crdits)",
+      "description": "tude des aspects mathmatiques associs  la classification de modles dans le contexte des langages de traitement d'image. Exemples pratiques en concordance de modles.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3505."
+    },
+    {
+      "docID": "CSI4539",
+      "title": "Conception de systmes informatiques scuritaires (3 crdits)",
+      "description": "Politiques de scurit. Mcanismes de scurit. Scurit physique. Conscience de la scurit. Authentification d'utilisateur. Application des mcanismes de scurit. Codage. \"Firewalls\" internes et externes. Scurit des systmes d'opration et des logiciels. Scurit des applications de commerce lectronique. Design de systmes et composantes de scurit. Dispositifs pour l'analyse de la scurit, renifleurs, dtecteurs d'attaque. Guerre de l'information. Aspects thiques de la scurit informatique.",
+      "courseComponent": "Groupe de discussion, Laboratoire, Cours magistral",
+      "Prerequisite": " CEG3585. Aussi offert sous la cote CEG4799."
+    },
+    {
+      "docID": "CSI4540",
+      "title": "Introduction au calcul parallle (3 crdits)",
+      "description": "Modles de calcul parallle. Machines parallles  mmoire partage. Rseaux d'interconnexion et leurs proprits topologiques. Tableaux systoliques. Architectures hypercube. Configuration physique. Mesures de performance pour algorithmes parallles. Recherche parallle et structures de donnes. Traitement algbrique et gomtrique parallle. Calcul tolrant les pannes. valuation parallle d'expressions.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3505."
+    },
+    {
+      "docID": "CSI4541",
+      "title": "Conception de systmes en temps rel (3 crdits)",
+      "description": "Dfinition de systmes en temps rel;  exemples.  Caractristiques de systmes en temps rel.  Outils et techniques d'analyse.  Structure de systmes en temps rel.  Fiabilit et tolrance de dfaillances. Prise en charge d'exceptions.  Simultanit d'excution et programmation simultane de systmes en temps rel.  Synchronisation et communication, contrle et ordonnancement de ressources dans des systmes en temps rel.  Mthodologies de conception de systmes en temps rel.  Conception assiste par ordinateur de systmes en temps rel.",
+      "courseComponent": "Laboratoire, Cours magistral, Tutoriel",
+      "Prerequisite": " CSI3531/CSI 3631. Aussi offert sous la cote CEG4566."
+    },
+    {
+      "docID": "CSI4542",
+      "title": "Introduction  la science des donnes (3 crdits)",
+      "description": "Donnes massives, analyse de donnes et infonuagique; prparation des donnes : organisation, statistiques de base, nettoyage et intgration des donnes; techniques d'exploration de donnes, exploration des motifs, classification, partionnement des donnes, dtection des donnes aberrantes, valuation des modles, entreposage des donnes et analyse multidimensionnelle, visualisation des donnes, analyse des donnes visuelles.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI2532, (CSI3520 ou SEG2506), MAT2777 ou (MAT2771 et MAT2775)."
+    },
+    {
+      "docID": "CSI4550",
+      "title": "Introduction aux mthodes d'optimisation (3 crdits)",
+      "description": "Modles d'optimisation linaire et leurs solutions. Techniques de modlisation des problmes de programmation linaire, les solutions par la mthode du simplex, thorie de la dualit, analyse de sensibilit, mthodes de point intrieur. Formulation de problmes par programmation linaire en nombres entiers, mthodes de rsolution telles que les algorithmes de coupes et les algorithmes de sparation et valuation.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI3505."
+    },
+    {
+      "docID": "CSI4900",
+      "title": "Projet de recherche / Honours Project (3 crdits / 3 units)",
+      "description": "Un projet d'une dure d'un semestre,  faire seul ou en petit groupe, sous la supervision d'un professeur. Les projets sont affichs et sont choisis durant le semestre prcdent. Les tudiants doivent participer aux prsentations des projets, cdules  la fin du semestre. / A one-semester project, individual or for a small group, carried out under the supervision of a faculty member.  Projects are posted and selected in the preceding semester.  The students are required to participate in project presentations scheduled at the end of the semester.",
+      "courseComponent": "Recherche / Research",
+      "Prerequisite": " 18 crdits de cours CSI ou SEG de niveau 3000 / Prerequisite: 18 credits of CSI or SEG courses at the 3000 level."
+    },
+    {
+      "docID": "CSI5100",
+      "title": "Data Integration (3 units)",
+      "description": "Materialized and virtual approaches to integration of heterogeneous and independent data sources. Emphasis on data models, architectures, logic-based techniques for query processing, metadata and consistency management, the role of XML and ontologies in data integration; connections to schema mapping, data exchange, and P2P systems. This course is equivalent to COMP 5306 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5101",
+      "title": "Knowledge Representation (3 units)",
+      "description": "KR is concerned with representing knowledge and using it in computers. Emphasis on logic-based languages for KR, and automated reasoning techniques and systems; important applications of this traditional area of AI to ontologies and semantic web. This course is equivalent to COMP 5307 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5102",
+      "title": "Topics in Medical Computing (3 units)",
+      "description": "Introductory course on data structures, algorithms, techniques, and software development related to medical computing (in particular spatial modeling). Topics may include: computational geometry algorithms for cancer treatment, medical imaging, spatial data compression algorithms, dynamic programming for DNA analysis. This course is equivalent to COMP 5308 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5105",
+      "title": "Network Security and Cryptography (3 units)",
+      "description": "Advanced methodologies selected from symmetric and public key cryptography, network security protocols and infrastructure, identification, anonymity, privacy technologies, secret-sharing, intrusion detection, firewalls, access control technologies, and defending network attacks. This course is equivalent to COMP 5406 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": " familiarity with basic concepts in networks, network security, and applied cryptography."
+    },
+    {
+      "docID": "CSI5106",
+      "title": "Cryptography (3 units)",
+      "description": "Security in encryption algorithms. Encryption and decryption. Entropy, equivocation, and unicity distance.  Cryptanalysis and computational complexity. Substitution, transposition, and product ciphers. Symmetric ciphers: block and stream modes. Modular arithmetic. Public key cryptosystems. Factorization methods. Elliptic curve, lattice-based, and homomorphic cryptography. Proofs of security.",
+      "courseComponent": "Discussion Group, Laboratory, Lecture, Research, Seminar, Work Term, Theory and Laboratory, Tutorial",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5110",
+      "title": "Principles of Formal Software Development (3 units)",
+      "description": "Methodologies in formal software specification, development, and verification. The use of theorem proving, automated deduction, and other related formal methods for software correctness. Applications in program verification and secure computation.  This course is equivalent to COMP 5707 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5111",
+      "title": "Software Quality Engineering (3 units)",
+      "description": "Software quality issues. Quality components and metrics. Software process quality. Software reliability  engineering. Software design for testability. Requirements capture and validation. Systematic design  validation; grey-box approach, test design, implementation and management, case studies in validation and verification of communications software. Object-oriented design and  test. Theoretical aspects. This course is equivalent to COMP 5501 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5112",
+      "title": "Software Engineering (3 units)",
+      "description": "Topics of current interest in Software Engineering, such as requirements engineering, precise and advanced modelling, development processes, change management, standards, and emerging types of applications. This course is equivalent to COMP 5207 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5113",
+      "title": "Foundations Programming Languages (3 units)",
+      "description": "Advanced study of programming paradigms from a practical perspective. Paradigms may include functional, imperative, concurrent, distributed, generative, aspect- and object-oriented, and logic programming. Emphasis on underlying principles. Topics may include: types, modules, inheritance, semantics, continuations, abstraction and reflection. This course is equivalent to COMP 5001 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5115",
+      "title": "Database Analysis and Design (3 units)",
+      "description": "The dimensional and multidimensional data models for data warehousing. Data dependencies and decomposition. Structure and use of data definition and manipulation languages. Database economics, engineering, deployment and evolution. Issues in integrity, security, the Internet and distributed databases. Relationships to decision support systems. This course is equivalent to COMP 5503 at Carleton University.",
+      "courseComponent": "Discussion Group, Laboratory, Lecture, Research, Seminar, Work Term, Theory and Laboratory, Tutorial",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5116",
+      "title": "Authentication and Software Security (3 units)",
+      "description": "Specialized topics in security including advanced authentication techniques, user interface aspects, electronic and digital signatures, security infrastructures and protocols, software vulnerabilities affecting security, non-secure software and hosts, protecting software and digital content. This course is equivalent to COMP 5407 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5118",
+      "title": "Automated Verification and Validation of Software (3 units)",
+      "description": "Topics in formal test derivation methods, test management, high-level, CASE-based verification and validation, data-flow & control-flow measures and metrics for assessing quality of designs and code, regression analysis & testing. This course is equivalent to COMP 5302 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5121",
+      "title": "Advanced Data Structures (3 units)",
+      "description": "Simple methods of data structure design and analysis that lead to efficient data structures for several problems. Topics include randomized binary search trees, persistence, fractional cascading, self-adjusting data structures, van Emde Boas trees, tries, randomized heaps, and lowest common ancestor queries. This course is equivalent to COMP 5408 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5122",
+      "title": "Software Usability (3 units)",
+      "description": "Design principles and metrics for usability. Qualitative and quantitative methods for the evaluation of software system usability: Heuristic evaluation, usability testing, usability inspections and walkthroughs, cognitive walkthroughs, formal usability experimentation. Ethical concerns when performing studies with test users. Economics of usability. Integration of usability engineering into the software engineering lifecycle. This course is equivalent to COMP 5301 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5124",
+      "title": "Computational Aspects of Geographic Information Systems (3 units)",
+      "description": "Computational perspective of geographic information systems (GIS). Data representations and their operations on raster and vector devices: e.g., quadtrees, grid files, digital elevation models, triangular irregular network models. Analysis and design of efficient algorithms for solving GIS problems: visibility queries, point location, facility location. This course is equivalent to COMP 5204 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5126",
+      "title": "Algorithms in Bioinformatics (3 units)",
+      "description": "Fundamental mathematical and algorithmic concepts underlying computational molecular biology; physical and genetic mapping, sequence analysis (including alignment and probabilistic models), genomic rearrangement, phylogenetic inference, computational proteomics and systemics modelling of the whole cell. This course is equivalent to COMP 5108 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5127",
+      "title": "Applied Computational Geometry (3 units)",
+      "description": "Design and analysis of efficient algorithms for solving geometric problems in applied fields such as Geometric Network Design, Geometric Routing and Searching. Geometric spanners, Greedy spanners, Theta-Graphs, Yao-Graphs, Well-Separated Pair Decomposition, Delaunay Triangulations. Introduction to the game of Cops and Robbers. This course is equivalent to COMP 5409 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5128",
+      "title": "Swarm Intelligence (3 units)",
+      "description": "Collective computation, collective action, and principles of self-organization in social agent systems. Algorithms for combinatorial optimization problems, division of labour, task allocation, task switching, and task sequencing with applications in security, routing, wireless and ad hoc networks and distributed manufacturing. This course is equivalent to COMP 5002 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5129",
+      "title": "Advanced Database Systems (3 units)",
+      "description": "In-depth study on developments in database systems shaping the future of information systems, including complex object, object-oriented, object-relational, and semi-structured databases. Data structures, query languages, implementation and applications. This course is equivalent to COMP 5305 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5130",
+      "title": "Applications Design for Mobile Devices (3 units)",
+      "description": "Programming environments for mobile devices applications: native applications and web applications.  User interface, multitouch screens, accelerometer, geo-localization, multi-networks interfaces, camera, digital signal processing. Enterprise applications development. Device-specific and carrier-specific challenges. Methods for dealing with limited memory, speed and storage. Power management. Security. Deployment and distribution of applications.",
+      "courseComponent": "Lecture",
+      "Prerequisite": "Permission of the Department is required."
+    },
+    {
+      "docID": "CSI5131",
+      "title": "Parallel Algorithms and Applications in Bioinformatics (3 units)",
+      "description": "Multiprocessor architectures from an application programmer's perspective: programming models, processor clusters, multi-core processors, GPUs, algorithmic paradigms, efficient parallel problem solving, scalability and portability. Projects on high performance computing in Data Science, including data analytics, bioinformatics, simulations. Programming experience on parallel processing equipment. This course is equivalent to COMP 5704 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5134",
+      "title": "Fault Tolerance (3 units)",
+      "description": "Hardware and software techniques for fault tolerance. Topics include modeling and evaluation techniques, error detecting and correcting codes, module and system level fault detection mechanisms, design techniques for fault-tolerant and fail-safe systems, software fault tolerance through recovery blocks, N-version programming, algorithm-based fault tolerance, checkpointing and recovery techniques, and survey of practical fault-tolerant systems. This course is equivalent to COMP 5004 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5135",
+      "title": "Information Visualization and Visual Analytics (3 units)",
+      "description": "Principles, techniques, technology and applications of information visualization for visual data analysis. Topics include human visual perception, cognitive processes, static and dynamic models of image semantics, interaction paradigms, big data visual analysis case studies. This course is equivalent to COMP 5209 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5136",
+      "title": "Computer Security and Usability (3 units)",
+      "description": "Design and evaluation of security and privacy software with particular attention to human factors and how interaction design impacts security. Topics include current approaches to usable security, methodologies for empirical analysis, and design principles for usable security and privacy. This course is equivalent to COMP 5110 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5137",
+      "title": "Selected Topics in Software Engineering (Category E) (3 units)",
+      "description": "Selected topics in Software Engineering (Category E), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5138",
+      "title": "Selected Topics in Theory of Computing (Category T) (3 units)",
+      "description": "Selected topics in Theory of Computing (Category T), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5139",
+      "title": "Selected Topics in Computer Applications (Category A) (3 units)",
+      "description": "Selected topics in Computer Applications (Category A), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5140",
+      "title": "Selected Topics in Computer Systems (Category S) (3 units)",
+      "description": "Selected topics in Computer Systems (Category S), not covered by other graduate courses. Details will be available from the School at the time of registration. This course is equivalent to COMP 5900 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5142",
+      "title": "Protocols for Mobile and Wireless Networks (3 units)",
+      "description": "Link and network layer protocols of wireless networks; applications of wireless networks may be discussed. Topics may include: protocol implementation, mobile IP, resource discovery, wireless LANs/PANs, and Spreadspectrum. Courses CSI 6136 (SYSC 5306), CSI5142 (COMP 5402) cannot be combined for units. This course is equivalent to COMP 5402 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": "Precludes additional credit for SYSC 5306."
+    },
+    {
+      "docID": "CSI5146",
+      "title": "Computer Graphics (3 units)",
+      "description": "Principles and advanced techniques in rendering and modelling. Research field overview. Splines, subdivision surfaces and hierarchical surface representations. Physics of light transport, rendering equation and Bidirectional Reflectance Distribution Function. Classical ray tracing, radiosity, global illumination and modern hybrid methods. Plenoptic function and image-based rendering. This course is equivalent to COMP 5402 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5147",
+      "title": "Computer Animation (3 units)",
+      "description": "Theories and techniques in 3D modeling and animation. Animation principles, categories, and history. Forward and inverse kinematics. Motion capture, editing and retargeting. Flexible bodies. Particle animation. Behavioral animation. Human modeling. Facial animation. Cloth animation and other sub-topics. This course is equivalent to COMP 5201 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5148",
+      "title": "Wireless Ad Hoc Networking (3 units)",
+      "description": "Self-organized, mobile, and hybrid ad hoc networks. Physical, medium access, networks, transport and application layers, and cross-layering issues. Power management. Security in ad hoc networks. Topology control and maintenance. Data communication protocols, routing and broadcasting. Location service for efficient routing. This course is equivalent to COMP 5103 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5149",
+      "title": "Graphical Models and Applications (3 units)",
+      "description": "Bayesian networks, factor graphs, Markov random fields, maximum a posteriori probability (MAP) and maximum likelihood (ML) principles, elimination algorithm, sum-product algorithm, decomposable and non-decomposable models, junction tree algorithm, completely observed models, iterative proportional fitting algorithm, expectation- maximization (EM) algorithm, iterative conditional modes algorithm, variational methods, applications. Courses CSI5149 (COMP 5007), ELG5131 (EAGJ 5131) and ELG7177 (EACJ 5605) cannot be combined for units. This course is equivalent to COMP 5007 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": "Permission of the Department is required."
+    },
+    {
+      "docID": "CSI5151",
+      "title": "Virtual Environments (3 units)",
+      "description": "Basic concepts. Virtual worlds. Hardware and software support. World modeling. Geometric modeling. Light modeling. Kinematic and dynamic models. Other physical modeling modalities. Multi-sensor data fusion. Anthropomorphic avatars. Animation: modeling languages, scripts, real-time computer architectures. Virtual environment interfaces. Case studies. Courses ELG5124 (EACJ 5204), CSI5151 (COMP 5205) cannot be combined for units. This course is equivalent to COMP 5205 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5152",
+      "title": "Evolving Information Networks (3 units)",
+      "description": "Convergence of social and technological networks with WWW. Interplay between information content, entities creating it and technologies supporting it. Structure and analysis of such networks, models abstracting their properties, link analysis, search, mechanism design, power laws, cascading, clustering and connections with work in social sciences. This course is equivalent to COMP 5310 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5153",
+      "title": "Data Management for Business Intelligence (3 units)",
+      "description": "Data management problems and information technology in decision making support in business environments. Topics include advanced data modeling, semantic modeling, multidimensional databases and data warehousing, on-line-analytical processing, elements of data mining, context in data management, data quality assessment, data cleaning, elements of business process modeling. This course emphasizes concepts and techniques rather than specific applications or systems/implementations. This course is equivalent to COMP 5111 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5154",
+      "title": "Algorithms for Data Science (3 units)",
+      "description": "Algorithmic techniques to handle (massive/big) data arising from, for example, social media, mobile devices, sensors, financial transactions. Algorithmic techniques may include locality-sensitive hashing, dimensionality reduction, streaming, clustering, VC-dimension, external memory, core sets, link analysis and recommendation systems. This course is equivalent to COMP 5112 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5155",
+      "title": "Machine Learning (3 units)",
+      "description": "Concepts, techniques, and algorithms in machine learning; representation, regularization and generalization; supervised learning; unsupervised learning; advanced methods such as support vector machines, online algorithms, neural networks, hidden Markov models, and Bayesian networks; curse of dimensionality and large-scale machine learning. Category T in course list.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5161",
+      "title": "Principles of Distributed Simulation (3 units)",
+      "description": "Distributed simulation principles and practices. Synchronization protocols: Optimistic vs Conservative,  Deadlock detection in conservative simulations, Time warp simulation. Distributed interactive simulation:  Data distribution management, Interest management, High Level Architectures (HLA), Run Time Infrastructure (RTI). Distributed web-based simulation. Distributed agent based simulation. Real time applications of distributed simulation. Distributed and collaborative virtual simulations. This course is equivalent to COMP 5606 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5163",
+      "title": "Algorithm Analysis and Design (3 units)",
+      "description": "Topics of current interest in the design and analysis of computer algorithms for graph-theoretical applications; e.g. shortest paths, chromatic number, etc. Lower bounds, upper bounds, and average performance of algorithms. Complexity theory. This course is equivalent to COMP 5703 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5164",
+      "title": "Computational Geometry (3 units)",
+      "description": "Study of design and analysis of algorithms to solve geometric problems; emphasis on applications such as robotics, graphics, and pattern recognition. Topics include: visibility problems, hidden line and surface removal, path planning amidst obstacles, convex hulls, polygon triangulation, point location. This course is equivalent to COMP 5008 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5165",
+      "title": "Combinatorial Algorithms (3 units)",
+      "description": "Design of algorithms for solving problems that are combinatorial in nature, involving exhaustive generation, enumeration, search and optimization. Algorithms for generating basic combinatorial objects (permutations, combinations, subsets) and for solving hard optimization problems (knapsack, maximum clique, minimum set cover). Metaheuristic search, backtracking, branch-and-bound. Computing isomorphism of combinatorial objects (graphs), isomorph-free exhaustive generation. This course is equivalent to COMP 5709 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5166",
+      "title": "Applications of Combinatorial Optimization (3 units)",
+      "description": "Topics in combinatorial optimization with emphasis on applications in Computer Science. Topics include network flows, various routing algorithms, polyhedral combinatorics, and the cutting plane method. This course is equivalent to COMP 5805 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5167",
+      "title": "Human-Computer Interaction Models, Theories and Frameworks (3 units)",
+      "description": "A basis for graduate study in HCI with an emphasis on the application of theory to user interface design. Review of main theories of human behaviour relevant to HCI, including especially Cognitive Dimensions of Notations Framework, Mental Models, Distributed Cognition, and Activity Theory, and their application to design and development of interactive systems. This course is equivalent to COMP 5210 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5168",
+      "title": "Digital Watermarking (3 units)",
+      "description": "Overview of recent advances in watermarking of image, video, audio, and other media. Spatial, spectral, and temporal watermarking algorithms. Perceptual models. Use of cryptography in steganography and watermarking. Robustness, security, imperceptibility, and capacity of watermarking. Content authentication, copy control, intellectual property, digital rights management, and other applications. This course is equivalent to COMP 5309 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5169",
+      "title": "Wireless Networks and Mobile Computing (3 units)",
+      "description": "Computational aspects and applications of design and analysis of mobile and wireless networking. Topics include Physical, Link Layer, Media Access Control, Wireless, Mobile LANs (Local Area Networks), Ad-Hoc, Sensor Networks, Power Consumption optimization, Routing, Searching, Service Discovery, Clustering, Multicasting, Localization, Mobile IP/TCP (Internet Protocol/Transmission Control Protocol), File Systems, Mobility Models, Wireless Applications. Courses CSI5169, ELG6168 cannot be combined for units. This course is equivalent to COMP 5304 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5173",
+      "title": "Data Networks (3 units)",
+      "description": "Mathematical and practical aspects of design and analysis of communication networks. Topics include: basic concepts, layering, delay models, multi-access communication, queuing theory, routing, fault-tolerance, and advanced topics on high-speed networks, ATM, mobile wireless networks, and optical networks. This course is equivalent to COMP 5203 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5174",
+      "title": "Validation Methods for Distributed Systems (3 units)",
+      "description": "Review of formal specification and description techniques for distributed and open systems. Verification techniques. Correctness proofs. Verification of general properties of distributed systems. Analysis and relief strategies. Testing techniques. Test generation strategies. Test architectures. This course is equivalent to COMP 5604 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5175",
+      "title": "Mobile Commerce Technologies (3 units)",
+      "description": "Wireless networks support for m-commerce; m-commerce architectures and applications; mobile payment support systems; business models; mobile devices and their operating systems; mobile content presentation; security issues and solutions; relevant cross layer standards and protocols; case studies. Courses EBC5175, CSI5175 cannot be combined for units. This course is equivalent to COMP 5900 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5180",
+      "title": "Topics in Artificial Intelligence (3 units)",
+      "description": "Selected topics in Artificial Intelligence (A.I.); could include A.I. programming techniques, pattern matching systems, natural language systems, rule-based systems, constraint systems, machine learning systems, and cognitive systems. Applications could include areas in Finance, Medicine, Manufacturing, Smart Cities, Semantic Web, Healthcare, Fraud Detection, Intrusion Detection, Autonomous Vehicles, Opinion mining, Sentiment Analysis or similar areas. Assignments will be both (a) programming-oriented, requiring implementation and/or extensions of prototypes in Lisp and/or Prolog and (b) research-oriented, requiring readings of special topics in current A.I. journals. This course is equivalent to COMP 5100 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5183",
+      "title": "Evolutionary Computation and Artificial Life (3 units)",
+      "description": "Study of algorithms based upon biological theories of evolution, applications to machine learning and optimization problems. Possible topics: Genetic Algorithms, Classifier Systems, and Genetic Programming. Recent work in the fields of Artificial Life (swarm intelligence, distributed agents, behavior-based AI) and of connectionism. This course is equivalent to COMP 5206 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": "Precludes additional credit for COMP 4107."
+    },
+    {
+      "docID": "CSI5185",
+      "title": "Statistical and Syntactic Pattern Recognition (3 units)",
+      "description": "Topics include a mathematical review, Bayes decision theory, maximum likelihood and Bayesian learning for parametric pattern recognition, non-parametric methods including nearest neighbor and linear discriminants. Syntactic recognition of strings, substrings, subsequences and tree structures. Applications include speech, shape and character recognition. This course is equivalent to COMP 5107 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5200",
+      "title": "Projects on Selected Topics (3 units)",
+      "description": null,
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5308",
+      "title": "Principles of Distributed Computing (3 units)",
+      "description": "Formal models of distributed environment; theoretical issues in the design of distributed algorithms; message and time complexity; problem solving in distributed settings. Problems discussed may include: coordination and control, information diffusion, leader election, consensus, distributed data operations, computing by mobile entities. This course is equivalent to COMP 5003 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5311",
+      "title": "Distributed Databases and Transaction Processing (3 units)",
+      "description": "Principles involved in the design and implementation of distributed databases and distributed transaction processing systems. Topics include: distributed and multi-database system architectures and models, atomicity, synchronization and distributed concurrency control algorithms, data replication, recovery techniques, and reliability in distributed databases. This course is equivalent to COMP 5101 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5312",
+      "title": "Distributed Operating Systems Engineering (3 units)",
+      "description": "Design issues of advanced multiprocessor distributed operating systems: multiprocessor system architectures; process and object models; synchronization and message passing primitives; memory architectures and management; distributed file systems; protection and security; distributed concurrency control; deadlock; recovery; remote tasking; dynamic reconfiguration; performance measurement, modeling, and system tuning. This course is equivalent to COMP 5102 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5314",
+      "title": "Object-Oriented Software Development (3 units)",
+      "description": "Issues in modeling and verifying quality and variability in object-oriented systems. Testable models in model-driven and test-driven approaches. System family engineering. Functional conformance: scenario modeling and verification, design by contract. Conformance to non-functional requirements: goals, forces and tradeoffs, metrics. This course is equivalent to COMP 5104 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5380",
+      "title": "Systems and Architectures for Electronic Commerce (3 units)",
+      "description": "E-commerce system architecture with a focus on relevant design patterns. Web servers, containers, and application frameworks. Web protocols, services, and client technologies. Scalability through load balancing, clustering, and code optimization. Internationalization, accessibility, and privacy. Data mining and sharing approaches for digital targeted advertising. E-commerce user interface design and evaluation. Current research issues. Hands-on experience with an integrated set of current e-commerce tools. E-commerce development project. Courses EBC5380, CSI5380 cannot be combined for units. This course is equivalent to COMP 5405 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5386",
+      "title": "Natural Language Processing (3 units)",
+      "description": "Overview of both rule-based or symbolic methods and statistical methods as approaches to Natural Language Processing (NLP), with more emphasis on the statistical ones. Applications such as information retrieval, text categorization, clustering, and statistical machine translation could be discussed. This course is equivalent to COMP 5505 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5387",
+      "title": "Data Mining and Concept Learning (3 units)",
+      "description": "Concepts and techniques of data mining. Methods for data summarization and data preprocessing. Algorithms for finding frequent patterns and association analysis; classification; cluster analysis and anomaly detection. Model selection, model evaluation and statistical significance testing. Approaches for coping with Big Data. Selected applications of data mining and concept learning.",
+      "courseComponent": "Lecture",
+      "Prerequisite": "Permission of the Department is required."
+    },
+    {
+      "docID": "CSI5388",
+      "title": "Topics in Machine Learning (3 units)",
+      "description": null,
+      "courseComponent": "Lecture",
+      "Prerequisite": "Permission of the Department is required."
+    },
+    {
+      "docID": "CSI5389",
+      "title": "Electronic Commerce Technologies (3 units)",
+      "description": "Business models and technologies. Search engines. Cryptography. Web services and agents. Secure electronic transactions.  Value added e-commerce technologies. Advanced research questions. Courses EBC5389, CSI5389 cannot be combined for units. This course is equivalent to COMP 5401 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5390",
+      "title": "Learning Systems from Random Environments (3 units)",
+      "description": "Computerized adaptive learning for random environments and its applications. Topics include a mathematical review, learning automata which are deterministic/stochastic, with fixed/variable structures, of continuous/discretized design, with ergodic/absorbing properties and of estimator families.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5500",
+      "title": "Projets en informatique (3 crdits)",
+      "description": null,
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5501",
+      "title": "Modles formels de l'information (3 crdits)",
+      "description": null,
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5510",
+      "title": "Principles de dveloppement formel de logiciels (3 crdits)",
+      "description": "Mthodologies pour la spcification, le dveloppement et la vrification formels de logiciels. Utilisation d'assistants de preuves, de dduction automatise et d?autres mthodes formelles visant l?exactitude de logiciel. Applications  la vrification de programmes et au calcul scuris. Ce cours est quivalent  COMP 5707  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5511",
+      "title": "Gnie de la qualit des logiciels (3 crdits)",
+      "description": "Critres de la qualit des logiciels. Composantes et mtriques de qualit. Qualit du processus de dveloppement des logiciels. Gnie de fiabilit des logiciels. Capture et validation d'exigences. Validation systmatique de la conception; approche bote-grise. Conception, implantation et gestion des tests. tude de cas en validation et vrification des logiciels de communication. Conception oriente objet. Aspects thoriques. Ce cours est quivalent  COMP 5501  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5526",
+      "title": "Algorithmes en bio-informatique (3 crdits)",
+      "description": "Assemblage de l'ADN, recherche de gnes, comparaison de chanes, alignement de squences, structures grammaticales, structures secondaires et tertiaires. Les rcents dveloppements, tels que les puces d'ADN et de protines. Travail additionnel requis dans le cas des tudiants inscrits sous la cote CSI5526.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": "Permission du Dpartement est requise."
+    },
+    {
+      "docID": "CSI5537",
+      "title": "Thme choisi en gnie logiciel (catgorie E) (3 crdits)",
+      "description": "Thmes choisis en gnie logiciel (catgorie E), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5538",
+      "title": "Thme choisi en thorie de l?informatique (catgorie T) (3 crdits)",
+      "description": "Thmes choisis en thorie de l'informatique (catgorie T), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5539",
+      "title": "Thme choisi en application informatique (catgorie A) (3 crdits)",
+      "description": "Thmes choisis en application informatique (catgorie A), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5540",
+      "title": "Thme choisi en systmes informatiques (catgorie S) (3 crdits)",
+      "description": "Thmes choisis en systmes informatiques (catgorie S), non couverts par d'autres cours de deuxime cycle. Les dtails seront disponibles  l'cole au moment de l'inscription. Ce cours est quivalent  COMP 5900  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5555",
+      "title": "Apprentissage machine (3 crdits)",
+      "description": "Concepts, techniques et algorithmes en apprentissage machine; reprsentation, rgularisation et gnralisation; apprentissage supervis; apprentissage non supervis; mthodes avances telles que les machines  vecteur de support, les algorithmes en ligne, les rseaux de neurones; les modles de Markov cachs et les rseaux baysiens; le flau de la dimensionnalit et l'apprentissage machine  grande chelle. Catgorie T dans la liste de cours.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5561",
+      "title": "Sujets en simulation et en optimisation des systmes (3 crdits)",
+      "description": null,
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5563",
+      "title": "Analyse et conception des algorithmes (3 crdits)",
+      "description": null,
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5565",
+      "title": "Algorithmes combinatoires (3 crdits)",
+      "description": "Conception d'algorithmes pour rsoudre des problmes de nature combinatoire (gnration exhaustive, numration, recherche et optimisation). Algorithmes pour gnrer des objets combinatoires de base (permutations, combinaisons, sous-ensembles) et pour rsoudre des problmes d'optimisation difficiles (knapsack, clique maximum, couverture minimum). Recherche mtaheuristique, retour arrire, branch-and-bound. Calcul de l'isomorphisme des objets combinatoires (graphes), gnration exhaustive sans isomorphes. Ce cours est quivalent  COMP 5709  l'Universit Carleton.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5571",
+      "title": "Tlmatique : Concepts et logiciels (3 crdits)",
+      "description": null,
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5580",
+      "title": "Sujets en intelligence artificielle (3 crdits)",
+      "description": "Thmes choisis en intelligence artificielle (I.A.); pourrait inclure des techniques de programmation en intelligence artificielle, des systmes d?appariement de formes, des systmes  langage naturel, des systmes  base de rgles, des systmes de contraintes, des systmes d?apprentissage automatique et des systmes cognitifs. Les applications peuvent couvrir les domaines de la finance, de la mdecine, de la fabrication, des villes intelligentes, du Web smantique, de la dtection de fraudes ou d?intrusion, des vhicules autonomes, de l?analyse d?opinion, de l?analyse de sentiments ou d?autres domaines similaires.  Les devoirs seront  la fois (a) axs sur la programmation, exigeant l?implmentation et/ou l?extension de prototypes (b) axs sur la recherche, ncessitant des lectures de sujets spciaux dans des revus d?I.A. contemporaines. Ce cours est quivalent  COMP 5100  l?Universit Carleton.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5780",
+      "title": "Systmes et architectures des logiciels pour le commerce lectronique (3 crdits)",
+      "description": "Architecture du systme de commerce lectronique et patrons de conception. Serveurs Web, conteneurs et cadres d'application. Protocoles, services, et technologies de client Web. volutivit grce  l'quilibrage de la charge, au clustering et  l'optimisation du code. Internationalisation, accessibilit et confidentialit. Mthodes d'exploration et de partage de donnes pour la publicit cible numrique. Conception et valuation de l'interface utilisateur pour le commerce lectronique. Problmes de recherche actuels. Exprience pratique avec un ensemble intgr d'outils de commerce lectronique actuels. Projet de dveloppement du commerce lectronique. Les cours EBC5380, CSI5380 ne peuvent pas tre combins pour les units. Ce cours est quivalent  COMP 5405  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI5389"
+    },
+    {
+      "docID": "CSI5787",
+      "title": "Fouille des donnes et apprentissage des concepts (3 crdits)",
+      "description": "Aspects conceptuels et techniques de l?exploration des donnes.  Mthodes pour l?agrgation et le prtraitement des donnes.  Algorithmes d?extraction de patrons et analyse des rgles d?association; partitionnement des donnes et dtection des anomalies.  Slection et valuation des modles et tests de signification statistique.  Approches pour composer avec les mgadonnes.  Choix d?applications en exploration des donnes et en extraction des concepts.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5789",
+      "title": "Technologies du commerce lectronique (3 crdits)",
+      "description": "Introduction aux modles et technologies d'entreprise. Moteurs de recherche. Cryptographie. Services Web et agents. Transactions lectroniques scurises. Technologies du commerce lectronique  valeur ajoute. Questions de recherche avances. Ce cours est quivalent  COMP 5401  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": " CSI 4110 or equivalent."
+    },
+    {
+      "docID": "CSI5900",
+      "title": "Projets de recherche en informatique / Graduate Projects in Computer Science (3 crdits / 3 units)",
+      "description": "Ce cours est quivalent  COMP 5902  la Carleton University. / This course is equivalent to COMP 5902 at Carleton University.",
+      "courseComponent": "Cours magistral / Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5901",
+      "title": "tudes diriges / Directed Studies (3 crdits / 3 units)",
+      "description": " A course of independent study under the supervision of a member of the School of Computer Science. Ce cours est quivalent  COMP 5901  la Carleton University. / This course is equivalent to COMP 5901 at Carleton University.",
+      "courseComponent": "Recherche / Research",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI5903",
+      "title": "Stage en commerce lectronique / Electronic Commerce Work Term (3 crdits / 3 units)",
+      "description": "Exprience en milieu de travail. Not S (satisfaisant) ou NS (non satisfaisant) selon les rsultats du rapport crit et l'valuation de l'employeur. Pralable : tre accept au programme de certificat en commerce lectronique (option technologie) et recevoir la permission du Comit du programme. / Practical experience. Graded S (Satisfactory) / NS (Not satisfactory), to be based on the grades obtained for the written report as well as on the evaluations of the employer.",
+      "courseComponent": "Cours magistral / Lecture",
+      "Prerequisite": "Permission du Dpartement est requise. / Permission of the Department is required."
+    },
+    {
+      "docID": "CSI5904",
+      "title": "Projet de recherche avanc en commerce lectronique / Graduate Project in Electronic Commerce (3 crdits / 3 units)",
+      "description": "Projet sur un sujet prcis en commerce lectronique men sous la direction d'un professeur. Les cours CSI5904, CSI5903 ne peuvent tre combins pour l'obtention de crdits. / Project on a specific topic in electronic commerce under the supervision of a professor. Courses CSI5904, CSI5903 cannot be combined for units.",
+      "courseComponent": "Cours magistral / Lecture",
+      "Prerequisite": " CSI5903."
+    },
+    {
+      "docID": "CSI5905",
+      "title": "Projet / Project (3 crdits / 3 units)",
+      "description": "Dveloppement d'une application pour appareils mobiles. L'tudiant identifie un projet, qui doit comprendre une importante part de logiciel s'excutant sur l'appareil mobile et se prter  une valuation raisonnablement indpendante d'autres logiciels. Le projet est dirig par un professeur approuv par la direction du programme. Le projet est normalement complt en une session. Not S (satisfaisant) ou NS (non satisfaisant) par le directeur du projet et un autre professeur nomm par le directeur du programme. / Development of an application for mobile devices. Students identify a project that must include a significant portion of software running on device, and should be reasonably self-contained. The project can normally be completed in one session. Graded S (Satisfactory) or NS (Not satisfactory) by the supervisor and by another professor appointed by the program director.",
+      "courseComponent": "Cours magistral / Lecture",
+      "Prerequisite": "Permission du Dpartement est requise. / Permission of the Department is required."
+    },
+    {
+      "docID": "CSI6900",
+      "title": "Projets de recherche intensive en informatique / Intensive Graduate Projects in Computer Science (6 crdits / 6 units)",
+      "description": "Cours de six crdits s'chelonnant sur une priode de deux sessions. L'envergure du projet de recherche exig dans ce cours est deux fois plus grande que dans le cas de CSI5900. Les cours CSI6900, CSI5900 ne peuvent tre combins pour l'obtention de crdits. Cours ouvert uniquement aux tudiants inscrits  la matrise sans thse. Ce cours est quivalent  COMP 5903  la Carleton University. / A two-session course. The project is twice the scope of projects in CSI5900. Courses CSI6900, CSI5900 cannot be combined for units. Not to be taken in the thesis option. This course is equivalent to COMP 5903 at Carleton University.",
+      "courseComponent": "Recherche / Research",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7131",
+      "title": "Advanced Parallel and Systolic Algorithms (3 units)",
+      "description": "Continuation of CSI5131 (COMP 5704). This course is equivalent to COMP 6100 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7160",
+      "title": "Advanced Topics in the Theory of Computing (3 units)",
+      "description": "This course is equivalent to COMP 6601 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7161",
+      "title": "Advanced Topics in Programming Systems and Languages (3 units)",
+      "description": "This course is equivalent to COMP 6603 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7162",
+      "title": "Advanced Topics in Computer Applications (3 units)",
+      "description": "This course is equivalent to COMP 6604 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7163",
+      "title": "Advanced Topics in Computer Systems (3 units)",
+      "description": "This course is equivalent to COMP 6605 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7170",
+      "title": "Advanced Topics in Distributed Computing (3 units)",
+      "description": "This course is equivalent to COMP 6602 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7314",
+      "title": "Advanced Topics in Object-Oriented Systems (3 units)",
+      "description": "Advanced object-oriented software engineering, in particular the issues of reuse and testing. Sample topics include: interaction modeling; class and cluster testing; traceability; design patterns and testing; the C++ standard template library. Students will carry out research. This course is equivalent to COMP 6104 at Carleton University.",
+      "courseComponent": "Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7561",
+      "title": "tudes avances en systmes et langages de programmation (3 crdits)",
+      "description": "Ce cours est quivalent  COMP 6603  la Carleton University.",
+      "courseComponent": "Cours magistral",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7900",
+      "title": "Projets de recherche en informatique / Graduate Projects in Computer Science (3 crdits / 3 units)",
+      "description": "Ce cours est quivalent  COMP 6902  la Carleton University. / This course is equivalent to COMP 6902 at Carleton University.",
+      "courseComponent": "Cours magistral / Lecture",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI7901",
+      "title": "tudes diriges / Directed Studies (3 crdits / 3 units)",
+      "description": "Ce cours est quivalent  COMP 6901  la Carleton University. / This course is equivalent to COMP 6901 at Carleton University.",
+      "courseComponent": "Recherche / Research",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI9901",
+      "title": "Colloque / Seminar",
+      "description": null,
+      "courseComponent": "Sminaire / Seminar",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI9902",
+      "title": "Colloque / Seminar",
+      "description": null,
+      "courseComponent": "Recherche / Research",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI9997",
+      "title": "Proposition de thse de doctorat / Doctoral Thesis Proposal",
+      "description": " Within 8 terms following initial registration in the program, a document, generally defining the problem addressed, relating it to the literature, outlining the hypotheses, goals, research methodology, initial results and validation approach, must be submitted to an examination committee and successfully defended. Ce cours est quivalent  COMP 6908  la Carleton University. This course is equivalent to COMP 6908 at Carleton University.",
+      "courseComponent": "Recherche / Research",
+      "Prerequisite": null
+    },
+    {
+      "docID": "CSI9998",
+      "title": "Examen gnral de doctorat / Ph.D. Comprehensive",
+      "description": " A committee must be assembled and must approve at least 3 topics for written examination: typically, a major and two minor areas. An oral examination occurs if the written exam is passed. Both elements must take place within the first 4 terms following initial registration in the program. The comprehensive examination may be failed, passed conditionally (i.e., with extra course requirements) or passed unconditionally. If failed, this course may be retaken at most one time. Ce cours est quivalent  COMP 6907  la Carleton University. This course is equivalent to COMP 6907 at Carleton University.",
+      "courseComponent": "Recherche / Research",
+      "Prerequisite": null
+    }
+  ]
+}
