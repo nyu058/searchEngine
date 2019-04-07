@@ -30,7 +30,11 @@ def result(request):
 
 def detail(request):
     template=loader.get_template('detail.html')
-    resultset=corpusAccess.getDocDetail( os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json", request.GET['docid'])
+    resultset=[]
+    if request.GET['collection']=='Reuters_2157':
+        resultset=corpusAccess.getDocDetail(reuterpath, request.GET['docid'])
+    else:
+        resultset = corpusAccess.getDocDetail(cspath, request.GET['docid'])
     return  HttpResponse(template.render({'title':resultset[0], 'description':resultset[1]}))
 
 def boolean(query, collection):
@@ -46,7 +50,7 @@ def boolean(query, collection):
         path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
 
     for elem in corpusAccess.getDocContent(path, doclist):
-        reslist.append("<div><h6><a href=\"/result/detail?docid="+elem[0]+"\">")
+        reslist.append("<div><h6><a href=\"/result/detail?collection="+collection+"&docid="+elem[0]+"\">")
         reslist.append(elem[1])
         reslist.append("</a></h6><div><p>")
         reslist.append(elem[2])

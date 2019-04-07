@@ -62,9 +62,12 @@ class DictionaryBuilding:
 def main():
     path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     pathreuter = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
-    builder = DictionaryBuilding(path, True, True, True)
-    print(builder.build())
-
+    builder = DictionaryBuilding(pathreuter, True, False, False)
+    csdic_path =os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\csdic.json"
+    reutersdic_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reutersdic.json"
+    with open(reutersdic_path, 'w') as f:
+        dic=builder.build()
+        json.dump(dic, f)
 
 if __name__ == '__main__':
     main()
