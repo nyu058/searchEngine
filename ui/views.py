@@ -6,13 +6,17 @@ from models import booleanmodel, vsmodel
 from django.template import Context, loader
 from nltk.corpus import words
 from optional import spellCorrection
+import json
 from dictionaryBuilding import dictionaryBuilding
-reuterpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
-cspath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
-print('building dictionary')
-reuterdic = dictionaryBuilding.DictionaryBuilding(reuterpath, True, False, False).build()
-csdic = dictionaryBuilding.DictionaryBuilding(cspath, True, False, False).build()
-print('building dictionary complete')
+reuterpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reutersdic.json"
+cspath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\csdic.json"
+
+with open(reuterpath, 'r') as f:
+    reuterdic=json.load(f)
+
+with open(cspath, 'r') as f:
+    csdic=json.load(f)
+
 
 def index(request):
     template= loader.get_template('index.html')
