@@ -127,9 +127,9 @@ def main():
     builder = db.DictionaryBuilding(path, True, False, False)
     indexer = VSModel()
     dic = builder.build()
-    print(indexer.buildIndex(dic))
+    # print(indexer.buildIndex(dic))
 
-    #print(indexer.search('operating systems', [True, True, True]))
+    print(indexer.search('China', dic))
 
 
 if __name__ == '__main__':

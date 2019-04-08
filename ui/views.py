@@ -8,13 +8,15 @@ from nltk.corpus import words
 from optional import spellCorrection
 import json
 from dictionaryBuilding import dictionaryBuilding
-reuterpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reutersdic.json"
-cspath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\csdic.json"
+cspath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+reuterpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
+reuterdicpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reutersdic.json"
+csdicpath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\csdic.json"
 
-with open(reuterpath, 'r') as f:
+with open(reuterdicpath, 'r') as f:
     reuterdic=json.load(f)
 
-with open(cspath, 'r') as f:
+with open(csdicpath, 'r') as f:
     csdic=json.load(f)
 
 
@@ -48,10 +50,10 @@ def boolean(query, collection):
     doclist =[]
     if collection=='UO_Courses':
         doclist=index.search(query, csdic)
-        path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+        path=cspath
     else:
         doclist = index.search(query, reuterdic)
-        path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
+        path=reuterpath
 
     for elem in corpusAccess.getDocContent(path, doclist):
         reslist.append("<div><h6><a href=\"/result/detail?collection="+collection+"&docid="+elem[0]+"\">")
@@ -69,12 +71,11 @@ def vsm(query, collection):
     index=vsmodel.VSModel()
     if collection=='UO_Courses':
         doclist = index.search(query, csdic)
-        path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
+        path=cspath
         resultset=corpusAccess.getDocContent(path, [i[0] for i in doclist])
     else:
-        doclist = index.search(query, csdic)
-        path = os.path.dirname(
-            os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
+        doclist = index.search(query, reuterdic)
+        path = reuterpath
         resultset = corpusAccess.getDocContent(path, [i[0] for i in doclist])
 
     if not resultset:

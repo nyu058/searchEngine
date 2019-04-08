@@ -54,7 +54,7 @@ class DictionaryBuilding:
             if self.stemming:
                 tokenized = self.stem(tokenized)
 
-            dictionary[doc['docID']] = tokenized
+            dictionary[doc['docID']] = [token for token in tokenized if token.isalpha()]
 
         return dictionary
 
@@ -63,8 +63,8 @@ def main():
     path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
     pathreuter = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
     builder = DictionaryBuilding(pathreuter, True, False, False)
-    csdic_path =os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\csdic.json"
-    reutersdic_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reutersdic.json"
+    csdic_path =os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\dictionaryBuilding\\csdic.json"
+    reutersdic_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\dictionaryBuilding\\reutersdic.json"
     with open(reutersdic_path, 'w') as f:
         dic=builder.build()
         json.dump(dic, f)
