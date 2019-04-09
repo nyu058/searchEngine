@@ -7,19 +7,59 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
     <link href="{% static 'css/main.css' %}" rel="stylesheet"/>
     <title>V10</title>
+    <script>
+        function showSuggestion(query) {
+            var tokenized = query.split(" ");
+            if ((tokenized.length - 1) < 1 || query[query.length - 1] !== ' ') {
+                document.getElementById("suggestion").innerHTML = "";
+                document.getElementById("suggestion").style.border = "0px";
+
+            } else {
+                var http = new XMLHttpRequest();
+                http.onreadystatechange = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        document.getElementById("suggestion").innerHTML = this.responseText;
+                        document.getElementById("suggestion").style.border = "1px solid #A5ACB2";
+                        document.getElementById("suggestion").style.backgroundColor = "white";
+                        var list = document.querySelectorAll(".suggest");
+                        for (var i = 0; i < list.length; i++) {
+                            list[i].addEventListener("click", function () {
+                                document.getElementById('search').value = this.innerText
+                            });
+                        }
+                    }
+                };
+                var elem = document.getElementById('collection');
+                http.open("GET", "query_complete?word=" + query + "&collection=" + elem.options[elem.selectedIndex].text, true);
+                http.send();
+
+
+            }
+        }
+
+    </script>
+    <style>
+        .suggest:hover {
+            color: #00a5bb;
+        }
+    </style>
 </head>
 <body>
 <h1 style="text-align: center ">V10 Search Engine</h1>
-    <p><b>Notes 1</b>: Boolean query will only work correctly if a space is added after each bracket. i.e 'graphics or (operating and system)' will produce unexpected result, "graphic or ( operating and system )" should work correctly."</p>
-    <p><b>Notes 2</b>: The spell correction module with edit distance is implemented with the VSM model only. Please choose VSM when testing for spell correction.</p>
-<p><b>Note 3</b>: Some query especially those incorrectly typed might be slow, since the edit distance algorithm may not be at the most optimal one.</p>
+<p><b>Notes 1</b>: Boolean query will only work correctly if a space is added after each bracket. i.e 'graphics or
+    (operating and system)' will produce unexpected result, "graphic or ( operating and system )" should work
+    correctly."</p>
+<p><b>Notes 2</b>: The spell correction module with edit distance is implemented with the VSM model only. Please choose
+    VSM when testing for spell correction.</p>
+<p><b>Note 3</b>: Some query especially those incorrectly typed might be slow, since the edit distance algorithm may not
+    be at the most optimal one.</p>
 <p><b>Note 4</b>: The spell correction may not function correctly with stemming selected</p>
 <div class="s003">
     <form action="/result" method="get">
         <div class="inner-form">
             <div class="input-field first-wrap">
                 <div class="input-select">
-                    <select data-trigger="" name="collection">
+                    <select data-trigger="" name="collection" id="collection">
                         <option placeholder="">UO_Courses</option>
                         <option>Reuters_2157</option>
 
@@ -39,7 +79,9 @@
             </div>
 
             <div class="input-field second-wrap">
-                <input id="search" type="text" placeholder="Enter your query here" name="query" required>
+                <input id="search" type="text" placeholder="Enter your query here" name="query" required
+                       onkeyup="showSuggestion(this.value)">
+                <div id="suggestion"></div>
             </div>
             <div class="input-field third-wrap">
                 <button class="btn-search" type="submit">
@@ -53,17 +95,17 @@
 
         </div>
         <br>
-        <div class="form-check form-check-inline" >
-        <input class="form-check-input" type="checkbox" id='check1' name="stopwords" value="true">
-  <label class="form-check-label" for="check1">Stopwords Removal</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id='check1' name="stopwords" value="true">
+            <label class="form-check-label" for="check1">Stopwords Removal</label>
         </div>
         <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id='check2' name="stemming" value="true">
-  <label class="form-check-label" for="check2">Stemming</label>
+            <input class="form-check-input" type="checkbox" id='check2' name="stemming" value="true">
+            <label class="form-check-label" for="check2">Stemming</label>
         </div>
-        <div class="form-check form-check-inline" >
-        <input class="form-check-input" type="checkbox" id='check3' name="normalize" value="true">
-  <label class="form-check-label" for="check3">Normalization</label>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id='check3' name="normalize" value="true">
+            <label class="form-check-label" for="check3">Normalization</label>
         </div>
     </form>
 

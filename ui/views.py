@@ -6,12 +6,13 @@ from models import booleanmodel, vsmodel
 from django.template import Context, loader
 from nltk.corpus import words
 from optional import spellCorrection
+from bigram import bigrammodel
 import json
 from dictionaryBuilding import dictionaryBuilding
 cspath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\ComputerScience(CSI)uOttawa.json"
 reuterpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reuters_parsed.json"
-reuterdicpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\reutersdic.json"
-csdicpath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\parsed\\csdic.json"
+reuterdicpath=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\dictionaryBuilding\\reutersdic.json"
+csdicpath = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\dictionaryBuilding\\csdic.json"
 
 with open(reuterdicpath, 'r') as f:
     reuterdic=json.load(f)
@@ -33,6 +34,17 @@ def result(request):
     else:
         reslist=vsm(query, request.GET['collection'])
     return HttpResponse(template.render({'query':request.GET['query'], 'reslist':''.join(reslist)}))
+def query_complete(request):
+    reuters_bi_path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\bigram\\reutersbigram.json"
+    with open(reuters_bi_path,"r") as f:
+        bigramsCollection = json.load(f)
+    bigramModel = bigrammodel.bigrammodel(bigramsCollection)
+    query=request.GET['word']
+    reslist=bigramModel.getRecommandations(query.split(' ')[-2], 5)
+    res=''
+    for elem in reslist:
+        res+='<p class=\'suggest\'>'+query+'<b>'+elem+'</b>'+'</p>'
+    return HttpResponse(res)
 
 def detail(request):
     template=loader.get_template('detail.html')
@@ -97,7 +109,7 @@ def vsm(query, collection):
     else:
         for i in range(len(resultset)):
 
-            reslist.append("<div><h6 style=\"display:inline\"><a href=\"/result/detail?docid="+resultset[i][0]+"\">")
+            reslist.append("<div><h6 style=\"display:inline\"><a href=\"/result/detail?collection="+collection+"&docid="+resultset[i][0]+"\">")
             reslist.append(resultset[i][1])
             reslist.append("</a></h6><span style=\"float:right\"><b>Score: </b>")
             reslist.append(str(doclist[i][1]))
