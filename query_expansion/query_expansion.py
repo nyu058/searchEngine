@@ -1,5 +1,6 @@
 import json
 import os.path
+import numpy as np
 import nltk
 from sklearn.metrics import jaccard_similarity_score
 from models import  model
@@ -32,7 +33,10 @@ class QueryExpansion:
             sim=self.get_sim(word, elem, doclist)
             result.append((elem,sim))
             couter+=1
-            print(couter)
+            # print(couter)
+            # print(sim)
+            if couter%1000==0:
+                print(couter)
         print(result)
         return result
 
@@ -64,19 +68,47 @@ class QueryExpansion:
                         lst2.append(True)
                 break
 
-        print(len(lst1),len(lst2))
+        # print(len(lst1),len(lst2))
         return self.jaccard(lst1,lst2)
 
-    @staticmethod
-    def jaccard(lst1, lst2):
-        count=0
-        diff=0
+
+    def get_doc_vector(self):
+        word_set = self.unique_words()
+        vec={}
+        doclst=[]
         for i in range(19043):
-            if lst1[i] and lst2[i]: #same and 1
-                count+=1
-            elif (not lst1[i] and lst2[i]) or (lst1[i] and not lst2[i]): #one of them has 1 and diff
-                diff+=1
-        return count/diff
+            doclst.append(str(i))
+        for word in word_set:
+            lst=[]
+            for elem in self.inverted_index:
+                if elem[0][0] == word:
+                    wlist = set([i[0] for i in elem[1]])
+                    for docid in doclst:
+
+                        if docid not in wlist:
+                            lst.append(False)
+                        else:
+                            lst.append(True)
+                    break
+            vec[word]=lst
+            print(word, lst)
+        return vec
+
+    @staticmethod
+    # def jaccard(lst1, lst2):
+    #     count=0
+    #     diff=0
+    #     for i in range(19043):
+    #         if lst1[i] and lst2[i]: #same and 1
+    #             count+=1
+    #         elif (not lst1[i] and lst2[i]) or (lst1[i] and not lst2[i]): #one of them has 1 and diff
+    #             diff+=1
+    #     return count/diff
+    def jaccard(lst1, lst2):
+        lst1=np.asarray(lst1)
+        lst2=np.asarray(lst2)
+        return np.double(np.bitwise_and(lst1, lst2).sum())/ np.double(np.bitwise_or(lst1, lst2).sum())
+
 
 
 if __name__ == '__main__':
@@ -86,6 +118,9 @@ if __name__ == '__main__':
         dic=json.load(f)
         inverted_index=model.Model('vsm').buildIndex(dic)
         expander=QueryExpansion(dic, inverted_index)
+
+    # with open('docvec.json', 'w') as f:
+    #     json.dump(expander.get_doc_vector(), f)
     print(expander.build_thesaurus())
     # print(expander.build_thesaurus())
     # with open('reuters_theaurus.json', 'w') as f:
