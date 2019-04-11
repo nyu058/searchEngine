@@ -34,6 +34,7 @@ def result(request):
     else:
         reslist=vsm(query, request.GET['collection'])
     return HttpResponse(template.render({'query':request.GET['query'], 'reslist':''.join(reslist)}))
+
 def query_complete(request):
     reuters_bi_path=os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + "\\bigram\\reutersbigram.json"
     with open(reuters_bi_path,"r") as f:

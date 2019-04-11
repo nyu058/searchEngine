@@ -2,7 +2,7 @@ import json
 import os.path
 import numpy as np
 import nltk
-from sklearn.metrics import jaccard_similarity_score
+# from sklearn.metrics import jaccard_similarity_score
 from models import  model
 class QueryExpansion:
     def __init__(self, dictionary, inverted_index):
@@ -13,12 +13,13 @@ class QueryExpansion:
         for doc in self.dictionary:
             for word in self.dictionary[doc]:
                 result.add(word)
-        return result
+        return list(result)
 
 
     def build_thesaurus(self):
         theaurous={}
         word_set=self.unique_words()
+        word_set.sort()
         doclist=[]
         for i in range(19043):
             doclist.append(str(i))
@@ -121,9 +122,9 @@ if __name__ == '__main__':
 
     # with open('docvec.json', 'w') as f:
     #     json.dump(expander.get_doc_vector(), f)
-    print(expander.build_thesaurus())
+    expander.build_thesaurus()
     # print(expander.build_thesaurus())
-    # with open('reuters_theaurus.json', 'w') as f:
-    #
-    #     json.dump(expander.build_thesaurus(),f, indent=4)
+    with open('reuters_theaurus.json', 'w') as f:
+
+        json.dump(expander.build_thesaurus(),f, indent=4)
 
