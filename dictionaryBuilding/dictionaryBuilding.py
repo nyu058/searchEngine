@@ -5,7 +5,6 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import re
 
-
 class DictionaryBuilding:
 
     def __init__(self, path, stopwords=False, stemming=False, normalization=False):
