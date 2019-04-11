@@ -3,7 +3,7 @@ import nltk
 import operator
 import os.path
 from collections import  Counter
-
+import time
 class bigrammodel:
 
     def __init__(self, bigramsCollection):

@@ -127,9 +127,10 @@ def main():
     builder = db.DictionaryBuilding(path, True, False, False)
     indexer = VSModel()
     dic = builder.build()
-    # print(indexer.buildIndex(dic))
+    i=indexer.buildIndex(dic)
+    print(print(len(i)))
 
-    print(indexer.search('China', dic))
+    # print(indexer.search('China', dic))
 
 
 if __name__ == '__main__':

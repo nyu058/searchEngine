@@ -4,6 +4,7 @@ import numpy as np
 import nltk
 # from sklearn.metrics import jaccard_similarity_score
 from models import  model
+import  time
 class QueryExpansion:
     def __init__(self, dictionary, inverted_index):
         self.dictionary=dictionary
@@ -19,20 +20,30 @@ class QueryExpansion:
     def build_thesaurus(self):
         theaurous={}
         word_set=self.unique_words()
+        print(len(word_set))
         word_set.sort()
         doclist=[]
         for i in range(19043):
             doclist.append(str(i))
 
         for word in word_set:
+            start=time.time()
             theaurous[word]=self.get_word_sim(word,word_set, doclist)
-
+            end=time.time()
+            print(end-start)
     def get_word_sim(self, word, word_set, doclist):
-        result=[]
+        result={}
         couter=0
-        for elem in word_set:
-            sim=self.get_sim(word, elem, doclist)
-            result.append((elem,sim))
+
+        wlist2=[]
+        for elem in inverted_index:
+            if elem[0][0]==word:
+                wlist2 = set([i[0] for i in elem[1]])
+                break
+        for i in range(len(word_set)-1):
+            wlist1 = set([i[0] for i in inverted_index[i][1]])
+            sim=self.get_sim(word_set[i], word, wlist1, wlist2, doclist)
+            result[word_set[i]]=sim
             couter+=1
             # print(couter)
             # print(sim)
@@ -41,34 +52,21 @@ class QueryExpansion:
         print(result)
         return result
 
-    def get_sim(self, word1, word2, doclst):
+    def get_sim(self, word1, word2, wlist1, wlist2, doclst):
         if word1==word2:
             return 1
         lst1=[]
         lst2=[]
-        for elem in self.inverted_index:
-            if elem[0][0]==word1:
-                wlist = set([i[0] for i in elem[1]])
-                for docid in doclst:
+        for docid in doclst:
 
-                    if docid not in wlist:
-                        lst1.append(False)
-                    else:
-                        lst1.append(True)
-                break
-
-        for elem in self.inverted_index:
-
-            if elem[0][0]==word2:
-                wlist = set([i[0] for i in elem[1]])
-                for docid in doclst:
-
-                    if docid not in wlist:
-                        lst2.append(False)
-                    else:
-                        lst2.append(True)
-                break
-
+            if docid not in wlist1:
+                lst1.append(False)
+            else:
+                lst1.append(True)
+            if docid not in wlist2:
+                lst2.append(False)
+            else:
+                lst2.append(True)
         # print(len(lst1),len(lst2))
         return self.jaccard(lst1,lst2)
 
@@ -118,6 +116,7 @@ if __name__ == '__main__':
     with open(reuterdicpath, 'r') as f:
         dic=json.load(f)
         inverted_index=model.Model('vsm').buildIndex(dic)
+        print(len(inverted_index))
         expander=QueryExpansion(dic, inverted_index)
 
     # with open('docvec.json', 'w') as f:
