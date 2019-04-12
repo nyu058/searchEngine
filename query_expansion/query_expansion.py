@@ -3,8 +3,8 @@ import os.path
 import numpy as np
 import nltk
 # from sklearn.metrics import jaccard_similarity_score
-from models import  model
-import  time
+from models import model
+import time
 class QueryExpansion:
     def __init__(self, dictionary, inverted_index):
         self.dictionary=dictionary
@@ -31,19 +31,28 @@ class QueryExpansion:
             theaurous[word]=self.get_word_sim(word,word_set, doclist)
             end=time.time()
             print(end-start)
+
     def get_word_sim(self, word, word_set, doclist):
         result={}
         couter=0
-
+        doclen = len(doclist)
         wlist2=[]
         for elem in inverted_index:
             if elem[0][0]==word:
                 wlist2 = set([i[0] for i in elem[1]])
                 break
+        lst1 = bytearray(doclen)
+        for i in range(doclen):
+            if doclist[i] in wlist2:
+                lst1[i] = 1
         for i in range(len(word_set)-1):
             wlist1 = set([i[0] for i in inverted_index[i][1]])
-            sim=self.get_sim(word_set[i], word, wlist1, wlist2, doclist)
-            result[word_set[i]]=sim
+            if word_set[i]==word:
+                sim=1
+            else:
+                sim=self.get_sim(lst1, wlist1, doclist)
+            if sim>0:
+                result[word_set[i]]=sim
             couter+=1
             # print(couter)
             # print(sim)
@@ -52,21 +61,13 @@ class QueryExpansion:
         print(result)
         return result
 
-    def get_sim(self, word1, word2, wlist1, wlist2, doclst):
-        if word1==word2:
-            return 1
-        lst1=[]
-        lst2=[]
-        for docid in doclst:
+    def get_sim(self, lst1, wlist2, doclst):
+        doclen=len(doclst)
+        lst2=bytearray(doclen)
+        for i in range(doclen):
+            if doclst[i] in wlist2:
+                lst2[i] = 1
 
-            if docid not in wlist1:
-                lst1.append(False)
-            else:
-                lst1.append(True)
-            if docid not in wlist2:
-                lst2.append(False)
-            else:
-                lst2.append(True)
         # print(len(lst1),len(lst2))
         return self.jaccard(lst1,lst2)
 

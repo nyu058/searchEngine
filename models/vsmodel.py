@@ -38,7 +38,8 @@ class VSModel(model.Model):
 
     def query_processor(self, query):
 
-        return list(filter(None, query.lower().split(' ')))
+        tokenized=list(filter(None, query.lower().split(' ')))
+        return db.DictionaryBuilding.stem(db.DictionaryBuilding.remove_stopwords(tokenized))
 
     def getDocVec(self, query, index):
         qdoclist = []

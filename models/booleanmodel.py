@@ -37,8 +37,7 @@ class BooleanModel(model.Model):
 
     def query_processor(self, query, index):
         tokenized = list(filter(None, query.lower().split(' ')))
-        # tokenized = dictionaryBuilding.DictionaryBuilding.stem(
-        #     dictionaryBuilding.DictionaryBuilding.normalize(tokenized))
+        tokenized = dictionaryBuilding.DictionaryBuilding.stem(tokenized)
         for i in range(len(tokenized)):
 
             if tokenized[i][-1]=='*':
@@ -64,9 +63,7 @@ class BooleanModel(model.Model):
     def search(self, query, dic):
 
         index = self.buildIndex(dic)
-        print(dic)
         processed = self.query_processor(query, index)
-        print(processed)
         operators = {'and', 'or', 'not'}
         tojoin = []
         for elem in processed:
@@ -87,9 +84,6 @@ class BooleanModel(model.Model):
                 joined = self.negation(tojoin[-1], dic)
                 tojoin.pop()
                 tojoin.append(joined)
-                print(joined)
-
-
         return tojoin[0]
 
 

@@ -1,7 +1,7 @@
 import os.path
 import sys
 import json
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords, words
 from nltk.stem import PorterStemmer
 import re
 
@@ -42,7 +42,7 @@ class DictionaryBuilding:
         collection = json.load(file)
         file.close()
         dictionary = {}
-
+        engword = set(words.words())
         for doc in collection['documents']:
             tokenized = list(filter(None, re.split('[ .,/()_&#!@?;:""]', str(doc['description']).lower())))
 
@@ -53,7 +53,7 @@ class DictionaryBuilding:
             if self.stemming:
                 tokenized = self.stem(tokenized)
 
-            dictionary[doc['docID']] = [token for token in tokenized if token.isalpha()]
+            dictionary[doc['docID']] = [token for token in tokenized if token.isalpha() and (token not in engword) and (len(token)<16)]
 
         return dictionary
 

@@ -96,17 +96,12 @@
 
         </div>
         <br>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id='check1' name="stopwords" value="true">
-            <label class="form-check-label" for="check1">Stopwords Removal</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id='check2' name="stemming" value="true">
-            <label class="form-check-label" for="check2">Stemming</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id='check3' name="normalize" value="true">
-            <label class="form-check-label" for="check3">Normalization</label>
+        <div class="form-check form-check-inline" id="topics" style="display: none">
+            <label>Select your topics: </label>
+            <select class="form-control" name="topics" id="topiclist">
+            <option placeholder="">all</option>
+
+            </select>
         </div>
     </form>
 
@@ -118,6 +113,24 @@
             searchEnabled: false,
             itemSelectText: '',
         });
+    topics=document.getElementById('topics');
+    topicselect=document.getElementById('topiclist');
+    document.getElementById('collection').addEventListener('change', function () {
+        var style = this.value == 'Reuters_2157' ? 'block' : 'none';
+        topics.style.display = style;
+    });
+
+    var topiclist = ['copra-cake', 'crude', 'skr', 'palladium', 'livestock', 'nkr', 'dfl', 'sugar', 'lin-oil', 'lin-meal', 'income', 'retail', 'wool', 'pork-belly', 'tea', 'gnp', 'wpi', 'trade', 'soy-oil', 'carcass', 'barley', 'cotton', 'instal-debt', 'lumber', 'austdlr', 'propane', 'corn', 'coffee', 'veg-oil', 'castorseed', 'rape-meal', 'gold', 'rye', 'corn-oil', 'lead', 'groundnut-oil', 'stg', 'reserves', 'money-fx', 'rand', 'lit', 'coconut', 'naphtha', 'soybean', 'orange', 'housing', 'acq', 'platinum', 'ringgit', 'tapioca', 'soy-meal', 'dmk', 'fishmeal', 'copper', 'palmkernel', 'plywood', 'earn', 'sunseed', 'cornglutenfeed', 'sfr', 'coconut-oil', 'sorghum', 'tin', 'interest', 'rice', 'iron-steel', 'hog', 'hk', 'gas', 'zinc', 'lei', 'bop', 'oilseed', 'silver', 'can', 'jobs', 'sun-meal', 'rupiah', 'nat-gas', 'rape-oil', 'saudriyal', 'grain', 'groundnut', 'wheat', 'cpi', 'f-cattle', 'cpu', 'citruspulp', 'bfr', 'potato', 'l-cattle', 'cottonseed', 'oat', 'peseta', 'sun-oil', 'yen', 'nzdlr', 'money-supply', 'dlr', 'fuel', 'dkr', 'red-bean', 'rapeseed', 'pet-chem', 'rubber', 'inventories', 'jet', 'strategic-metal', 'linseed', 'cotton-oil', 'nickel', 'ipi', 'palm-oil', 'castor-oil', 'heat', 'cocoa', 'meal-feed', 'alum', 'ship']
+    var lst='';
+    topiclist.sort();
+    for (var i=0;i<topiclist.length;i++){
+        // lst+='<option>'++'</option>'
+        var node= document.createElement('option');
+        node.innerText=topiclist[i];
+        topicselect.appendChild(node)
+    }
+    console.log(lst);
+    // topicselect.innerHtml=lst;
 
 </script>
 </body>

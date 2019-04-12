@@ -30,9 +30,9 @@ def result(request):
     reslist=[]
     query=request.GET.get('query', '')
     if request.GET['model']=='Boolean':
-        reslist=boolean(query, request.GET['collection'])
+        reslist=boolean(query, request.GET['collection'], request.GET['topics'])
     else:
-        reslist=vsm(query, request.GET['collection'])
+        reslist=vsm(query, request.GET['collection'], request.GET['topics'])
     return HttpResponse(template.render({'query':request.GET['query'], 'reslist':''.join(reslist)}))
 
 def query_complete(request):
@@ -56,7 +56,7 @@ def detail(request):
         resultset = corpusAccess.getDocDetail(cspath, request.GET['docid'])
     return  HttpResponse(template.render({'title':resultset[0], 'description':resultset[1]}))
 
-def boolean(query, collection):
+def boolean(query, collection, topic='all'):
     reslist=[]
     index = booleanmodel.BooleanModel()
     path=''
@@ -68,7 +68,7 @@ def boolean(query, collection):
         doclist = index.search(query, reuterdic)
         path=reuterpath
 
-    for elem in corpusAccess.getDocContent(path, doclist):
+    for elem in corpusAccess.getDocContent(path, doclist, topic):
         reslist.append("<div><h6><a href=\"/result/detail?collection="+collection+"&docid="+elem[0]+"\">")
         reslist.append(elem[1])
         reslist.append("</a></h6><div><p>")
@@ -77,7 +77,8 @@ def boolean(query, collection):
     return reslist
 
 
-def vsm(query, collection):
+def vsm(query, collection, topic='all'):
+
     reslist = []
     resultset=[]
     doclist=[]
@@ -89,7 +90,7 @@ def vsm(query, collection):
     else:
         doclist = index.search(query, reuterdic)
         path = reuterpath
-        resultset = corpusAccess.getDocContent(path, [i[0] for i in doclist])
+        resultset = corpusAccess.getDocContent(path, [i[0] for i in doclist], topic)
 
     if not resultset:
         tokenized = list(filter(None, query.lower().split(' ')))
