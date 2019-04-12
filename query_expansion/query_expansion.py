@@ -119,12 +119,14 @@ if __name__ == '__main__':
         inverted_index=model.Model('vsm').buildIndex(dic)
         print(len(inverted_index))
         expander=QueryExpansion(dic, inverted_index)
-
+    with open('unique_words.json', 'w')as f:
+        words=expander.unique_words()
+        json.dump(words,f)
     # with open('docvec.json', 'w') as f:
     #     json.dump(expander.get_doc_vector(), f)
-    expander.build_thesaurus()
+    # expander.build_thesaurus()
     # print(expander.build_thesaurus())
-    with open('reuters_theaurus.json', 'w') as f:
-
-        json.dump(expander.build_thesaurus(),f, indent=4)
+    # with open('reuters_theaurus.json', 'w') as f:
+    #
+    #     json.dump(expander.build_thesaurus(),f, indent=4)
 
