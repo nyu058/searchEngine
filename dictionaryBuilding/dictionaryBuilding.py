@@ -53,7 +53,7 @@ class DictionaryBuilding:
             if self.stemming:
                 tokenized = self.stem(tokenized)
 
-            dictionary[doc['docID']] = [token for token in tokenized if token.isalpha() and (token not in engword) and (len(token)<16)]
+            dictionary[doc['docID']] = [token for token in tokenized if token.isalpha()]
 
         return dictionary
 

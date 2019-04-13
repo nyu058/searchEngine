@@ -9,6 +9,7 @@ class QueryExpansion:
     def __init__(self, dictionary, inverted_index):
         self.dictionary=dictionary
         self.inverted_index=inverted_index
+
     def unique_words(self):
         result=set()
         for doc in self.dictionary:
@@ -20,23 +21,26 @@ class QueryExpansion:
     def build_thesaurus(self):
         theaurous={}
         word_set=self.unique_words()
+        limited={'coffe', 'stock', 'oil', 'appl', 'china'}
+
         print(len(word_set))
         word_set.sort()
         doclist=[]
         for i in range(19043):
             doclist.append(str(i))
-
-        for word in word_set:
+        print(doclist)
+        for w in limited:
             start=time.time()
-            theaurous[word]=self.get_word_sim(word,word_set, doclist)
+            theaurous[w]=self.get_word_sim(w,word_set, doclist)
             end=time.time()
             print(end-start)
+        return theaurous
 
     def get_word_sim(self, word, word_set, doclist):
-        result={}
+        result=[]
         couter=0
         doclen = len(doclist)
-        wlist2=[]
+        wlist2 = []
         for elem in inverted_index:
             if elem[0][0]==word:
                 wlist2 = set([i[0] for i in elem[1]])
@@ -52,13 +56,14 @@ class QueryExpansion:
             else:
                 sim=self.get_sim(lst1, wlist1, doclist)
             if sim>0:
-                result[word_set[i]]=sim
+                result.append((word_set[i],sim))
             couter+=1
             # print(couter)
             # print(sim)
             if couter%1000==0:
                 print(couter)
         print(result)
+        result.sort(key=lambda x:x[1])
         return result
 
     def get_sim(self, lst1, wlist2, doclst):
@@ -119,14 +124,14 @@ if __name__ == '__main__':
         inverted_index=model.Model('vsm').buildIndex(dic)
         print(len(inverted_index))
         expander=QueryExpansion(dic, inverted_index)
-    with open('unique_words.json', 'w')as f:
-        words=expander.unique_words()
-        json.dump(words,f)
+    # with open('unique_words.json', 'w')as f:
+    #     words=expander.unique_words()
+    #     json.dump(words,f)
     # with open('docvec.json', 'w') as f:
     #     json.dump(expander.get_doc_vector(), f)
     # expander.build_thesaurus()
     # print(expander.build_thesaurus())
-    # with open('reuters_theaurus.json', 'w') as f:
+    with open('reuters_theaurus.json', 'w') as f:
     #
-    #     json.dump(expander.build_thesaurus(),f, indent=4)
+        json.dump(expander.build_thesaurus(), f)
 

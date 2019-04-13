@@ -41,7 +41,7 @@ def query_complete(request):
         bigramsCollection = json.load(f)
     bigramModel = bigrammodel.bigrammodel(bigramsCollection)
     query=request.GET['word']
-    reslist=bigramModel.getRecommandations(query.split(' ')[-2], 5)
+    reslist=bigramModel.getRecommandations(query.split(' ')[-2], 10)
     res=''
     for elem in reslist:
         res+='<p class=\'suggest\'>'+query+'<b>'+elem+'</b>'+'</p>'
